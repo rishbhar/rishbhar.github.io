@@ -1,0 +1,73 @@
+/*rishCSS*/
+
+.rish_forLinks
+{
+  margin-top:4.4%; 
+  margin-right:5%;
+
+}
+
+.rish_linksLi
+{
+  padding-right:40px;
+  margin-top:1.5%;
+  
+}
+
+.navbar-default .navbar-nav > li > a 
+{
+  color:#9B9B9B;
+  font-size: 15px;
+}
+
+.rish_navbarUi{
+ padding-left: 5%; 
+}
+
+.rish_navbarBack
+{
+  background-color: #ffffff;
+}
+
+.portfolioColor
+{
+
+  color:#32C7C3;
+
+}
+
+.rish_About
+{
+  font-size:20px;
+  color:gray;
+  
+}
+
+.rish_Margins
+{
+  padding: 0 10% 0 10%;
+}
+
+
+
+.rish_topMargins
+{
+  margin-top: 2%;
+}
+
+.rish_navbarShadow{
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.01),0 1px 10px 0 rgba(0,0,0,.02),0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+.subHeads
+{
+  font-size: 25px;
+  color:gray;
+  font-weight: bold;
+}
+
+.rish_projectSummary
+{
+  font-size: 15px;
+  color:gray;
+}
