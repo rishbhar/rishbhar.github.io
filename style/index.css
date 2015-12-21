@@ -6,7 +6,6 @@
 {
   padding-right:40px;
   
-  
 }
 
 .navbar-default .navbar-nav > li > a 
@@ -17,6 +16,11 @@
 
 .rish_navbarUi{
  padding-left: 5%; 
+}
+
+
+.rish_links_selected{
+
 }
 
 .container-fluid_rishabh {
@@ -60,8 +64,13 @@
 
 .rish_thumbnail
 {
+  cursor:pointer;
   border:none;
+}
 
+.rish_thumbnail_no_click
+{
+ border:none; 
 }
 
 
@@ -70,7 +79,6 @@
   padding-right:15%;
   
 }
-
 
 
 .footer_content
