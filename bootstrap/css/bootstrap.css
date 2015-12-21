@@ -1615,6 +1615,11 @@ pre code {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  /*added by Rishabh*/
+  padding-left: 12%;
+  padding-right: 15%;
+  padding-top: 2%;
+  /*ended by Rishabh*/
 }
 .row {
   margin-left: -15px;
