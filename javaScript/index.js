@@ -5,31 +5,24 @@ $(function () {
 $("[id^='workExp']").click(
 	function()
 	{
-		alert(this.id);
+		//alert(this.id.search("ContentBlock"));
+		if(-1!=(this.id.search("ContentBlock")))
+			return false;
+		var currentPosition = $(window).scrollTop();
+		//alert("currentPosition"+currentPosition);
+		var secondNavBarPosition = $('#secondNavBar').offset().top;
+		//alert("secondNavBarPosition"+secondNavBarPosition);
 
-		$("[id^='workExp'+'Content']").css("display","none");
-
-		var id=this.id+'Content';
-		alert(id);
+		//$('[id^="ContentBlock"]').css("display","none");
+		$("[id*=ContentBlock]").css("display","none");
+		var id=this.id+'ContentBlock';
+		//alert(id);
 		$('#'+id).css("display","block");
-
-
-	});
-
-
-$("[id^='workExpContent']").click(
-	function()
-	{
+		if(currentPosition > secondNavBarPosition)
+		$(window).scrollTop($('#secondNavBar').offset().top);
 		
-		if(this.id="workExpContent1")
-		{
-			var id=this.id+'';
-			alert(id);
-		}
-
-
 	});
 
-	
+
 
 });
