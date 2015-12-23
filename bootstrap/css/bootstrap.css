@@ -1094,6 +1094,8 @@ body {
   line-height: 1.42857143;
   color: #333333;
   background-color: #ffffff;
+ 
+  /*background-image: url('../../images/cube_portfolio_background2.png');*/
 }
 input,
 button,
@@ -4244,8 +4246,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-collapse {
   overflow-x: visible;
-  padding-right: 15px;
-  padding-left: 15px;
+  /*padding-right: 15px;
+  padding-left: 15px; Commented by Risahabh Bhardwaj*/ 
   border-top: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);

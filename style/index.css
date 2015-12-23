@@ -4,7 +4,7 @@
 
 .rish_linksLi
 {
-  padding-right:40px;
+  padding-right:17px;
   
 }
 
@@ -45,15 +45,18 @@
 .bodyBlock
 {
   background-color:#ffffff;
-  padding-left:2.5%;
-  padding-right:;
+/* padding-left:2.5%;
+  padding-right:;*/
+  margin: 0px 1% 0px 1%;
   margin-top: -2%;
+
 }
 
 .rish_navbarBack
 {
   background-color: #ffffff;
   border-color:#ffffff;
+  
 }
 
 .portfolioColor
