@@ -2,16 +2,45 @@
 
 
 
+
+/* xs < 768 
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+/* sm 
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+/* md 
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+/* lg 
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}*/
+
+
 .rish_linksLi
 {
-  padding-right:17px;
-  
+  padding-right:17px;  
 }
 
 .navbar-default .navbar-nav > li > a 
 {
   color:#9B9B9B;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .rish_navbarUi{
@@ -32,13 +61,13 @@
   /*added by Rishabh*/
   padding-left: 12%;
   padding-right: 15%;
-  padding-top: 0%;
+  padding-top: 2%;
   /*ended by Rishabh*/
 }
 
 .collapse_navbar_rishabh
 {
-  border-top: 1px solid #e7e7e7;
+  
   border-bottom: 1px solid #e7e7e7;
 }
 
@@ -62,9 +91,27 @@
 .portfolioColor
 {
 
-  color:#32C7C3;
+  color:#F86C6C;
 
 }
+
+
+.projectBlockLablesHead
+{
+  padding:4px;
+  color:#F86C6C;
+  font-size: 14px;
+}
+
+
+.projectBlockLables
+{
+  padding-left:4px;
+  color:#F86C6C;
+  font-size: 14px;
+}
+
+
 
 .rish_thumbnail
 {
@@ -125,3 +172,11 @@
   font-size: 15px;
   color:gray;
 }
+
+
+.blockStartText
+{
+  border-bottom:1px solid #e9e9e9 ;
+}
+
+

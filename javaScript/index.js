@@ -10,7 +10,7 @@ $("[id^='workExp']").click(
 			return false;
 		var currentPosition = $(window).scrollTop();
 		//alert("currentPosition"+currentPosition);
-		var secondNavBarPosition = $('#secondNavBar').offset().top;
+		var secondNavBarPosition = $('#navLinks').offset().top;
 		//alert("secondNavBarPosition"+secondNavBarPosition);
 
 		//$('[id^="ContentBlock"]').css("display","none");
@@ -19,7 +19,7 @@ $("[id^='workExp']").click(
 		//alert(id);
 		$('#'+id).css("display","block");
 		if(currentPosition > secondNavBarPosition)
-		$(window).scrollTop($('#secondNavBar').offset().top);
+		$(window).scrollTop($('#navLinks').offset().top);
 		
 	});
 

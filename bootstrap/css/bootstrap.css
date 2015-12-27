@@ -4241,7 +4241,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-header {
-    float: left;
+   /* float: left;Commented by Rishabh for addding a logo image*/
   }
 }
 .navbar-collapse {
@@ -4386,7 +4386,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 7.5px -15px;
+  /*margin: 7.5px -15px;Commented by Rishabh for navbar responsive*/
 }
 .navbar-nav > li > a {
   padding-top: 10px;
