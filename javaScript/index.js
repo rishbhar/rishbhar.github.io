@@ -1,6 +1,6 @@
 $(function () {
 
-
+ $("#footer").load("footer.html");
 
 $("[id^='workExp']").click(
 	function()

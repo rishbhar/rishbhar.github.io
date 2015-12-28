@@ -126,15 +126,27 @@
 
 
 .rish_footer{
-  padding-left: 15%;
-  padding-right:15%;
-  
+    padding-left: 12%;
+    padding-right: 15%;
+    padding-top: 2%;
 }
 
 
 .footer_content
 {
   border-top: 1px solid #e9e9e9;
+  padding-top: 2%;
+}
+
+.footerHeads{
+   color:#555555;
+  font-size: .9em;
+}
+
+.footerHeadsContent{
+ 
+  font-size: .9em;
+  color:#9B9B9B;
 }
 
 .rish_About
@@ -153,7 +165,7 @@
 
 .rish_topMargins
 {
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 .rish_navbarShadow{
@@ -176,7 +188,12 @@
 
 .blockStartText
 {
-  border-bottom:1px solid #e9e9e9 ;
+  /*border-bottom:1px solid #e9e9e9 ;*/
 }
 
+.subheaderText
+{
+  font-size:20px;
+
+}
 
