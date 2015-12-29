@@ -165,7 +165,7 @@
 
 .rish_topMargins
 {
-  margin-top: 4%;
+  margin-top: 0%;
 }
 
 .rish_navbarShadow{
@@ -193,7 +193,35 @@
 
 .subheaderText
 {
-  font-size:20px;
+  font-size:18px;
+  color:#555555;
+
+}
+
+.resumeBlockHeads
+{
+  font-weight: bold;
+  font-size: 15px;
+  color:#F59090;
+
+}
+
+.resumeDetailsDate
+{
+  float:right;
+  font-weight:bold;
+  color:#555555;
+}
+
+.resumeDetailsBlock
+{
+  margin-top: 0.8%;
+  text-align: justify;
+}
+
+
+.aboutRightBlock
+{
 
 }
 
