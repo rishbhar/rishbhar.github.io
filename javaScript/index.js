@@ -1,6 +1,25 @@
 $(function () {
 
- $("#footer").load("footer.html");
+
+
+
+$('.carousel-control.left').click(function() {
+  $('#myCarousel').carousel('prev');
+});
+
+$('.carousel-control.right').click(function() {
+  $('#myCarousel').carousel('next');
+});
+
+
+$('a[data-slide="prev"]').click(function() {
+  $('#myCarousel').carousel('prev');
+});
+
+$('a[data-slide="next"]').click(function() {
+  $('#myCarousel').carousel('next');
+});
+
 
 $("[id^='workExp']").click(
 	function()
