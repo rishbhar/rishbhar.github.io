@@ -68,7 +68,7 @@
 .collapse_navbar_rishabh
 {
   
-  border-bottom: 1px solid #e7e7e7;
+  /*border-bottom: 1px solid #e7e7e7;*/
 }
 
 .bodyBlock
@@ -84,7 +84,8 @@
 .rish_navbarBack
 {
   background-color: #ffffff;
-  border-color:#ffffff;
+  /*border-color:#ffffff;*/
+  box-shadow: 0 0px 3px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,-0.8);
   
 }
 
@@ -134,7 +135,7 @@
 
 .footer_content
 {
-  border-top: 1px solid #e9e9e9;
+  border-top: 1px solid #7d7d7d;
   padding-top: 2%;
 }
 

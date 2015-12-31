@@ -1158,6 +1158,8 @@ hr {
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eeeeee;
+  border-top: 1px solid #7d7d7d;/*Rishabh*/
+
 }
 .sr-only {
   position: absolute;
@@ -4238,12 +4240,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+    border-radius: 0px;/*Changed to 0 by Rishabh Bhardwaj*/
   }
 }
 @media (min-width: 768px) {
   .navbar-header {
-   /* float: left;Commented by Rishabh for addding a logo image*/
+    float: left;
   }
 }
 .navbar-collapse {
@@ -4344,6 +4346,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 18px;
   line-height: 20px;
   height: 50px;
+  height:auto;/*added by Rishabh*/
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4363,7 +4366,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: right;
   margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 8px;
+  margin-top: 48px;/*changed from 8 to 46 by Rishabh*/
   margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
@@ -4554,6 +4557,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-right {
     float: right !important;
     margin-right: -15px;
+    margin-top:48px;/*added by Rishabh Bhardwaj*/
   }
   .navbar-right ~ .navbar-right {
     margin-right: 0;
@@ -4597,18 +4601,34 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #dddddd;
+  border-color: #F59090;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #dddddd;
+  background-color: #F59090;/*added by Rishabh*/
+  
 }
+
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888888;
+  background-color: #F59090;/*added by Rishabh*/
+
 }
+
+/*added by Rishabh*/
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar{
+  background-color: #ffffff;/*added by Rishabh*/
+  
+}
+
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
+  border-color: #7d7d7d;/*Rishabh*/
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -6491,15 +6511,18 @@ button.close {
 }
 .carousel-caption {
   position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
+  left: 0%;
+  right: 0%;
+  bottom: 0px;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 8px;
   color: #ffffff;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  /*text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);Commented by Rishabh Bhardwaj*/
+  /*background added by Rishabh Bhardwaj*/
+  font-size: 20px;
+  background:#F59090;
 }
 .carousel-caption .btn {
   text-shadow: none;
@@ -6523,9 +6546,9 @@ button.close {
     margin-right: -15px;
   }
   .carousel-caption {
-    left: 20%;
-    right: 20%;
-    padding-bottom: 30px;
+    left: 0%; 
+    right: 0%;
+    /*padding-bottom: 30px;Commented by Rishabh and left and right made 0%*/
   }
   .carousel-indicators {
     bottom: 20px;
