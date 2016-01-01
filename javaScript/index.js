@@ -3,13 +3,13 @@ $(function () {
 
 
 //jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
+/*$(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
-});
+});*/
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
@@ -27,13 +27,13 @@ $(window).scroll(function() {
   if ($(document).scrollTop() > 100) {
     $('nav').addClass('shrink');
     $('#navLinksBar').addClass('shrinkNavLinkBar');
-    $('#logoImage').attr("src","Logo_Block.png");
+    $('#logoImage').attr("src","LOGO_Block.png");
       $('#collapseButton').css("margin-top","20px");
    
   } else {
     $('nav').removeClass('shrink');
     $('#navLinksBar').removeClass('shrinkNavLinkBar');
-    $('#logoImage').attr("src","Logo_Block.jpg");
+    $('#logoImage').attr("src","LOGO_Block.jpg");
     $('#collapseButton').css("margin-top","48px");
   }
 });
