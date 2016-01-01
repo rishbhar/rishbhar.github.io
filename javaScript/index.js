@@ -22,6 +22,22 @@ $(function() {
     });
 });
 
+//nav bar shrink
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 100) {
+    $('nav').addClass('shrink');
+    $('#navLinksBar').addClass('shrinkNavLinkBar');
+    $('#logoImage').attr("src","Logo_Block.png");
+      $('#collapseButton').css("margin-top","20px");
+   
+  } else {
+    $('nav').removeClass('shrink');
+    $('#navLinksBar').removeClass('shrinkNavLinkBar');
+    $('#logoImage').attr("src","Logo_Block.jpg");
+    $('#collapseButton').css("margin-top","48px");
+  }
+});
+
 
 
 
