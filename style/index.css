@@ -91,10 +91,12 @@ nav.navbar{
 
 .bodyBlock
 {
-  background-color:#ffffff;
+  background-color:#fcfcfc;
 /* padding-left:2.5%;
   padding-right:;*/
-  margin: 5% 1% 0px 1%;
+  margin: 3% 1% 0px 1%;
+  padding-left: 8%;
+  padding-right: 8%;
   
 
 }
@@ -146,6 +148,7 @@ nav.navbar{
 
 
 .rish_footer{
+    background-color: #ffffff;
     /*padding-left: 12%;
     padding-right: 15%;
     padding-top: 2%;*/
@@ -154,8 +157,8 @@ nav.navbar{
 
 .footer_content
 {
-  padding-left: 12%;
-    padding-right: 15%;
+  padding-left: 9%;
+    padding-right: 9%;
   border-top: 1px solid #e7e7e7;
   padding-top: 2%;
 }
@@ -262,8 +265,8 @@ nav.navbar{
 .resumeDetailsBlock
 {
   margin-top: 0.8%;
-  text-align: justify;
-  font-size: 1.3em;
+  
+  font-size: 1.25em;
 }
 
 
@@ -274,4 +277,22 @@ nav.navbar{
 
 .btn:focus,.btn:active {
    outline: none !important;
+}
+
+
+
+.tabContentPadding
+{
+  background-color:#fff;
+  padding: 0 1% 0 1%;
+}
+
+.rishNavbarContainerPadding
+{
+  padding: 0 9% 0 9%; 
+}
+
+
+.navbar-nav li>a:hover,.navbar-nav li>a:focus,.navbar-nav li.active {
+    background-color:#000;
 }

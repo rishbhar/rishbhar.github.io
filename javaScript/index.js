@@ -16,7 +16,7 @@ $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: $($anchor.attr('href')).offset().top-70/*70 added by Rishabh*/
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
