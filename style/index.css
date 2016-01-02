@@ -225,7 +225,7 @@ nav.navbar{
 .subHeadings{
   text-align: :center;
   font-family: 'Merriweather', serif;
-  font-size:1.8em;
+  font-size:2em;
   color:#F59090;
  
 }
@@ -240,7 +240,8 @@ nav.navbar{
 .introTextDetails
 {
   font-size:1.8em;
-  color:#777777;
+  color:#555555;
+  margin-top:-1%;
 }
 
 .resumeBlockHeads
