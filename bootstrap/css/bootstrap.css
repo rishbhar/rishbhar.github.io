@@ -3030,12 +3030,12 @@ select[multiple].input-lg {
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 12px;
-  /*font-size: 14px; Commented by Rishabh Bhardwaj*/
+  padding: 4px 18px;
+  font-size: 16px;
   line-height: 1.42857143;
+  line-height: 2.42857143;/*added by Rishabh */
   border-radius: 2px;
-  /*border-radius: 4px; Commented by Rishabh for buttongs border*/
+  /*border-radius: 4px; *Commented by Risbabh*/
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3086,11 +3086,19 @@ fieldset[disabled] a.btn {
 .btn-default.focus {
   color: #333333;
   background-color: #e6e6e6;
+  /*added by Rishabh*/
+  background-color: #F59090;
+  color:#ffffff;
+  /*ended*/
   border-color: #8c8c8c;
 }
 .btn-default:hover {
   color: #333333;
   background-color: #e6e6e6;
+  /*added by Rishabh*/
+background-color: #F59090;
+color:#ffffff;
+  /*ended*/
   border-color: #adadad;
 }
 .btn-default:active,
@@ -3098,7 +3106,7 @@ fieldset[disabled] a.btn {
 .open > .dropdown-toggle.btn-default {
   color: #333333;
   background-color: #e6e6e6;
-  border-color: #adadad;
+  /*border-color: #adadad;Rishabh*/
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -3111,6 +3119,8 @@ fieldset[disabled] a.btn {
 .open > .dropdown-toggle.btn-default.focus {
   color: #333333;
   background-color: #d4d4d4;
+  background-color: #dc8181;/*Rishabh*/
+  color:#ffffff;
   border-color: #8c8c8c;
 }
 .btn-default:active,
