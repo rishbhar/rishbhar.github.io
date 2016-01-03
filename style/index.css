@@ -91,7 +91,7 @@ nav.navbar{
 
 .bodyBlock
 {
-  background-color:#fcfcfc;
+  background-color:#f8f8f8;
 /* padding-left:2.5%;
   padding-right:;*/
   margin: 3% 1% 0px 1%;
@@ -120,25 +120,32 @@ nav.navbar{
 
 .projectBlockLablesHead
 {
-  padding:4px;
+  padding:4px 0 4px 0 ;
   color:#F86C6C;
-  font-size: 14px;
+  font-size: 1.2em;
 }
 
 
 .projectBlockLables
 {
-  padding-left:4px;
+  padding:4px 0 4px 0 ;
   color:#F86C6C;
   font-size: 14px;
 }
-
 
 
 .rish_thumbnail
 {
   cursor:pointer;
   border:none;
+  padding: 0px;
+
+}
+
+.rish_imageBorder
+{
+   border:1px solid #d5d5d5;
+   border-radius: 0px;
 }
 
 .rish_thumbnail_no_click
@@ -228,7 +235,7 @@ nav.navbar{
 .subHeadings{
   text-align: :center;
   font-family: 'Merriweather', serif;
-  font-size:2em;
+  font-size:2.3em;
   color:#F59090;
  
 }
@@ -249,6 +256,7 @@ nav.navbar{
 
 .resumeBlockHeads
 {
+  margin-top:3%;
   font-weight: normal;
   font-size: 1.5em;
   color:#F59090;

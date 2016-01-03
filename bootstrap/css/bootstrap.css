@@ -2462,8 +2462,11 @@ table th[class*="col-"] {
 }
 @media screen and (max-width: 767px) {
 
- 
-
+ /*Rishabh for extra space*/
+.extraSpaceForResumeBlock
+{
+  margin-top:8% !important;
+}
 
   .table-responsive {
     width: 100%;
@@ -4614,7 +4617,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #333333;
   background-color: transparent;
    color:#F59090;
-   
+
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
