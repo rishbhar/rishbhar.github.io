@@ -2465,7 +2465,7 @@ table th[class*="col-"] {
  /*Rishabh for extra space*/
 .extraSpaceForResumeBlock
 {
-  margin-top:8% !important;
+  margin-top:7% !important;
 }
 
   .table-responsive {
@@ -6029,7 +6029,7 @@ button.close {
   background-color: #ffffff;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  /*border-radius: 6px; Commented by Rishabh because he didnt need it no!!*/
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   -webkit-background-clip: padding-box;
@@ -6094,7 +6094,11 @@ button.close {
 @media (min-width: 768px) {
   .modal-dialog {
     width: 600px;
+    width:80%;
+    /*changed to 80% by Rishabh the Bhardwaj*/
     margin: 30px auto;
+    margin-top:0;
+    margin-bottom:0;
   }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
