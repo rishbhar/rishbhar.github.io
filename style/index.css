@@ -124,14 +124,16 @@ nav.navbar{
   padding:4px 0 4px 0 ;
   color:#F86C6C;
   font-size: 1.2em;
+  font-weight: 300;
 }
 
 
 .projectBlockLables
 {
   padding:0px 0 4px 0 ;
-  color:#333333;
+  color:#000000;
   font-size: 1.2em;
+  font-weight: 300;
 }
 
 
@@ -248,15 +250,16 @@ nav.navbar{
 .subheaderText
 {
   font-size:1.2em;
-  color:#333333;
+  color:#000000;
   text-align: justify;
-  font-weight:400;
+  font-weight:300;
 
 }
 
 .subHeadings{
   text-align: :center;
   font-family: 'Merriweather', serif;
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:2.3em;
   color:#F59090;
  
@@ -265,12 +268,15 @@ nav.navbar{
 .introText
 {
   font-family: 'Merriweather', serif;
-  font-size:2.3em;
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size:3em;
   color:#F59090;
 }
 
 .introTextDetails
 {
+
   font-size:1.8em;
   color:#555555;
   margin-top:-1%;
@@ -280,7 +286,7 @@ nav.navbar{
 {
   margin-top:3%;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.4em;
   color:#F59090;
 
 }
@@ -297,6 +303,7 @@ nav.navbar{
   margin-top: 0.8%;
   
   font-size: 1.2em;
+  font-weight: 300;
 }
 
 
@@ -440,8 +447,9 @@ nav.navbar{
 
 .projectsubHeads
 {
-  font-size:1.3em; 
+  font-size:1.4em; 
   text-transform: uppercase;
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .projectType
@@ -452,6 +460,7 @@ nav.navbar{
 
 .theProjectWhy
 {
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-top: 2%;
   font-size:1.5em; 
   font-weight: 300;
@@ -463,7 +472,7 @@ nav.navbar{
 
 .subheaderTextProjectType
 {
-  font-size:1.4em;
+  font-size:1.3em;
   color:#333333;
   text-align: justify;
   font-weight:400;
@@ -472,15 +481,17 @@ nav.navbar{
 .projectBodyText
 {
   font-size:1.2em;
-  color:#555555;
+  color:#000000;
   text-align: justify;
-  font-weight:400;
+  font-weight:300;
 }
 
 .projectSubHeadings
 {
 
-  font-family: 'Merriweather', serif;
+  /*font-family: 'Merriweather', serif;*/
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   font-size:1.8em;
   text-transform: uppercase;
   color:#F59090;
@@ -495,4 +506,12 @@ nav.navbar{
 .centerAligned
 {
   text-align: center;
+}
+
+.navbarHeads
+{
+  color:#F59090;
+  font-size:2.3em;
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
