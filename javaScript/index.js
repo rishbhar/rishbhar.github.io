@@ -4,6 +4,27 @@ $(function () {
 
 
 
+/*$("#fsModalAssistiveTech").on("show", function () {
+  $("body").addClass("when-modal-open");
+alert("zsajsdakjsdh");
+  $("#fsModalUBER").modal('toggle');
+
+}).on("hidden", function () {
+  $("body").removeClass("when-modal-open")
+});
+
+
+$("#fsModalUBER").on("show", function () {
+  $("body").addClass("when-modal-open");
+alert("sds");
+  $("#fsModalAssistiveTech").modal('toggle');
+
+}).on("hidden", function () {
+  $("body").removeClass("when-modal-open")
+});
+
+
+/*ends*/
 
 //jQuery to collapse the navbar on scroll
 /*$(window).scroll(function() {
@@ -82,5 +103,24 @@ $("[id^='workExp']").click(
 		$(window).scrollTop($('#navLinks').offset().top);
 		
 	});
+
+
+/*Code for making modal open and close*/
+
+$('#fsModalAssistiveTech').on('shown.bs.modal', function() {
+    $("#fsModalUBER").modal('hide');
+});
+
+$('#fsModalUBER').on('shown.bs.modal', function() {
+    $("#fsModalAssistiveTech").modal('hide');
+});
+
+
+
+
+
+
+//$("#fsModalForums").modal('show');
+
 
 });

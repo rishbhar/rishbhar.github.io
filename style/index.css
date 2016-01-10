@@ -120,6 +120,7 @@ nav.navbar{
 
 .projectBlockLablesHead
 {
+  cursor: pointer;
   padding:4px 0 4px 0 ;
   color:#F86C6C;
   font-size: 1.2em;
@@ -129,17 +130,32 @@ nav.navbar{
 .projectBlockLables
 {
   padding:0px 0 4px 0 ;
-  color:#F86C6C;
-  font-size: 14px;
+  color:#333333;
+  font-size: 1.2em;
 }
 
 
 .rish_thumbnail
 {
-  cursor:pointer;
+  /*cursor:pointer;*/
   border:none;
+  border-radius: 0;
   padding: 0px;
 
+}
+
+.rish_thumbnail_click
+{
+  cursor:pointer;
+  border:none;
+  border-radius: 0;
+  padding: 0px;
+
+}
+
+.rish_thumbnail_click:hover
+{
+  border: 1px solid #6a6a6a;
 }
 
 .rish_imageBorder
@@ -173,6 +189,11 @@ nav.navbar{
 .footerHeads{
    color:#555555;
   font-size: .9em;
+}
+
+.footerHeadsRight
+{
+ float: right;
 }
 
 .footerHeadsContent{
@@ -226,9 +247,10 @@ nav.navbar{
 
 .subheaderText
 {
-  font-size:1.25em;
-  color:#555555;
+  font-size:1.2em;
+  color:#333333;
   text-align: justify;
+  font-weight:400;
 
 }
 
@@ -243,7 +265,7 @@ nav.navbar{
 .introText
 {
   font-family: 'Merriweather', serif;
-  font-size:3em;
+  font-size:2.3em;
   color:#F59090;
 }
 
@@ -274,7 +296,7 @@ nav.navbar{
 {
   margin-top: 0.8%;
   
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 
 
@@ -314,7 +336,12 @@ nav.navbar{
 
 
 /*for the projects modal boxes*/
-.modal { overflow: auto; } .modal-open { overflow: auto;padding-right: 0px !important; } 
+.modal { overflow: auto; } .modal-open {padding-right: 0px !important; } \
+
+.when-modal-open
+{
+  overflow: hidden;
+}
 
 .modal-backdrop
 {
@@ -409,3 +436,63 @@ nav.navbar{
     transform: none !important;
 }
 /*ended*/
+
+
+.projectsubHeads
+{
+  font-size:1.3em; 
+  text-transform: uppercase;
+}
+
+.projectType
+{
+  color:#777777;
+  text-transform:uppercase;
+}
+
+.theProjectWhy
+{
+  margin-top: 2%;
+  font-size:1.5em; 
+  font-weight: 300;
+  padding:1% 10% 1% 10%;
+  color:#333333;
+  /*font-family: 'Merriweather', serif;*/
+  text-align: justify;
+}
+
+.subheaderTextProjectType
+{
+  font-size:1.4em;
+  color:#333333;
+  text-align: justify;
+  font-weight:400;
+}
+
+.projectBodyText
+{
+  font-size:1.2em;
+  color:#555555;
+  text-align: justify;
+  font-weight:400;
+}
+
+.projectSubHeadings
+{
+
+  font-family: 'Merriweather', serif;
+  font-size:1.8em;
+  text-transform: uppercase;
+  color:#F59090;
+}
+
+.aLinks
+{
+  color:#F59090 !important ;
+  text-decoration:none !important;
+}
+
+.centerAligned
+{
+  text-align: center;
+}
