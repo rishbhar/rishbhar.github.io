@@ -130,8 +130,9 @@ nav.navbar{
 
 .projectBlockLables
 {
-  padding:0px 0 4px 0 ;
-  color:#000000;
+  padding:4px 0 8% 0;
+  color:#555555;
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   font-weight: 300;
 }
@@ -157,12 +158,12 @@ nav.navbar{
 
 .rish_thumbnail_click:hover
 {
-  border: 1px solid #6a6a6a;
+  /*border: 1px solid #6a6a6a;*/
 }
 
 .rish_imageBorder
 {
-   border:1px solid #d5d5d5;
+   /*border:1px solid #d5d5d5;*/
    border-radius: 0px;
 }
 
@@ -515,3 +516,10 @@ nav.navbar{
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
+
+.downloadButton{
+text-align:center;
+margin-top:2%;
+font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;"
+}
+
