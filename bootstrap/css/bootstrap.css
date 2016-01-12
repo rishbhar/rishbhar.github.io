@@ -3045,6 +3045,7 @@ select[multiple].input-lg {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .btn:focus,
 .btn:active:focus,

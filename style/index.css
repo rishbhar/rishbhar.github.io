@@ -53,6 +53,7 @@ nav.navbar{
 .rish_linksLi
 {
   padding-right:17px;  
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar-default .navbar-nav > li > a 
@@ -92,13 +93,20 @@ nav.navbar{
 .bodyBlock
 {
   background-color:#f8f8f8;
+      
 /* padding-left:2.5%;
   padding-right:;*/
   margin: 3% 1% 0px 1%;
   padding-left: 8%;
   padding-right: 8%;
   
+  
 
+}
+
+.bodyColor
+{
+  background:url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/paper_fibers.png");
 }
 
 .rish_navbarBack
@@ -186,6 +194,7 @@ nav.navbar{
   padding-left: 9%;
     padding-right: 9%;
   border-top: 1px solid #e7e7e7;
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-top: 2%;
 }
 
@@ -269,7 +278,7 @@ nav.navbar{
 .introText
 {
   font-family: 'Merriweather', serif;
-  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-weight: 300;
   font-size:3em;
   color:#F59090;
@@ -277,7 +286,7 @@ nav.navbar{
 
 .introTextDetails
 {
-
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:1.8em;
   color:#555555;
   margin-top:-1%;
@@ -323,6 +332,8 @@ nav.navbar{
 {
   background-color:#fff;
   padding: 0 1% 0 1%;
+  /*border-left:1px solid #e7e7e7;
+  border-right:1px solid #e7e7e7;*/
 }
 
 .rishNavbarContainerPadding
@@ -340,6 +351,7 @@ nav.navbar{
   float:right;
   vertical-align: top;
   cursor: pointer;
+
 }
 
 
@@ -512,7 +524,7 @@ nav.navbar{
 .navbarHeads
 {
   color:#F59090;
-  font-size:2.3em;
+  font-size:2em;
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
@@ -523,3 +535,14 @@ margin-top:2%;
 font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;"
 }
 
+.toggleBackgroundColor
+{
+  background-color: #fff;
+ border-top: 2px solid #ededed;/*
+ background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/lightpaperfibers.png");
+ background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/grid_noise.png");*/
+
+}
+
+  
+}
