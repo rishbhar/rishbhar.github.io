@@ -206,6 +206,7 @@ nav.navbar{
 .footerHeadsRight
 {
  float: right;
+ font-size: .9em;
 }
 
 .footerHeadsContent{
