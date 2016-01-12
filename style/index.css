@@ -104,6 +104,13 @@ nav.navbar{
 
 }
 
+.myPicDiv
+{
+  margin-top:4%;
+  min-height:40%;
+  
+}
+
 .bodyColor
 {
   background:url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/paper_fibers.png");

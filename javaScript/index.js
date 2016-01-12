@@ -116,7 +116,8 @@ $('#fsModalUBER').on('shown.bs.modal', function() {
 });
 
 
-
+//$('#myPic').height($('#aboutText').height());
+//alert($('#myPic').height());
 
 
 
