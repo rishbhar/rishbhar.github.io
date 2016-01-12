@@ -259,7 +259,7 @@ nav.navbar{
 
 .subheaderText
 {
-  font-size:1.2em;
+  font-size:1.1em;
   color:#000000;
   text-align: justify;
   font-weight:300;
@@ -296,7 +296,7 @@ nav.navbar{
 {
   margin-top:3%;
   font-weight: normal;
-  font-size: 1.4em;
+  font-size: 1.3em;
   color:#F59090;
 
 }
@@ -312,7 +312,7 @@ nav.navbar{
 {
   margin-top: 0.8%;
   
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 300;
 }
 
@@ -460,7 +460,7 @@ nav.navbar{
 
 .projectsubHeads
 {
-  font-size:1.4em; 
+  font-size:1.3em; 
   text-transform: uppercase;
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -493,7 +493,7 @@ nav.navbar{
 
 .projectBodyText
 {
-  font-size:1.2em;
+  font-size:1.1em;
   color:#000000;
   text-align: justify;
   font-weight:300;
