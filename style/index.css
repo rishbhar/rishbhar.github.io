@@ -108,7 +108,7 @@ nav.navbar{
 {
   margin-top:4%;
   min-height:40%;
-  
+
 }
 
 .bodyColor
@@ -127,9 +127,7 @@ nav.navbar{
 
 .portfolioColor
 {
-
   color:#F86C6C;
-
 }
 
 
@@ -138,7 +136,7 @@ nav.navbar{
   cursor: pointer;
   padding:4px 0 4px 0 ;
   color:#F86C6C;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 300;
 }
 
@@ -148,7 +146,7 @@ nav.navbar{
   padding:4px 0 8% 0;
   color:#555555;
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 300;
 }
 
@@ -159,7 +157,6 @@ nav.navbar{
   border:none;
   border-radius: 0;
   padding: 0px;
-
 }
 
 .rish_thumbnail_click
@@ -475,9 +472,13 @@ nav.navbar{
 
 .projectType
 {
+  margin-top:4%;
   color:#777777;
   text-transform:uppercase;
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left:8%;
 }
+
 
 .theProjectWhy
 {
@@ -485,26 +486,37 @@ nav.navbar{
   margin-top: 2%;
   font-size:1.5em; 
   font-weight: 300;
-  padding:1% 10% 1% 10%;
+  padding:1% 9% 1% 9%;
   color:#333333;
-  /*font-family: 'Merriweather', serif;*/
   text-align: justify;
+  /*font-family: 'Merriweather', serif;*/
+  
 }
 
 .subheaderTextProjectType
 {
-  font-size:1.3em;
+  font-size:1.2em;
   color:#333333;
   text-align: justify;
   font-weight:400;
+  
+}
+
+.paddingForProjectsPagesSubHeads
+{
+  padding-left:9%;
 }
 
 .projectBodyText
 {
+ text-align: center;
   font-size:1.1em;
-  color:#000000;
+  color:#666;
   text-align: justify;
   font-weight:300;
+  padding:0% 9% 0 9%;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
 }
 
 .projectSubHeadings
@@ -512,10 +524,13 @@ nav.navbar{
 
   /*font-family: 'Merriweather', serif;*/
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size:1.8em;
+  font-weight: 400;
+  font-size:1.6em;
   text-transform: uppercase;
   color:#F59090;
+  padding-top: 2%;
+  padding-left:9%;
+  text-align: left;
 }
 
 .aLinks
@@ -553,4 +568,10 @@ font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;"
 }
 
   
+.projectHeadings{
+font-size:1.4em;
+font-weight:300;
+font-family:'Merriweather', serif;
+text-align: center;
+
 }

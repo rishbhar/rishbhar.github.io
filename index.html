@@ -38,7 +38,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img id="logoImage" src="LOGO_Block.jpg" class="img-responsive rish_thumbnail" width="50%" style="margin-top:5%;"></a>
+                <a class="navbar-brand" href="index.html"><img id="logoImage" src="LOGO_Block.jpg" class="img-responsive rish_thumbnail" width="50%" style="margin-top:5%;"></a>
               </div>
             
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -97,7 +97,7 @@
                 <div class="col-md-6">
                 <p style="margin-top:12%;">
 
-                <div class="introText introTextDetailSmallScreen centerAligned"> RISHABH BHARDWAJ</div>
+                <div class="introText introTextDetailSmallScreen centerAligned">RISHABH BHARDWAJ</div>
                 <div class="introTextDetails centerAligned">User Experience Designer</div>
                 <!--<span class="subheaderText">Looking for a User Experience internship opportunity.</span>-->
                 </p>
@@ -268,7 +268,7 @@
   <div class="centerAligned"> <span class="subheaderTextProjectType centerAligned">ACADEMIC DESIGN PROJECTS</span></div><br>
     <div class="row rish_topMargins centerAligned">
 
-            <!--<div class="col-md-1">
+            <div class="col-md-1">
               </div>
 
               <div class="col-md-10">
@@ -277,9 +277,11 @@
             <div class="row">  <!-- inside row-->            
 
                 <div class="col-md-4">
-                   <div><img src="images/Assistive_Tech_shot.png" class="img-thumbnail rish_thumbnail_click rish_imageBorder"  
+                   <div onclick="location.href='Assistive_Technology_Page.html'">
+                    <img src="images/Assistive_Tech_shot.png" class="img-thumbnail rish_thumbnail_click rish_imageBorder"  
                     data-toggle="modal"
-                      data-target="#fsModalAssistiveTech" ></div>
+                      data-target="#fsModalAssistiveTec" >
+                    </div>
                       
                      
                      
@@ -291,8 +293,8 @@
 
 
                 <div class="col-md-4">
-                      <div><img src="images/Uber_shot.png" class="img-thumbnail rish_thumbnail_click rish_imageBorder" data-toggle="modal"
-                      data-target="#fsModalUBER"></div>
+                      <div onclick="location.href='Uber_Ratings_Redesign_Page.html'"><img src="images/Uber_shot.png" class="img-thumbnail rish_thumbnail_click rish_imageBorder" data-toggle="modal"
+                      data-target="#fsModalUBE"></div>
                       <!--<div class="projectBlockLablesHead" data-toggle="modal"
                       data-target="#fsModalUBER">UBER Ratings Redesign</div>-->
                       <div class="projectBlockLables"  >Interaction Design, 2 weeks</div> 
@@ -300,46 +302,71 @@
 
            
                 <div class="col-md-4">
-                      <div><img src="images/Forums_shot.png" class="img-thumbnail rish_thumbnail_click rish_imageBorder" data-toggle="modal"
-                          data-target="#fsModalForums"></div>
+                      <div onclick="location.href='Forums_Redesign_Page.html'">
+                  <img src="images/Forums_shot.png" class="img-thumbnail rish_thumbnail_click rish_imageBorder" data-toggle="modal"
+                          data-target="#fsModalForum"></div>
                       <!--<div class="projectBlockLablesHead" data-toggle="modal"
                           data-target="#fsModalForums">Forums Redesign</div>-->
                       <div class="projectBlockLables" >Interaction Design, 2 weeks</div> 
                 </div>
 
-            <!--  </div><!-- inside row
+              </div><!-- inside row-->
 
               </div>
 
 
              
              <div class="col-md-1">
-              </div>-->
+              </div>
 
                 
     </div>
 
+<br>
+<br><br>
 
 
-<!--
- <div> <span class="subheaderTextProjectType">WORK EXPERIENCE</span></div><br>
-   <div class="row rish_topMargins">
+ <div class="centerAligned"> <span class="subheaderTextProjectType centerAligned">WORK EXPERIENCE</span></div><br>
+   <div class="row rish_topMargins centerAligned">
 
-      <div class="col-md-3">
-            <div><img src="images/Musejam_shot_old.jpg" class="img-thumbnail rish_thumbnail_click rish_imageBorder" data-toggle="modal"
-                      data-target="#fsModal"></div>
-            <div class="projectBlockLablesHead">Musejam</div>
-            <div class="projectBlockLables" style="color:gray" >User Experience Design Intern, 3 months</div>
+     <div class="col-md-1">
       </div>
 
-      
+            <div class="col-md-10">
+            <div class="row">  <!-- inside row-->            
 
+
+              <div class="col-md-4">
+              </div>
+
+            <div class="col-md-4">
+                  <div onclick="location.href='Musejam_Page.html'"><img src="images/Musejam_shot_old.jpg" class="img-thumbnail rish_thumbnail_click rish_imageBorder" data-toggle="modal"
+                            data-target="#fsModal"></div>
+                 <!-- <div class="projectBlockLablesHead">Musejam</div>-->
+                  <div class="projectBlockLables" >User Experience Design Intern, 3 months</div>
+            </div>
+
+
+            <div class="col-md-4">
+            </div>
+
+
+
+       </div><!-- inside row-->
+
+        </div>
+
+
+             
+             <div class="col-md-1">
+              </div>
+<!--
       <div class="col-md-3">
          <div><img src="images/Nucleus_shot.png" class="img-thumbnail rish_thumbnail_click rish_imageBorder" data-toggle="modal"
                       data-target="#fsModal"></div>
          <div class="projectBlockLablesHead">Nucleus Software</div>
          <div class="projectBlockLables" style="color:gray" >Software Developer, 2.5 years</div>
-      </div>
+      </div>-->
    
     </div>
 
@@ -349,6 +376,7 @@
 <br>
 <br>
   
+ <!-- 
      <div> <span class="subheaderTextProjectType">INDEPENDENT PROJECTS</span></div><br>
     <div class="row rish_topMargins">
 
@@ -809,20 +837,31 @@
 
                     <!-- header -->
                     <div class="modal-header">
-                      <div class="blockStartText">
-                                
+
+
+                       
+
+                            <div class="blockStartText">
+
                                 <img src="images/cross31.png" class="closeButton" width="3%" height="3%" data-dismiss="modal">
-                      </div>  
+                            </div>  
 
 
+                          
+                              
+                            <div class="modal-header">
 
-                      <div class="modal-header">
+                            <div class="projectType">
+                            <span><img src="images/graduateIcon.png" width="2.8%" height="2.8%"></span>
+                            &nbsp
+                            Academic Design Project
+                            </div>
 
-                        <div class="projectType">
-                          <span><img src="images/graduateIcon.png" width="2.8%" height="2.8%"></span>
-                          &nbsp
-                          Academic Design Project
-                        </div><br>
+                     
+
+                        <br>
+
+
 
                         <h1 id="myModalLabel"
                             class="modal-title">
@@ -1187,6 +1226,17 @@
 
                           <div class="centerAligned"> <span class="subheaderTextProjectType ">ACADEMIC DESIGN PROJECTS</span></div><br>
                           <div class="row rish_topMargins centerAligned">
+
+                            <div class="col-md-1">
+                            </div>
+
+                           <div class="col-md-10">
+                          <div class="row">  <!-- inside row--> 
+              
+
+
+
+
                           <div class="col-md-4">
                           <div><img src="images/Assistive_Tech_shot.png" class="img-thumbnail rish_thumbnail_click rish_imageBorder"  data-toggle="modal"
                           data-target="#fsModalAssistiveTech"></div>
@@ -1224,6 +1274,15 @@
                           data-target="#fsModalForums">Forums Redesign</div>-->
                           <div class="projectBlockLables"  >Interaction Design, 2 weeks</div> 
                           </div>
+
+                          </div><!-- inside row-->
+                          </div>            
+                           <div class="col-md-1">
+                            </div>
+
+
+
+
                           </div>
 
                           <br>
@@ -1877,6 +1936,15 @@
 
                           <div> <span class="subheaderTextProjectType centerAligned">ACADEMIC DESIGN PROJECTS</span></div><br>
                           <div class="row rish_topMargins centerAligned">
+
+
+
+                            <div class="col-md-1">
+                            </div>
+
+                           <div class="col-md-10">
+                          <div class="row">  <!-- inside row--> 
+              
                           <div class="col-md-4">
                           <div><img src="images/Assistive_Tech_shot.png" class="img-thumbnail rish_thumbnail_click rish_imageBorder"  data-toggle="modal"
                           data-target="#fsModalAssistiveTech"></div>
@@ -1915,6 +1983,11 @@
                           <div class="projectBlockLables"  >Interaction Design, 2 weeks</div> 
                           </div>
                           </div>
+
+                           </div><!-- inside row-->
+                          </div>            
+                           <div class="col-md-1">
+                            </div>
 
                           <br>
                           <br>
