@@ -468,6 +468,7 @@ nav.navbar{
   font-size:1.3em; 
   text-transform: uppercase;
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#333333;
 }
 
 .projectType
@@ -476,18 +477,19 @@ nav.navbar{
   color:#777777;
   text-transform:uppercase;
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding-left:8%;
+  padding-left:9%;
 }
 
 
 .theProjectWhy
 {
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 2%;
-  font-size:1.5em; 
+  margin-top: -2%;
+  font-size:1.65em; 
   font-weight: 300;
-  padding:1% 9% 1% 9%;
-  color:#333333;
+  padding:1% 10% 1% 9.5%;
+  color:#000;
+  font-style:italic;
   text-align: justify;
   /*font-family: 'Merriweather', serif;*/
   
@@ -511,11 +513,11 @@ nav.navbar{
 {
  text-align: center;
   font-size:1.1em;
-  color:#666;
+  color:#333;
   text-align: justify;
   font-weight:300;
   padding:0% 9% 0 9%;
-  line-height: 1.6;
+  line-height: 1.9;
   text-rendering: optimizeLegibility;
 }
 
@@ -525,10 +527,11 @@ nav.navbar{
   /*font-family: 'Merriweather', serif;*/
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size:1.6em;
-  text-transform: uppercase;
-  color:#F59090;
+  font-size:1.9em;
+  
+  color:#333;
   padding-top: 2%;
+  padding-bottom: 0.5%;
   padding-left:9%;
   text-align: left;
 }
@@ -574,4 +577,15 @@ font-weight:300;
 font-family:'Merriweather', serif;
 text-align: center;
 
+}
+
+b
+{
+  font-weight:400;
+}
+
+
+.paddLeft
+{
+  padding-left: 1%;
 }
