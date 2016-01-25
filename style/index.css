@@ -589,3 +589,13 @@ b
 {
   padding-left: 1%;
 }
+
+.projectPicLables
+{
+  padding:4px 0 2% 0;
+  color:#555555;
+  font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  text-align:center;
+}
