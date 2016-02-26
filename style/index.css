@@ -264,7 +264,7 @@ nav.navbar{
 
 .subheaderText
 {
-  font-size:1.1em;
+  font-size:1.3em;
   color:#000000;
   text-align: justify;
   font-weight:300;
@@ -301,7 +301,7 @@ nav.navbar{
 {
   margin-top:3%;
   font-weight: normal;
-  font-size: 1.3em;
+  font-size: 1.4em;
   color:#F59090;
 
 }
@@ -317,7 +317,7 @@ nav.navbar{
 {
   margin-top: 0.8%;
   
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 300;
 }
 
@@ -512,7 +512,7 @@ nav.navbar{
 .projectBodyText
 {
  text-align: center;
-  font-size:1.1em;
+  font-size:1.3em;
   color:#333;
   text-align: justify;
   font-weight:300;
