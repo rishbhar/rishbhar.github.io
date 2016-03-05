@@ -147,7 +147,7 @@ nav.navbar{
   color:#555555;
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 
@@ -477,7 +477,7 @@ nav.navbar{
   color:#777777;
   text-transform:uppercase;
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding-left:9%;
+  padding-left:16%;
 }
 
 
@@ -487,7 +487,7 @@ nav.navbar{
   margin-top: -2%;
   font-size:1.65em; 
   font-weight: 300;
-  padding:1% 10% 1% 9.5%;
+  padding:1% 16% 1% 15.5%;
   color:#000;
   font-style:italic;
   text-align: justify;
@@ -514,7 +514,7 @@ nav.navbar{
  text-align: center;
   font-size:1.3em;
   color:#333;
-  text-align: justify;
+  text-align: left;
   font-weight:300;
   padding:0% 9% 0 9%;
   line-height: 1.9;
@@ -526,7 +526,7 @@ nav.navbar{
 
   /*font-family: 'Merriweather', serif;*/
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size:1.9em;
   
   color:#333;
@@ -534,6 +534,7 @@ nav.navbar{
   padding-bottom: 0.5%;
   padding-left:9%;
   text-align: left;
+  padding-right:6%;
 }
 
 .aLinks
@@ -587,7 +588,7 @@ b
 
 .paddLeft
 {
-  padding-left: 1%;
+  padding-left: 8%;
 }
 
 .projectPicLables
@@ -596,6 +597,6 @@ b
   color:#555555;
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   text-align:center;
 }
