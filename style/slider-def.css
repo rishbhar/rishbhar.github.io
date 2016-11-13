@@ -49,7 +49,7 @@
 .legend{
   /*border:500px solid transparent;
   border-left:800px solid rgba(52, 73, 94, .7);*/
-  border:130px solid black;
+  border:70% solid black;
   opacity:0.5;
   width:50%;
   margin-bottom: 5%;
@@ -60,6 +60,23 @@
 }
 
 /* Contents */
+
+
+@media screen and (max-width: 767px) {
+.content{
+  width:100%;
+  height:100%;
+  left:2%;
+  top:1%;
+  position:absolute;
+  overflow:hidden;
+}
+
+  }
+
+
+@media screen and (min-width: 1200px) {
+
 .content{
   width:100%;
   height:100%;
@@ -68,8 +85,11 @@
   position:absolute;
   overflow:hidden;
 }
+
+}
+
 .content-txt{
-  width:400px;
+  width:40%;
   height:150px;
   float:left;
   position:relative;
@@ -86,6 +106,7 @@ font-family: 'Open Sans', sans-serif;font-weight:400;
   text-align:left;
   font-size:1.5em;
   padding-bottom:0px;
+   text-shadow: 2px 2px #000000;
 }
 .content-txt h2{
 font-family: 'Open Sans', sans-serif;font-weight:300;
@@ -99,6 +120,9 @@ font-family: 'Open Sans', sans-serif;font-weight:300;
 }
 
 /* Switch */
+
+@media screen and (min-width: 1200px) {
+
 .switch{
   margin-top:10%;
   width:120px;
@@ -108,6 +132,26 @@ font-family: 'Open Sans', sans-serif;font-weight:300;
   z-index:99;
   left:48%;
 }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+.switch{
+  margin-top:10%;
+  width:120px;
+  height:5px;
+  position:absolute;
+  bottom:20px;
+  z-index:99;
+  left:41%;
+}
+
+}
+
+
+
 .switch > ul{
   list-style:none;
 }
@@ -215,31 +259,31 @@ font-family: 'Open Sans', sans-serif;font-weight:300;
 }
 
 @-webkit-keyframes content-s{
-  0%{left:-420px;}
+  0%{left:-440px;}
   10%{left:0px;}
   30%{left:0px;}
   40%{left:0px;}
   50%{left:0px;}
   60%{left:0px;}
   70%{left:0;}
-  80%{left:-420px;}
-  90%{left:-420px;}
-  100%{left:-420px;}
+  80%{left:-440px;}
+  90%{left:-440px;}
+  100%{left:-440px;}
 }
 @-moz-keyframes content-s{
-  0%{left:-420px;}
+  0%{left:-440px;}
   10%{left:0px;}
   30%{left:0px;}
   40%{left:0px;}
   50%{left:0px;}
   60%{left:0px;}
   70%{left:0;}
-  80%{left:-420px;}
-  90%{left:-420px;}
-  100%{left:-420px;}
+  80%{left:-440px;}
+  90%{left:-440px;}
+  100%{left:-440px;}
 }
 @keyframes content-s{
-  0%{left:-420px;}
+  0%{left:-440px;}
   10%{left:20px;}
   15%{left:0px;}
   30%{left:0px;}
@@ -247,9 +291,9 @@ font-family: 'Open Sans', sans-serif;font-weight:300;
   50%{left:0px;}
   60%{left:0px;}
   70%{left:0;}
-  80%{left:-420px;}
-  90%{left:-420px;}
-  100%{left:-420px;}
+  80%{left:-440px;}
+  90%{left:-440px;}
+  100%{left:-440px;}
 }
 
 @-webkit-keyframes on{

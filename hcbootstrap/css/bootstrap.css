@@ -4084,7 +4084,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li.disabled > a:hover,
 .nav > li.disabled > a:focus {
-  color: #777777;
+  color: #777777;/*Rishabh*/
   text-decoration: none;
   background-color: transparent;
   cursor: not-allowed;
@@ -4622,7 +4622,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a:focus {
   color: #333333;
   background-color: transparent;
-   color:#F59090;
+   color:#FA9601; /*menu link color change Rishabh*/
 
 }
 .navbar-default .navbar-nav > .active > a,
