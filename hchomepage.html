@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Rishabh Bhardwaj</title>
+    <title>Human Cognition Evolution</title>
 
     <!-- Bootstrap -->
     <link href="hcbootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="style/hchomepage.css" rel="stylesheet">
+    <link href="style/slider-def.css" rel="stylesheet">
+    
     <link href="style/scrolling-nav.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,300italic,400,700' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -49,24 +51,23 @@ $('.navbar-lower').affix({
 <div class="divide-nav">
   <div class="container" style="padding:0 2% 0 2%;">
     <p class="divide-text">
-      <a class="navbar-brand" href="index.html" style="width:15%"><img id="logoImage" src="hcimages/sai-logo.gif" class="img-responsive rish_thumbnail"  style="margin-top:5%;"></a>
+      <a class="navbar-brand" href="index.html" style="width:12%"><img id="logoImage" src="hcimages/sai-logo.gif" class="img-responsive rish_thumbnail"  style="margin-top:5%;"></a>
       <div class="hcLogoText"> Human Cognitive Evolution</div>
-       <div style="margin-top:-5%;margin-left:85%;"><img width="80%" height="80%" src="hcimages/John_Templeton_logo.png" /></div>
-       <div style="margin-top:-5.2%;margin-left:78%;"><img width="23%" height="23%" src="hcimages/Indiana-University-logo.gif" /></div>
+       
     </p>
 
   </div>
 </div>
 
-<nav class="navbar navbar-default navbar-fixed-top relativePosition" id="menuTab" role="navigation" style="border:none;margin-bottom:0px;">
+<nav class="navbar-xs navbar-default navbar-fixed-top relativePosition" id="menuTab" role="navigation" style="border:none;margin-bottom:0px;">
 
-<div style="background-color:#2A5769; border-top:1px solid #FA9601; border-bottom:1px solid #FA9601;">
+<div style="background-color:#2A5769; border-bottom:1px solid #FA9601;">
 
   <div class="container" style="padding:0 4% 0 4%;">
 
     
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav" style="width:100%;margin-top:0.4%;">
+      <ul class="nav navbar-nav" style="width:100%;">
         <li class="dropdown hcDropdownPadding">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Research</a>
           <ul class="dropdown-menu">
@@ -133,181 +134,369 @@ $('.navbar-lower').affix({
 
   <div class="row">
 
-      <div class="col-md-7 noPadding">
-            <div id="slider" class="sliderImagesBlock">
-            <figure>
-            <img src="hcimages/Homepage_EvolutionaryPsychology.png" alt>
-            <img src="hcimages/event2.png" alt>
-            <img src="hcimages/Homepage_EvolutionaryPsychology.png" alt>
-             <img src="hcimages/Homepage_EvolutionaryPsychology.png" alt>
-            <img src="hcimages/event2.png" alt>
-            </figure>
-            </div>
+      <div class="col-md-12 noPadding">
+
+                            <div id="slider">
+                            <div class="slides">
+
+                            <!-- First slide -->
+                            <div class="slider">
+                            <div class="legend"></div>
+                            <div class="content">
+                            <div class="content-txt">
+                            <h1> Vast Evolution from the Stone age to the Information age</h1>
+                           
+                            <button type="button" class="btn">read more</button>
+                            </div>
+                            </div>
+                            <div class="images">
+                            <img src="hcimages/sliderimage1.png">
+                            </div>
+                            </div>
+
+                            <!-- Second slide -->
+                            <div class="slider">
+                            <div class="legend"></div>
+                            <div class="content">
+                            <div class="content-txt">
+                            <h1> Mammals Brain Evolution has seen some major changes</h1>
+                           
+                              <button type="button" class="btn">read more</button>
+                            </div>
+                            </div>
+                            <div class="images">
+                            <img src="hcimages/sliderimage2.png">
+                            </div>
+                            </div>
+
+                             <!-- First slide -->
+                            <div class="slider">
+                            <div class="legend"></div>
+                            <div class="content">
+                            <div class="content-txt">
+                           <h1> Vast Evolution from the Stone age to the Information age</h1>
+                            
+                              <button type="button" class="btn">read more</button>
+                            </div>
+                            </div>
+                            <div class="images">
+                            <img src="hcimages/sliderimage1.png">
+                            </div>
+                            </div>
+
+                            <!-- Second slide -->
+                            <div class="slider">
+                            <div class="legend"></div>
+                            <div class="content">
+                            <div class="content-txt">
+                           <h1> Mammals Brain Evolution has seen some major changes</h1>
+                              <button type="button" class="btn">read more</button>
+                            </div>
+                            </div>
+                            <div class="images">
+                            <img src="hcimages/sliderimage2.png">
+                            </div>
+                            </div>
+
+                           
+                            </div>
+                            </div>
+
+                            <div class="switch">
+        <ul>
+          <li>
+            <div class="on"></div>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       </div> 
 
 
-      <div class="col-md-5 noPadding ourVision">
-        <div class="hcLogoText" style="padding:5%;width:100%;color:#2A5769;">Investigating the origins of the human mind, from the Stone to the Information Age.</div>
-      </div>
+      <!--<div class="col-md-4 noPadding ourVision">
+        <div class="hcLogoText" style="padding:5%;width:100%;color:#2A5769;font-size:2em;font-weight:400;"><span style="font-weight:600">Our Mission</span>
+         <br>Investigating the origins of the human mind, from the Stone to the Information Age.</div>
+      </div>-->
 
   </div>
 
   <!-- slider ends-->
-
- <!--middle bar starts -->
+<!--middle bar starts -->
     <div class="row" style="margin-top:0%;">
 
-          <div class="col-md-12 noPadding" style="background-color:#2A5769;height:10px;"> 
+          <div class="col-md-12 noPadding" style="background-color:#FA9601;height:1px;"> 
+          </div>
+
+      </div>
+<!-- middle bar stops -->
+ 
+
+<div class="row">
+
+      <div class="col-md-12 noPadding ourVision">
+
+        <div style="padding:3% 0 3% 0;width:100%;color:#ffffff;font-weight:300;text-align:center;font-style:italic;">
+
+         Investigating the origins of the human mind, from the Stone to the Information Age</div>
+
+      </div>
+      
+</div>
+ 
+ <!--middle bar starts -->
+    <div class="row" style="margin-bottom:1%;">
+
+          <div class="col-md-12 noPadding" style="background-color:#FA9601;height:1px;"> 
           </div>
 
       </div>
 <!-- middle bar stops -->
 
- 
-
 
    <div class="row" style="margin-top:0.5%;">
 
 <!-- explpore human cognition block-->
-      <div class="col-md-7 noPadding" style="margin-top:6%;">
+
+      <div class="col-md-8 noPadding" style="margin-top:4.5%;">
+
+        
           
               <div class="row">
 
                 <div class="col-md-12">
-                  <span style="font-size:1.5em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;"> Explore Human Cognition </span>
+                  <span style="font-size:1.8em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;"> Explore Human Cognition </span>
                  <!--<hr style="margin-left:0;width:80%;margin-top:1%;">-->
                 </div>
             
              </div> 
 
-              <div class="row" style="margin-top:4%;">
+             <div class="row" style="margin-top:2.6%;">
 
-              <div class="col-md-4" style="padding-right:0;">
-                <span> <img src="hcimages/bird.jpg" class="img-responsive rish_thumbnail" ></span> 
-                 </div>
 
-               <div class="col-md-7 noPadding">
-                 <div style="background-color:#2A5769; height:9.5em;">
-                  <div style="font-size:1.3em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:600;padding:3%;"> The bird of discovery from Africa that led to several discovery from Africa that...<span style="color:#FBCB70;">read more</span>
+                  <div class="row">
+
+                      <div class="col-md-10">
+
+
+                          <div class="col-md-6">
+                            <span> <img src="hcimages/bird.jpg" class="img-responsive rish_thumbnail" ></span> 
+                             
+
+                           
+                             <div>
+                              <div style="background-color:#2A5769;font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:400;padding:3%;"> The bird of discovery from Africa that led to several that...<span style="color:#FBCB70;">read more</span>
+                              </div>
+                             </div>
+                           </div>
+
+
+
+                             <div class="col-md-6">
+                              <span> <img src="hcimages/chimp.png" class="img-responsive rish_thumbnail" ></span> 
+                               
+
+                   
+                             <div>
+                              <div style="background-color:#2A5769;font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:400;padding:3%;"> The bird of discovery from Africa that led to several that...<span style="color:#FBCB70;">read more</span>
+                              </div>
+                             </div>
+                           </div>
+
+
+                     
+                      </div>
+
+                        <div class="col-md-1">
+                        </div>
+
                   </div>
-                 </div>
-                </div>
+
+
+
              </div> 
 
-             <br>
+            <br>
 
-            <div class="row" style="margin-top:2%;">
-              <div class="col-md-4" style="padding-right:0;">
-                <span> <img src="hcimages/chimp.png" class="img-responsive rish_thumbnail" ></span> 
-                 </div>
+            <div class="row" style="margin-top:3%;">
 
-               <div class="col-md-7 noPadding">
-                 <div style="background-color:#2A5769; height:9.5em;color:#ffffff;">
-                 <div style="font-size:1.3em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:600;padding:3%;"> The bird of discovery from Africa that led to several discovery from Africa that...<span style="color:#FBCB70;">read more</span>
+
+                  <div class="row">
+
+                      <div class="col-md-10">
+
+
+                          <div class="col-md-6">
+                            <span> <img src="hcimages/chimp.png" class="img-responsive rish_thumbnail" ></span> 
+                             
+
+                           
+                             <div>
+                            <div style="background-color:#2A5769;font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:400;padding:3%;"> The bird of discovery from Africa that led to several that...<span style="color:#FBCB70;">read more</span>
+                              </div>
+                             </div>
+                           </div>
+
+
+
+                             <div class="col-md-6">
+                              <span> <img src="hcimages/bird.jpg" class="img-responsive rish_thumbnail" ></span> 
+                               
+
+                   
+                             <div>
+                              <div style="background-color:#2A5769;font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:400;padding:3%;"> The bird of discovery from Africa that led to several that...<span style="color:#FBCB70;">read more</span>
+                              </div>
+                             </div>
+                           </div>
+
+
+                     
+                      </div>
+
+                        <div class="col-md-1">
+                        </div>
+
                   </div>
-                </div>
-              </div>
-            </div> 
+
+
+
+             </div> 
+
 
             <br>
 
-            <div class="row" style="margin-top:2%;">
-              <div class="col-md-4" style="padding-right:0;">
-                <span> <img src="hcimages/bird.jpg" class="img-responsive rish_thumbnail" ></span> 
-                 </div>
+           <div class="row" style="margin-top:3%;">
 
-               <div class="col-md-7 noPadding">
-                 <div style="background-color:#2A5769; height:9.5em;color:#ffffff;">
-                  <div style="font-size:1.3em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:600;padding:3%;"> The bird of discovery from Africa that led to several discovery from Africa that...<span style="color:#FBCB70;">read more</span>
+
+                  <div class="row">
+
+                      <div class="col-md-10">
+
+
+                          <div class="col-md-6">
+                            <span> <img src="hcimages/chimp.png" class="img-responsive rish_thumbnail" ></span> 
+                             
+
+                           
+                             <div>
+                            <div style="background-color:#2A5769;font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:400;padding:3%;"> The bird of discovery from Africa that led to several that...<span style="color:#FBCB70;">read more</span>
+                              </div>
+                             </div>
+                           </div>
+
+
+
+                             <div class="col-md-6">
+                              <span> <img src="hcimages/bird.jpg" class="img-responsive rish_thumbnail" ></span> 
+                               
+
+                   
+                             <div>
+                              <div style="background-color:#2A5769;font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:400;padding:3%;"> The bird of discovery from Africa that led to several that...<span style="color:#FBCB70;">read more</span>
+                              </div>
+                             </div>
+                           </div>
+
+
+                     
+                      </div>
+
+                        <div class="col-md-1">
+                        </div>
+
                   </div>
-                 </div>
-                </div>
-            </div> 
 
-            <br>
+             </div> 
 
-            <div class="row" style="margin-top:2%;">
-              <div class="col-md-4" style="padding-right:0;">
-                <span> <img src="hcimages/chimp.png" class="img-responsive rish_thumbnail" ></span> 
-                 </div>
-
-               <div class="col-md-7 noPadding">
-                 <div style="background-color:#2A5769; height:9.5em;color:#ffffff;">
-                 <div style="font-size:1.3em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:600;padding:3%;"> The bird of discovery from Africa that led to several discovery from Africa that...<span style="color:#FBCB70;">read more</span>
-                  </div>
-                 </div>
-                </div>
-            </div> 
-
-
-          
- 
-
-
-      </div>
+            </div>
 
 
 
-
-      <div class="col-md-5 noPadding" style="margin-top:5%;">
+      <div class="col-md-4" style="margin-top:4%;">
           
               <div class="row">
 
-                <div class="col-md-12">
-                  <div style="font-size:1.5em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;
+                <div class="col-md-12 noPadding">
+                  <div style="font-size:1.8em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;
                    padding:2% 2% 2% 0%;">
                    Latest News </div>
                 </div>
             
              </div>
 
-             <div style="background-color:#2A5769;">
-               <hr style="border-color:orange;margin-top:4%;">
+            
+              
 
-              <div class="row" style="margin-top:5%;">
+              <div class="row" style="margin-top:5%;background-color:#2A5769;">
 
-               <div class="col-md-12">
-                 <div style="border:orange; height:4em;color:#ffffff; padding:2% 2% 0% 4%;">
-                  <div style="font-size:1em;color:#ffffff;"> Explore Human Cognition 1 </div>
+                         <div class="col-md-4 noPadding">
+                              <span> <img src="hcimages/bird.jpg" class="img-responsive rish_thumbnail" ></span> 
+                          
+                           </div>
+
+               <div class="col-md-7 noPadding">
+                 <div style="border:orange;color:#ffffff; padding:3% 1% 3% 4%;">
+                  <div style="font-size:1em;color:#ffffff;"> New bird species in town..<span style="color:#FBCB70;">read more</span> </div>
                  </div>
                 </div>
+     
              </div> 
 
-            <hr style="border-color:orange;margin-top:1%;">   
+
+<!--            <hr style="border-color:orange;margin-top:1%;">   -->
              
-
-            <div class="row" style="margin-top:2%;">
-
-               <div class="col-md-12">
-                 <div style="background-color:#2A5769; height:4em;color:#ffffff;padding:2% 2% 0% 4%;">
-                  <div style="font-size:1em;color:#ffffff;"> Explore Human Cognition 1 </div>
-                 </div>
-                </div>
-            </div> 
             
-            <hr style="border-color:orange;margin-top:1%;">  
+              <div class="row" style="margin-top:7%;background-color:#2A5769;">
 
-            <div class="row" style="margin-top:2%;">
-              
-               <div class="col-md-12">
-                 <div style="background-color:#2A5769; height:4em;color:#ffffff;padding:2% 2% 0% 4%;">
-                  <div style="font-size:1em;color:#ffffff;"> Explore Human Cognition 1 </div>
+                         <div class="col-md-4 noPadding">
+                              <span> <img src="hcimages/chimp.png" class="img-responsive rish_thumbnail" ></span> 
+                          
+                           </div>
+
+               <div class="col-md-7 noPadding">
+                 <div style="border:orange;color:#ffffff; padding:3% 1% 3% 4%;">
+                  <div style="font-size:1em;color:#ffffff;"> New bird species in town..<span style="color:#FBCB70;">read more</span> </div>
                  </div>
                 </div>
-            </div> 
+     
+             </div> 
 
-           <hr style="border-color:orange;margin-top:1%;">  
 
-            <div class="row" style="margin-top:2%;">
-              
-               <div class="col-md-12">
-                 <div style="background-color:#2A5769; height:4em;color:#ffffff;padding:2% 2% 0% 4%;">
-                  <div style="font-size:1em;color:#ffffff;"> Explore Human Cognition 1 </div>
+               <div class="row" style="margin-top:7%;background-color:#2A5769;">
+
+                         <div class="col-md-4 noPadding">
+                              <span> <img src="hcimages/converse.jpeg" class="img-responsive rish_thumbnail" ></span> 
+                          
+                           </div>
+
+               <div class="col-md-7 noPadding">
+                 <div style="border:orange;color:#ffffff; padding:3% 1% 3% 4%;">
+                  <div style="font-size:1em;color:#ffffff;"> New bird species in town..<span style="color:#FBCB70;">read more</span> </div>
                  </div>
                 </div>
-            </div> 
+     
+             </div> 
 
-          </div>
+               <div class="row" style="margin-top:7%;background-color:#2A5769;">
+
+                         <div class="col-md-4 noPadding">
+                              <span> <img src="hcimages/bird.jpg" class="img-responsive rish_thumbnail" ></span> 
+                          
+                           </div>
+
+               <div class="col-md-7 noPadding">
+                 <div style="border:orange;color:#ffffff; padding:3% 1% 3% 4%;">
+                  <div style="font-size:1em;color:#ffffff;"> New bird species in town..<span style="color:#FBCB70;">read more</span> </div>
+                 </div>
+                </div>
+     
+             </div> 
+
+
+
+         
 
       </div>
   
@@ -335,55 +524,38 @@ $('.navbar-lower').affix({
               <div class="row">
 
                     <div class="col-md-3">
-                    <div class="footerHeads">Popular Topics</div>
+                          <div class="footerHeads">Popular Topics</div>
+                          <div class="footerHeadsContent" style="margin-top:5%">Dr. Bishop discovery on Bones</div>
+                          <div class="footerHeadsContent" style="margin-top:5%" >Paneological sites around Africa</div>
+                          <div class="footerHeadsContent" style="margin-top:5%" >Shelby Putt's new project</div>
                     </div>
 
                     <div class="col-md-3">
-                    <div class="footerHeads">Links</div>
+                          <div class="footerHeads">Links</div>
+                          <div class="footerHeadsContent" style="margin-top:5%">Our Research</div>
+                          <div class="footerHeadsContent" style="margin-top:5%" >News & Events</div>
+                          <div class="footerHeadsContent" style="margin-top:5%" >Resources</div>
+                          <div class="footerHeadsContent" style="margin-top:5%" >About Us</div>
                     </div>
 
                     <div class="col-md-3">
-                    <div class="footerHeads">Contact Us</div>
+                          <div class="footerHeads">Contact Us</div>
+                           <div class="footerHeadsContent" style="margin-top:5%">+1 812 456 8535</div>
+                          <div class="footerHeadsContent" style="margin-top:5%" >humancog@iu.edu</div>
                     </div>
 
                     <div class="col-md-3">
                     <div class="footerHeads">All Copyrights Reserved 2016</div>
+                    <div style="margin-top:5%"><img width="80%" height="80%" src="hcimages/John_Templeton_logo.png" /></div>
+                    <div style="margin-top:5%"><img width="80%" height="80%" src="hcimages/IU_logo.png" /></div>
                     </div>
 
                 </div> 
 
 
-                <div class="row" style="margin-top:2%;">
-
-                   <div class="col-md-3">
-                   <div class="footerHeadsContent" style="margin-top:-2%">Dr. Bishop discovery on Bones</div>
-                   <div class="footerHeadsContent" style="margin-top:5%" >Shelby Putt's new project</div>
-                   <div class="footerHeadsContent" style="margin-top:5%" >Paneological sites around Africa</div>
-                   </div>
-
-                    <div class="col-md-3">
-                   <div class="footerHeadsContent" style="margin-top:-2%">Our Research</div>
-                   <div class="footerHeadsContent" style="margin-top:5%" >News & Events</div>
-                   <div class="footerHeadsContent" style="margin-top:5%" >Resources</div>
-                   <div class="footerHeadsContent" style="margin-top:5%" >About Us</div>
-                   </div>
-
-                    <div class="col-md-3">
-                   <div class="footerHeadsContent" style="margin-top:-2%">+1 812 456 8535</div>
-                   <div class="footerHeadsContent" style="margin-top:5%" >humancog@iu.edu</div>
-                   </div>
-
-                </div> 
+               
 
            </div>
-
-
-
-            <br>
-
-
-        
-
             <br>
 
          

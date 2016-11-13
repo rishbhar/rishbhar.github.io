@@ -3036,9 +3036,9 @@ select[multiple].input-lg {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 4px 18px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.42857143;
-  line-height: 2.42857143;/*added by Rishabh */
+  line-height: 1.82857143;/*added by Rishabh */
   border-radius: 2px;
   /*border-radius: 4px; *Commented by Risbabh*/
   -webkit-user-select: none;
@@ -3046,6 +3046,9 @@ select[multiple].input-lg {
   -ms-user-select: none;
   user-select: none;
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FA9601; 
+  color: #012E40;
 }
 .btn:focus,
 .btn:active:focus,

@@ -645,9 +645,9 @@ b
 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
-  font-size:2.5em;
+  font-size:1.8em;
   color:#ffffff;
-  width:40%;
+  width:35%;
   margin-top: -1%;
 
 }
@@ -670,7 +670,7 @@ body{
 }
 
 .divide-nav{
-  height: 150px;
+  height: 120px;
   background-color: #012E40;
   top:0px;
 }
@@ -753,8 +753,20 @@ div#slider figure {
   padding: 0px;
 }
 
+
+
 .ourVision
 {
-  background-color:#FBCB70; 
-  height:348px;
+  
+  height:auto;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size:1.8em;
+  color:#ffffff;
+  background-color:#2A5769;
+
+  
 }
+
+
+
