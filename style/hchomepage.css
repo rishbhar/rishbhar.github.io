@@ -796,6 +796,11 @@ div#slider figure {
   
 }
 
+.dropdown-menu > li > a:hover {
+    background-color: #214554; /* This doesn't... why? */
+    color:#ffffff;
+}
+
 
 } 
 
@@ -1423,7 +1428,7 @@ b
 
 .hcDropdownPadding
 {
-  padding: 0 2% 0 2%;
+  margin: 0 2% 0 0;
 }
 
 
@@ -1457,6 +1462,12 @@ b
     width: 100%;
     background: transparent;
     transition: all 0s ease;
+
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #214554; /* This doesn't... why? */
+    color:#ffffff;
 }
 
 /* copied from stackoverflow for multiple bars*/ 
