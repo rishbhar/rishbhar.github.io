@@ -44,6 +44,38 @@ CSS for mobile
 
 @media screen and (max-width: 767px) {
 
+
+.selected
+{
+  border-left:4px solid #FABD4A;
+}
+
+.sideLinks{
+  font-size:1em;
+  color:#ffffff;
+  font-weight:300;
+}
+
+
+.sideLinks:hover
+{
+color:#FBCB70;
+cursor: pointer;
+text-decoration: none;
+}
+
+
+
+  a{
+  color:#FBCB70;
+  cursor:pointer;
+}
+
+a:hover{
+  color:#FBCB70;
+  cursor:pointer;
+}
+
 .hcLogoText
 {
   font-family: 'Cormorant Garamond', serif;
@@ -814,7 +846,32 @@ CSS for laptops
 
 @media screen and (min-width: 1200px) {
 
+.selected
+{
+  border-left:4px solid #FABD4A;
+}
 
+.sideLinks{
+  font-size:1em;
+  color:#ffffff;
+  font-weight:300;
+}
+
+.sideLinks:hover
+{
+color:#FBCB70;
+cursor: pointer;
+}
+
+a{
+  color:#FBCB70;
+  cursor:pointer;
+}
+
+a:hover{
+  color:#FBCB70;
+  cursor:pointer;
+}
 
 nav.navbar.shrink {
   min-height: 70px;
