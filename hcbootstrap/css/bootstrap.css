@@ -4637,7 +4637,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a:focus {
   color: #333333;
   background-color: transparent;
-   color:#ffffff; /*menu link color change Rishabh*/
+   color:#fcdea4; /*menu link color change Rishabh*/
 
 }
 .navbar-default .navbar-nav > .active > a,

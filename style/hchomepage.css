@@ -283,6 +283,11 @@ nav.navbar{
   color:#FABD4A;
 }
 
+.footerHeadsContent:hover
+{
+  color:#fcdea4;
+}
+
 .rish_About
 {
   font-size:20px;
@@ -1072,6 +1077,11 @@ nav.navbar{
   color:#FABD4A;
 }
 
+.footerHeadsContent:hover
+{
+  color:#fcdea4;
+}
+
 .rish_About
 {
   font-size:20px;
@@ -1526,7 +1536,8 @@ b
     background: #FA9601;
     transition: width .5s ease;
 }
-.hcDropdownPadding:hover:before {
+
+/*.hcDropdownPadding:hover:before {
     width: 100%;
     background: #FA9601;
     transition: width .5s ease;
@@ -1536,7 +1547,7 @@ b
     background: transparent;
     transition: all 0s ease;
 
-}
+}*/
 
 .dropdown-menu > li > a:hover {
     background-color: #214554; /* This doesn't... why? */
