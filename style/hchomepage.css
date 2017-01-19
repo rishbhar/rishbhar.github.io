@@ -80,10 +80,10 @@ a:hover{
 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
-  font-size:1.8em;
+  font-size:2.4em;
   color:#ffffff;
-  width:35%;
-  margin-top: -1%;
+  width:50%;
+  margin-top: 0%;
 
 }
 
@@ -124,7 +124,7 @@ nav.navbar{
 
 .navbar-default .navbar-nav > li > a 
 {
-  color:#ffffff;
+  color:#FABD4A;
   font-family: 'Open Sans', sans-serif;
    font-size: 13px;
   background-color: #2A5769;
@@ -260,14 +260,14 @@ nav.navbar{
 {
   padding-left: 13%;
     padding-right: 13%;
-  border-top: 1px solid #e7e7e7;
+  /*border-top: 1px solid #e7e7e7;*/
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: 'Open Sans', sans-serif;
   padding-top: 2%;
 }
 
 .footerHeads{
-   color:#FABD4A;
+   color:#ffffff;
   font-size: 0.9em;
 }
 
@@ -280,7 +280,7 @@ nav.navbar{
 .footerHeadsContent{
  
   font-size: 0.9em;
-  color:#ffffff;
+  color:#FABD4A;
 }
 
 .rish_About
@@ -913,7 +913,7 @@ nav.navbar{
 
 .navbar-default .navbar-nav > li > a 
 {
-  color:#ffffff;
+  color:#FABD4A;
   font-family: 'Open Sans', sans-serif;
    font-size: 13px;
   background-color: #2A5769;
@@ -1049,14 +1049,14 @@ nav.navbar{
 {
   padding-left: 13%;
     padding-right: 13%;
-  border-top: 1px solid #e7e7e7;
+  /*border-top: 1px solid #e7e7e7;*/
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: 'Open Sans', sans-serif;
   padding-top: 2%;
 }
 
 .footerHeads{
-   color:#FABD4A;
+   color:#ffffff;
   font-size: 0.9em;
 }
 
@@ -1069,7 +1069,7 @@ nav.navbar{
 .footerHeadsContent{
  
   font-size: 0.9em;
-  color:#ffffff;
+  color:#FABD4A;
 }
 
 .rish_About
@@ -1556,15 +1556,14 @@ body{
 }
 
 
-
-  .hcLogoText
+.hcLogoText
 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
-  font-size:1.8em;
+  font-size:2.4em;
   color:#ffffff;
-  width:35%;
-  margin-top: -1%;
+  width:50%;
+  margin-top: 0%;
 
 }
 

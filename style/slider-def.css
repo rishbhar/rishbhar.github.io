@@ -90,9 +90,11 @@
 
 .content-txt{
   width:40%;
-  height:150px;
+  height:132px;
+  padding:0 2% 0 2%;
   float:left;
   position:relative;
+  /*background-color: rgba(0,0,0,0.3);*/
   top:260px;
   margin-left:30px;
   -webkit-animation:content-s 7.5s infinite;
@@ -106,7 +108,7 @@ font-family: 'Open Sans', sans-serif;font-weight:400;
   text-align:left;
   font-size:1.5em;
   padding-bottom:0px;
-   text-shadow: 2px 2px #000000;
+   /*text-shadow: 2px 2px #000000;*/
 }
 .content-txt h2{
 font-family: 'Open Sans', sans-serif;font-weight:300;

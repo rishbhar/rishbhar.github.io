@@ -39,18 +39,20 @@
   ga('create', 'UA-72840901-1', 'auto');
   ga('send', 'pageview');
 
-$('.navbar-lower').affix({
-  offset: {top: 50}
-});
+  $(function(){
+$("#headerMenu").load("headermenu.html"); 
+ });
 
 </script>
     <!-- --> 
   </head>
   <body style="background-color:#012E40;">
 
+<!-- including a header and menu html page-->
+<div id="headerMenu"></div>
 
-<div class="divide-nav">
-  <div class="container" style="padding:0 2% 0 2%;">
+<!--<div class="divide-nav">
+  <div class="container" style="padding:0 2% 0 3%;">
     <p class="divide-text">
       <a class="navbar-brand" id="skull" href="hchomepage.html" style="width:12%"><img id="logoImage" src="hcimages/sai-logo.gif" class="img-responsive rish_thumbnail"  style="margin-top:5%;"></a>
       <div class="hcLogoText"> Human Cognitive Evolution</div>
@@ -62,7 +64,7 @@ $('.navbar-lower').affix({
 
 <nav class="navbar-xs navbar-default navbar-fixed-top relativePosition" id="menuTab" role="navigation" style="border:none;margin-bottom:0px;">
 
-<div style="background-color:#2A5769; border-bottom:1px solid #FA9601;">
+<div style="background-color:#2A5769;">
 
   <div class="container" style="padding:0 4% 0 4%;">
 
@@ -106,27 +108,18 @@ $('.navbar-lower').affix({
           </ul>
         </li>
         <li class="dropdown hcDropdownPadding">
-          <a href="hcaboutus.html" >About Us</a> <!-- class="dropdown-toggle" data-toggle="dropdown" -->
-          <!--<ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>-->
+          <a href="hcaboutus.html" >About Us</a> 
         </li>
       </ul>
     </div>
 
 
-  </div><!-- /.container-fluid -->
+  </div>
 
 </div>
 
 
-</nav>
+</nav> -->
 
 
 
@@ -272,7 +265,7 @@ $('.navbar-lower').affix({
               <div class="row">
 
                 <div class="col-md-12">
-                  <span style="font-size:1.3em;color:#FABD4A;font-family: 'Open Sans', sans-serif;font-weight:300;"> Explore Human Cognition </span>
+                  <span style="font-size:1.3em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;"> Explore Human Cognition </span>
                  <!--<hr style="margin-left:0;width:80%;margin-top:1%;">-->
                 </div>
             
@@ -418,7 +411,7 @@ $('.navbar-lower').affix({
               <div class="row">
 
                 <div class="col-md-12 noPadding">
-                  <div style="font-size:1.3em;color:#FABD4A;font-family: 'Open Sans', sans-serif;font-weight:300;
+                  <div style="font-size:1.3em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;
                    padding:2% 2% 2% 0%;">
                    Latest News </div>
                 </div>
@@ -519,7 +512,7 @@ $('.navbar-lower').affix({
 <!-- body background-->
 </div>
       <div class="rish_footer" style="background-color:#2A5769;">
-          <div class="footer_content" style="border-top:1px solid #FA9601;">
+          <div class="footer_content">
               <div class="row">
 
                     <div class="col-md-3">
