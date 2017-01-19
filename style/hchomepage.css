@@ -297,6 +297,7 @@ nav.navbar{
 .footerHeadsContent:hover
 {
   color:#fcdea4;
+    cursor: pointer;
 }
 
 .rish_About
@@ -560,6 +561,18 @@ nav.navbar{
   padding-left:16%;
 }
 
+
+.sideLinks{
+  font-size:1em;
+  color:#FABD4A;
+  font-weight:300;
+}
+
+.sideLinks:hover
+{
+color:#fcdea4;
+cursor: pointer;
+}
 
 .theProjectWhy
 {
@@ -895,13 +908,13 @@ CSS for laptops
 
 .sideLinks{
   font-size:1em;
-  color:#ffffff;
+  color:#FABD4A;
   font-weight:300;
 }
 
 .sideLinks:hover
 {
-color:#FBCB70;
+color:#fcdea4;
 cursor: pointer;
 }
 
@@ -1101,7 +1114,7 @@ nav.navbar{
 .footerHeadsContent:hover
 {
   color:#fcdea4;
-}
+  cursor: pointer;
 
 .rish_About
 {
