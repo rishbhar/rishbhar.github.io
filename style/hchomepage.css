@@ -47,7 +47,10 @@ CSS for mobile
 
 .exlpore-cognition-blocks-links
 {
-  font-size:1em;color:#FABD4A;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 0 3% 0;
+  font-size:1em;
+  color:#FABD4A;
+  font-family: 'Open Sans', sans-serif;font-weight:300;
+  padding:3% 0 3% 0;
 }
 
 .exlpore-cognition-blocks-links:hover{
@@ -61,19 +64,7 @@ CSS for mobile
   border-left:4px solid #FABD4A;
 }
 
-.sideLinks{
-  font-size:1em;
-  color:#ffffff;
-  font-weight:300;
-}
 
-
-.sideLinks:hover
-{
-color:#FBCB70;
-cursor: pointer;
-text-decoration: none;
-}
 
 
 
@@ -878,7 +869,10 @@ CSS for laptops
 
 .exlpore-cognition-blocks-links
 {
-  font-size:1em;color:#FABD4A;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 0 3% 0;
+  font-size:1em;
+  color:#FABD4A;
+  font-family: 'Open Sans', sans-serif;font-weight:300;
+  padding:3% 0 3% 0;
 }
 
 .exlpore-cognition-blocks-links:hover{
@@ -1115,6 +1109,7 @@ nav.navbar{
 {
   color:#fcdea4;
   cursor: pointer;
+}
 
 .rish_About
 {
