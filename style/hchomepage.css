@@ -45,6 +45,17 @@ CSS for mobile
 @media screen and (max-width: 767px) {
 
 
+.exlpore-cognition-blocks-links
+{
+  font-size:1em;color:#FABD4A;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 0 3% 0;
+}
+
+.exlpore-cognition-blocks-links:hover{
+  color:#fcdea4;
+  cursor: pointer;
+}
+
+
 .selected
 {
   border-left:4px solid #FABD4A;
@@ -851,6 +862,16 @@ CSS for laptops
 
 @media screen and (min-width: 1200px) {
 
+
+.exlpore-cognition-blocks-links
+{
+  font-size:1em;color:#FABD4A;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 0 3% 0;
+}
+
+.exlpore-cognition-blocks-links:hover{
+  color:#fcdea4;
+  cursor: pointer;
+}
 
 #cursorImages img{
   cursor: pointer;
