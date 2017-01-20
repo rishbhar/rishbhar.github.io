@@ -39,9 +39,10 @@
   ga('create', 'UA-72840901-1', 'auto');
   ga('send', 'pageview');
 
-$('.navbar-lower').affix({
-  offset: {top: 50}
-});
+ $(function(){
+$("#headerMenu").load("headermenu.html"); 
+$("#footer").load("footer.html"); 
+ });
 
 </script>
     <!-- --> 
@@ -49,84 +50,7 @@ $('.navbar-lower').affix({
   <body style="background-color:#012E40;">
 
 
-<div class="divide-nav">
-  <div class="container" style="padding:0 2% 0 3%;">
-    <p class="divide-text">
-      <a class="navbar-brand" id="skull" href="hchomepage.html" style="width:12%"><img id="logoImage" src="hcimages/sai-logo.gif" class="img-responsive rish_thumbnail"  style="margin-top:5%;"></a>
-      <div class="hcLogoText"> Human Cognitive Evolution</div>
-       
-    </p>
-
-  </div>
-</div>
-
-<nav class="navbar-xs navbar-default navbar-fixed-top relativePosition" id="menuTab" role="navigation" style="border:none;margin-bottom:0px;">
-
-<div style="background-color:#2A5769; border-bottom:1px solid #FA9601;">
-
-  <div class="container" style="padding:0 4% 0 4%;">
-
-    
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav" style="width:100%;">
-        <li class="dropdown hcDropdownPadding">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Research</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown hcDropdownPadding">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">News & Events</b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-         <li class="dropdown hcDropdownPadding">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-        <li class="dropdown hcDropdownPadding">
-          <a href="hcaboutus.html" >About Us</a> <!-- class="dropdown-toggle" data-toggle="dropdown" -->
-          <!--<ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>-->
-        </li>
-      </ul>
-    </div>
-
-
-  </div><!-- /.container-fluid -->
-
-</div>
-
-
-</nav>
+<div id="headerMenu"></div>
 
 
 
@@ -148,7 +72,7 @@ $('.navbar-lower').affix({
 
                     <div class="breadcrumbNav"><a href="hchomepage.html">Home</a> | <a href="hcaboutus.html">About Us</a> | <a href="hcgetinvolved.html">Get Involved</a> </div>
 
-                  <span style="font-size:1.3em;color:#FABD4A;font-family: 'Open Sans', sans-serif;font-weight:300;"> Get Involved </span>
+                  <span style="font-size:1.3em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;"> Get Involved </span>
                  <!--<hr style="margin-left:0;width:80%;margin-top:1%;">-->
                 </div>
             
@@ -293,7 +217,7 @@ contributing content, getting involved, or supporting our mission, please email 
             <div class="row">
 
                 <div class="col-md-12 noPadding">
-                  <div style="font-size:1.3em;color:#FABD4A;font-family: 'Open Sans', sans-serif;font-weight:300;
+                  <div style="font-size:1.3em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;
                    padding:2% 2% 2% 0%;">
                    Latest News </div>
                 </div>
@@ -391,48 +315,7 @@ contributing content, getting involved, or supporting our mission, please email 
 
 <!-- body background-->
 </div>
-      <div class="rish_footer" style="background-color:#2A5769;">
-          <div class="footer_content" style="border-top:1px solid #FA9601;">
-              <div class="row">
-
-                    <div class="col-md-3">
-                          <div class="footerHeads">Popular Topics</div>
-                          <div class="footerHeadsContent" style="margin-top:5%">Dr. Bishop discovery on Bones</div>
-                          <div class="footerHeadsContent" style="margin-top:5%" >Paneological sites around Africa</div>
-                          <div class="footerHeadsContent" style="margin-top:5%" >Shelby Putt's new project</div>
-                    </div>
-
-                    <div class="col-md-3">
-                          <div class="footerHeads">Links</div>
-                          <div class="footerHeadsContent" style="margin-top:5%">Our Research</div>
-                          <div class="footerHeadsContent" style="margin-top:5%" >News & Events</div>
-                          <div class="footerHeadsContent" style="margin-top:5%" >Resources</div>
-                          <div class="footerHeadsContent" style="margin-top:5%" >About Us</div>
-                    </div>
-
-                    <div class="col-md-3">
-                          <div class="footerHeads">Contact Us</div>
-                           <div class="footerHeadsContent" style="margin-top:5%">+1 812 456 8535</div>
-                          <div class="footerHeadsContent" style="margin-top:5%" >humancog@iu.edu</div>
-                    </div>
-
-                    <div class="col-md-3">
-                    <div class="footerHeads">All Copyrights Reserved 2016</div>
-                    <div style="margin-top:5%"><img width="80%" height="80%" src="hcimages/John_Templeton_logo.png" /></div>
-                    <div style="margin-top:5%"><img width="80%" height="80%" src="hcimages/IU_logo.png" /></div>
-                    </div>
-
-                </div> 
-
-
-               
-
-           </div>
-            <br>
-
-         
-
-          </div>
+      <div id="footer"></div>
 
           
       </div>
