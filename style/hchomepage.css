@@ -45,6 +45,16 @@ CSS for mobile
 @media screen and (max-width: 767px) {
 
 
+.breadcrumbNav
+{
+font-size:.9em;color:#FABD4A;font-family: 'Open Sans', sans-serif;font-weight:300;;margin-bottom:5%;
+}
+
+.breadcrumbNav:hover
+{
+ color:#fcdea4;
+}
+
 .exlpore-cognition-blocks-links
 {
   font-size:1em;
@@ -68,14 +78,15 @@ CSS for mobile
 
 
 
-  a{
-  color:#FBCB70;
+ a{
+  color:#FABD4A;
   cursor:pointer;
 }
 
 a:hover{
-  color:#FBCB70;
+  color:#fcdea4;
   cursor:pointer;
+  text-decoration: none;
 }
 
 .hcLogoText
@@ -867,6 +878,14 @@ CSS for laptops
 @media screen and (min-width: 1200px) {
 
 
+.breadcrumbNav
+{
+font-size:.9em;color:#FABD4A;font-family: 'Open Sans', sans-serif;font-weight:300;;margin-bottom:5%;
+}
+
+
+
+
 .exlpore-cognition-blocks-links
 {
   font-size:1em;
@@ -913,13 +932,13 @@ cursor: pointer;
 }
 
 a{
-  color:#FBCB70;
+  color:#FABD4A;
   cursor:pointer;
 }
 
 a:hover{
-  color:#FBCB70;
-  cursor:pointer;
+  color:#fcdea4;
+  cursor:pointer;text-decoration: none;
 }
 
 nav.navbar.shrink {
