@@ -44,6 +44,12 @@ CSS for mobile
 
 @media screen and (max-width: 767px) {
 
+.tagMargin
+{
+    margin-top: 4%;
+  margin-right: 4%;
+}
+
 
 .breadcrumbNav
 {
@@ -877,6 +883,11 @@ CSS for laptops
 
 @media screen and (min-width: 1200px) {
 
+.tagMargin
+{
+  margin-top: 4%;
+  margin-right: 4%;
+}
 
 .breadcrumbNav
 {
