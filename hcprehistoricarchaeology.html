@@ -85,6 +85,176 @@ handlesSlider.noUiSlider.on('update', function ( values, handle ) {
 });
 
 
+$('#locationCatBar').click(function(){
+      if ( $('#locationTagToggle').hasClass( "glyphicon-minus" ) ) {
+
+        $('#locationTagToggle').removeClass('glyphicon-minus');
+        $('#locationTagToggle').addClass('glyphicon-chevron-down');
+
+      }
+      else 
+        {
+          $('#locationTagToggle').removeClass('glyphicon-chevron-down');
+          $('#locationTagToggle').addClass('glyphicon-minus');
+  
+        }
+
+    $('#locationTagOptionsBlock').slideToggle(100,function(){});
+});
+
+$('#speciesTagBar').click(function(){
+  if ( $('#speciesTagToggle').hasClass( "glyphicon-minus" ) ) {
+
+        $('#speciesTagToggle').removeClass('glyphicon-minus');
+        $('#speciesTagToggle').addClass('glyphicon-chevron-down');
+
+      }
+      else 
+        {
+          $('#speciesTagToggle').removeClass('glyphicon-chevron-down');
+          $('#speciesTagToggle').addClass('glyphicon-minus');
+  
+        }
+    $('#speciesTagOptionsBlock').slideToggle(100,function(){});
+});
+
+$('#behavioursTagBar').click(function(){
+   if ( $( '#behavioursTagToggle' ).hasClass( "glyphicon-minus" ) ) {
+
+        $('#behavioursTagToggle').removeClass('glyphicon-minus');
+        $('#behavioursTagToggle').addClass('glyphicon-chevron-down');
+
+      }
+      else 
+        {
+          $('#behavioursTagToggle').removeClass('glyphicon-chevron-down');
+          $('#behavioursTagToggle').addClass('glyphicon-minus');
+  
+        }
+    $('#behavioursTagOptionsBlock').slideToggle(100,function(){});
+});
+
+$('#cognitionTagBar').click(function(){
+  if ( $( '#cognitionTagToggle' ).hasClass( "glyphicon-minus" ) ) {
+
+        $('#cognitionTagToggle').removeClass('glyphicon-minus');
+        $('#cognitionTagToggle').addClass('glyphicon-chevron-down');
+
+      }
+      else 
+        {
+          $('#cognitionTagToggle').removeClass('glyphicon-chevron-down');
+          $('#cognitionTagToggle').addClass('glyphicon-minus');
+  
+        }
+    $('#cognitionTagOptionsBlock').slideToggle(100,function(){});
+});
+
+var selectedFilters = ["dummy"];
+
+Array.prototype.remove= function(){
+    var what, a= arguments, L= a.length, ax;
+    while(L && this.length){
+        what= a[--L];
+        while((ax= this.indexOf(what))!= -1){
+            this.splice(ax, 1);
+        }
+    }
+    return this;
+}
+
+function searchStringInArray (str, strArray) {
+    for (var j=0; j<strArray.length; j++) {
+        if (strArray[j].match(str)) return 1;
+    }
+    return -1;
+}
+
+
+$('.tagMargin').click(function(){
+
+if(searchStringInArray($(this).attr('id'),selectedFilters)>0)
+selectedFilters.remove($(this).attr('id'));
+else
+selectedFilters.push($(this).attr('id'));
+
+//alert(selectedFilters);
+shuffleDiscoveries();
+});
+
+var Dikika = ["eastafrica","australopithecus","preoldowan"];
+var Lomekwi = ["eastafrica", "preoldowan", "australopithecus"];
+var Gona = ["eastafrica","oldowan", "planning", "problem-solving", "imitation"];
+var KanjeraSouth = ["eastafrica","oldowan", "planning", "hunting", "imitation"];
+
+function arraysAreIdentical(arr1, arr2){
+   var equals = 0;
+
+  for (var i = 0, len1 = arr1.length; i < len1; i++){
+        for (var j = 0, len2 = arr2.length; j < len2; j++){
+        if (arr1[i] == arr2[j]){
+            equals++;
+        }
+      }
+    }
+    //alert(equals);
+    if(selectedFilters.length == (equals+1))
+      return 1;
+    else 
+    return 2;
+}
+
+
+function shuffleDiscoveries()
+{
+
+
+  if(selectedFilters.length ==1)
+  {
+       $('#discoveriesBlock').css('opacity', '0.6');
+      $('#Dikika').fadeOut(500);
+      $('#Lomekwi').fadeOut(500);
+      $('#Gona').fadeOut(500);
+      $('#KanjeraSouth').fadeOut(500);
+      $('#discoveriesBlock').css('opacity', '1');
+      $('#Dikika').fadeIn(500);
+      $('#Lomekwi').fadeIn(500);
+      $('#Gona').fadeIn(500);
+      $('#KanjeraSouth').fadeIn(500);
+      return 1;
+  
+  }
+
+
+  var showDikika = arraysAreIdentical(selectedFilters,Dikika);
+  var showLomekwi= arraysAreIdentical(selectedFilters,Lomekwi);
+  var showGona = arraysAreIdentical(selectedFilters,Gona);
+  var showKanjeraSouth = arraysAreIdentical(selectedFilters,KanjeraSouth);
+  //alert(showDikika,showLomekwi,showGona,showKanjeraSouth);
+
+
+  $('#discoveriesBlock').css('opacity', '0.6');
+  $('#Dikika').fadeOut(500);
+  $('#Lomekwi').fadeOut(500);
+  $('#Gona').fadeOut(500);
+  $('#KanjeraSouth').fadeOut(500);
+
+  $('#discoveriesBlock').css('opacity', '1');
+  if(showDikika==1)
+  $('#Dikika').fadeIn(500);
+
+  if(showLomekwi==1)
+  $('#Lomekwi').fadeIn(500);
+
+  if(showGona==1)
+  $('#Gona').fadeIn(500);
+
+  if(showKanjeraSouth==1)
+  $('#KanjeraSouth').fadeIn(500);
+
+
+}
+
 });
 
 
@@ -130,140 +300,186 @@ handlesSlider.noUiSlider.on('update', function ( values, handle ) {
 
                   <div class="row">
 
-                      <div class="col-md-10">
+                      <div class="col-md-10" id="discoveriesBlock">
 
                         <!-- block starts-->
-                        <div class="col-md-12">
+                        <div class="col-md-12" id="Dikika" style="margin-bottom:10%;">
 
 
-                            <div class="hcLogoText" style="width:auto;"> Vast Evolution from the Stone age to the Information age</div><br>
-
-                            <span> <img src="hcimages/sliderimage2.png" class="img-responsive rish_thumbnail" ></span> 
-                             
-                              <div style="margin-top:2%;">
-
-
-                            <div style="font-size: 1em;color: #FABD4A;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;"><span >Region : Middle Africa</span>
-                            <span style="color:#ffffff;"></span>
-                            </div>
-
-                            <div style="font-size: 1em;color: #FABD4A;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right"><span class="">Discovery Date : 08/12/1995</span>
-                            <span></span>
-                            </div>
-
-                            </div>
-
-                            <br>
-                           
-                            <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> We are an international collaborative program of researchers focused on the Big Question of how the human mind evolved. Because of support from the <a target="_blank" href="https://www.templeton.org/">John Templeton Foundation
-
-                            </a> provided to us for the grant, <a target="_blank" href="http://news.indiana.edu/releases/iu/2016/03/stone-age-institute-cognitive-science-grant.shtml">“What Drives Human Cognitive
-
-                            Evolution?”</a>, our research team is at the forefront of discovery in this field. We are committed to
-
-                            broadening the public’s understanding of cognitive and human evolution in general and being the
-
-                            go-to source for the latest updates on progress in the field for researchers and students.
-                            </div>
-                            </div>
-
-
-                                 <hr style="background-color:white;height:0px;"></hr>
-
-                        </div>
-
-                        <!-- block ends-->
-
-
-                         <!-- block starts-->
-                        <div class="col-md-12" style="margin-top:5%;">
-
-
-                            <div class="hcLogoText" style="width:auto;"> Vast Evolution from the Stone age to the Information age</div><br>
+                            <div class="hcLogoText" style="width:auto;"> Dikika</div>
 
                             <span> <img src="hcimages/sliderimage2.png" class="img-responsive rish_thumbnail" ></span> 
                              
-                              <div style="margin-top:2%;">
-
-
-                            <div style="font-size: 1em;color: #FABD4A;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;"><span >Region : Middle Africa</span>
-                            <span style="color:#ffffff;"></span>
-                            </div>
-
-                            <div style="font-size: 1em;color: #FABD4A;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right"><span class="">Discovery Date : 08/12/1995</span>
-                            <span></span>
-                            </div>
-
-                            </div>
-
-                            <br>
-                           
-                            <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> We are an international collaborative program of researchers focused on the Big Question of how the human mind evolved. Because of support from the <a target="_blank" href="https://www.templeton.org/">John Templeton Foundation
-
-                            </a> provided to us for the grant, <a target="_blank" href="http://news.indiana.edu/releases/iu/2016/03/stone-age-institute-cognitive-science-grant.shtml">“What Drives Human Cognitive
-
-                            Evolution?”</a>, our research team is at the forefront of discovery in this field. We are committed to
-
-                            broadening the public’s understanding of cognitive and human evolution in general and being the
-
-                            go-to source for the latest updates on progress in the field for researchers and students.
-                            </div>
-                            </div>
-
-
-                                 <hr style="background-color:white;height:0px;"></hr>
-
-
-                        </div>
-
-                        <!-- block ends-->
-
-                         <!-- block starts-->
-                        <div class="col-md-12" style="margin-top:5%;">
-
-
-                            <div class="hcLogoText" style="width:auto;"> Vast Evolution from the Stone age to the Information age</div><br>
-
-                            <span> <img src="hcimages/sliderimage2.png" class="img-responsive rish_thumbnail" ></span> 
-                             
-                              <div style="margin-top:2%;">
-
-
-                            <div style="font-size: 1em;color: #FABD4A;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;"><span >Region : Middle Africa</span>
-                            <span style="color:#ffffff;"></span>
-                            </div>
-
-                            <div style="font-size: 1em;color: #FABD4A;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right"><span class="">Discovery Date : 08/12/1995</span>
-                            <span></span>
-                            </div>
-
-                            </div>
-
-                            <br>
-                           
-                            <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> We are an international collaborative program of researchers focused on the Big Question of how the human mind evolved. Because of support from the <a target="_blank" href="https://www.templeton.org/">John Templeton Foundation
-
-                            </a> provided to us for the grant, <a target="_blank" href="http://news.indiana.edu/releases/iu/2016/03/stone-age-institute-cognitive-science-grant.shtml">“What Drives Human Cognitive
-
-                            Evolution?”</a>, our research team is at the forefront of discovery in this field. We are committed to
-
-                            broadening the public’s understanding of cognitive and human evolution in general and being the
-
-                            go-to source for the latest updates on progress in the field for researchers and students.
-                            </div>
-                            </div>
-
                             
-                                 <hr style="background-color:white;height:0px;"></hr>
+                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
 
+                              
+                               
+                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                    LOCATION : Afar, Ethiopia
+                                 
+                                  </span>
+
+                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                     DATED TO : 3.42 - 3.24 Ma
+                                  
+                                  </span>
+
+                             
+
+                            </div>
+
+                            <div>
+                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> 
+
+                              Hominins prior to 2.6 Ma left behind relatively few traces of their cognition and behavior for us to discover in the archaeological record. Possibly the earliest evidence for stone tool use by hominins comes from the site of Dikika in Ethiopia, where a team led by <a target="_blank" href="http://www.calacademy.org/explore-science/zeray-alemseged">Zeray Alemseged</a> of the California Academy of Sciences in San Francisco discovered two 3.4 million-year-old fossilized animal bones that bear potential cut marks caused by stone tools. This finding could indicate that Australopithecus afarensis butchered large mammals with the assistance of stone tools.<br>
+                            <button type="button" class="btn readmoreMargin">Read more about this discovery</button>
+                            
+                            </div>
+                            </div>
+
+
+
+                                
 
                         </div>
 
                         <!-- block ends-->
 
+
+
+
+                         <!-- block starts-->
+                         <div class="col-md-12"  id="Lomekwi" style="margin-bottom:10%;">
+
+
+                            <div class="hcLogoText" style="width:auto;"> Lomekwi </div>
+
+                            <span> <img src="hcimages/sliderimage2.png" class="img-responsive rish_thumbnail" ></span> 
+                             
+                            
+                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+
+                              
+                               
+                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                    LOCATION : West Turkana, Kenya
+                                 
+                                  </span>
+
+                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                     DATED TO : 3.3 Ma
+                                  
+                                  </span>
+
+                             
+
+                            </div>
+
+                            <div>
+                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> Stone tools dating back to 3.3 Ma were discovered at Lomekwi by a team led by Sonia Harmand (http://www.stonybrook.edu/commcms/anthropology/faculty/archaeology.html) of Stony Brook University. If this date turns out to be correct, then that would mean that these are the oldest stone tools yet known, and it would push the date of chipped stone technologies back by 700,000 years, before the appearance of the genus Homo.<br>
+                            <button type="button" class="btn readmoreMargin">Read more about this discovery</button>
+                            
+                            </div>
+                            </div>
+
+
+
+                                
+
+                        </div>
+                          
+
+                        <!-- block ends-->
+
+
+                        <!-- block starts-->
+                         <div class="col-md-12" style="margin-bottom:10%;" id="Gona">
+
+
+                            <div class="hcLogoText" style="width:auto;">Gona</div>
+
+                            <span> <img src="hcimages/sliderimage2.png" class="img-responsive rish_thumbnail" ></span> 
+                             
+                            
+                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+
+                              
+                               
+                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                    LOCATION : Afar, Ethiopia
+                                 
+                                  </span>
+
+                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                     DATED TO : 2.6 Ma
+                                  
+                                  </span>
+
+                             
+
+                            </div>
+
+                            <div>
+                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> When first reported by <a href="http://www.cenieh.es/en/staff/sileshi-semaw" target="_blank">Sileshi Semaw</a>  and his team in 1997, the 2.6 million-year-old artifacts found at the site of Gona were thought to be the oldest chipped stone tools in the world. With the discovery of 3.3 million-year-old tools at the site of Lomekwi, Gona may now only represent the earliest evidence of the Oldowan industry<br>
+                            <button type="button" class="btn readmoreMargin">Read more about this discovery</button>
+                            
+                            </div>
+                            </div>
+
+
+
+                                
+
+                        </div>
+                          
+
+                        <!-- block ends-->
+
+                          <!-- block starts-->
+                         <div class="col-md-12" style="margin-bottom:10%;" id="KanjeraSouth">
+
+
+                            <div class="hcLogoText" style="width:auto;">Kanjera South</div>
+
+                            <span> <img src="hcimages/sliderimage2.png" class="img-responsive rish_thumbnail" ></span> 
+                             
+                            
+                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+
+                              
+                               
+                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                    LOCATION : Kenya
+                                 
+                                  </span>
+
+                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                     DATED TO : 2 Ma
+                                  
+                                  </span>
+
+                             
+
+                            </div>
+
+                            <div>
+                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> Numerous, relatively complete carcasses of small hoofed animals were found at Kanjera South, where they had been butchered with Oldowan stone tools. These tools were made from raw materials that were transported over 10 km. This site represents the earliest evidence for persistent carnivory by hominins in the archaeological record.<br>
+                            <button type="button" class="btn readmoreMargin">Read more about this discovery</button>
+                            
+                            </div>
+                            </div>
+
+
+
+                                
+
+                        </div>
+                          
+
+                        <!-- block ends-->
+
+                        
                      
                       </div>
 
@@ -315,7 +531,7 @@ handlesSlider.noUiSlider.on('update', function ( values, handle ) {
                 <div class="col-md-12 noPadding">
                   <div style="font-size:1.3em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;
                    padding:2% 2% 2% 0%;text-transform: uppercase;">
-                    Filter by tags</div>
+                    Filter by Categories</div>
                 </div>
             
              </div>
@@ -323,19 +539,162 @@ handlesSlider.noUiSlider.on('update', function ( values, handle ) {
             
               
 
-              <div class="row" style="margin-top:1%;">
+              <div class="row" style="margin-top:18%;">
 
                          
 
                <div class="col-md-11 noPadding">
-                <button type="button" class="btn tagMargin">apes</button><button type="button" class="btn tagMargin">brain waves</button>
-                <button type="button" class="btn tagMargin">machines</button> <button type="button" class="btn tagMargin">south pole</button>
-                 <button type="button" class="btn tagMargin">psychology</button> <button type="button" class="btn tagMargin">southern hemisphere</button>
+                <div id="locationCatBar" style="margin-top:1%;height:3em;background-color:#2A5769;margin-bottom:1%;cursor:pointer;"><div style="font-family:'Open Sans', sans-serif;color:white;padding:3% 3% 3% 5%;">LOCATION  
+                  <span id="locationTagToggle" class="glyphicon glyphicon-chevron-down" style="float:right;cursor:pointer"></span></div>
+
                 </div>
 
-                
-     
+
+                  <div id="locationTagOptionsBlock" class="btn-group" data-toggle="buttons" style="margin-top:2.5%;display:none">
+                    <label class="btn btn-primary tagMargin" id="eastafrica">
+                      <input type="checkbox" autocomplete="off" >  East Africa
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="southafrica">
+                      <input type="checkbox" autocomplete="off" > South Africa
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="westeurope">
+                      <input type="checkbox" autocomplete="off" >  West Europe
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="southeurope">
+                      <input type="checkbox" checked autocomplete="off" >  South Europe
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="westasia">
+                      <input type="checkbox" autocomplete="off" >  West Asia
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="southasia">
+                      <input type="checkbox" autocomplete="off" >    South Asia
+                    </label>
+                  </div>
+
+
+                    
+                     
+                </div>
+
+              </div>
+
+
+               <div class="row" style="margin-top:10%;">
+
+                 <div class="col-md-11 noPadding">
+                <div id="speciesTagBar" style="margin-top:1%;height:3em;background-color:#2A5769;margin-bottom:1%;cursor:pointer;"><div style="font-family:'Open Sans', sans-serif;color:white;padding:3% 3% 3% 5%;">SPECIES
+                  <span id="speciesTagToggle" class="glyphicon glyphicon-chevron-down" style="float:right;cursor:pointer"></span></div>
+                </div>
+
+                  <div id="speciesTagOptionsBlock" class="btn-group" data-toggle="buttons" style="margin-top:2.5%;display:none">
+                    <label class="btn btn-primary tagMargin" id="australopithecus">
+                      <input type="checkbox" checked autocomplete="off" >  Australopithecus
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="homoerectus">
+                      <input type="checkbox" autocomplete="off" > Homo erectus
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="homoneanderthalensis">
+                      <input type="checkbox" autocomplete="off" >  Homo neanderthalensis
+                    </label>
+                   
+                  </div>
+
+
+                    
+                     
+                </div>
+
+
              </div> 
+
+             <div class="row" style="margin-top:10%;">
+
+                 <div class="col-md-11 noPadding">
+             <div id="behavioursTagBar" style="margin-top:1%;height:3em;background-color:#2A5769;margin-bottom:1%;cursor:pointer;"><div style="font-family:'Open Sans', sans-serif;color:white;padding:3% 3% 3% 5%;">BEHAVIOURS
+              <span id="behavioursTagToggle" class="glyphicon glyphicon-chevron-down" style="float:right;cursor:pointer"></span></div>
+                </div>
+
+                  <div id="behavioursTagOptionsBlock" class="btn-group" data-toggle="buttons" style="margin-top:2.5%;display:none">
+                    <label class="btn btn-primary tagMargin" id="preoldowan">
+                      <input type="checkbox" autocomplete="off" >  pre-Oldowan
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="oldowan">
+                      <input type="checkbox" autocomplete="off" > Oldowan
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="acheulian">
+                      <input type="checkbox" autocomplete="off" >  Acheulian
+                    </label>
+
+                    <label class="btn btn-primary tagMargin" id="art">
+                      <input type="checkbox" autocomplete="off" > art
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="butchery">
+                      <input type="checkbox" autocomplete="off" > butchery
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="hunting">
+                      <input type="checkbox" autocomplete="off" >  hunting
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="seafaring">
+                      <input type="checkbox" autocomplete="off" > seafaring
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="fire">
+                      <input type="checkbox" autocomplete="off" >  fire
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="livingstructures">
+                      <input type="checkbox" autocomplete="off" >  living structures
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="haftedtools">
+                      <input type="checkbox" autocomplete="off" > hafted tools
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="burials">
+                      <input type="checkbox" autocomplete="off" >  burials
+                    </label>
+                   
+                  </div>
+
+
+                    
+                     
+                </div>
+
+
+             </div> 
+
+
+
+             <div class="row" style="margin-top:10%;">
+
+                 <div class="col-md-11 noPadding">
+              <div id="cognitionTagBar" style="margin-top:1%;height:3em;background-color:#2A5769;margin-bottom:1%;cursor:pointer;"><div style="font-family:'Open Sans', sans-serif;color:white;padding:3% 3% 3% 5%;">COGNITION
+                <span id="cognitionTagToggle" class="glyphicon glyphicon-chevron-down" style="float:right;cursor:pointer"></span></div>
+                </div>
+
+                  <div id="cognitionTagOptionsBlock" class="btn-group" data-toggle="buttons" style="margin-top:2.5%;display:none">
+                    <label class="btn btn-primary tagMargin" id="planning">
+                      <input type="checkbox" checked autocomplete="off" > planning
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="imitation">
+                      <input type="checkbox" autocomplete="off" > imitation
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="language">
+                      <input type="checkbox" autocomplete="off" >  language
+                    </label>
+
+                    <label class="btn btn-primary tagMargin" id="problemsolving">
+                      <input type="checkbox" checked autocomplete="off" > problem solving
+                    </label>
+                    <label class="btn btn-primary tagMargin" id="memory">
+                      <input type="checkbox" autocomplete="off" > memory
+                    </label>
+                    
+                  </div>
+
+                     
+                </div>
+
+
+             </div> 
+
 
 
 <!--            <hr style="border-color:orange;margin-top:1%;">   -->
@@ -368,11 +727,11 @@ handlesSlider.noUiSlider.on('update', function ( values, handle ) {
                           </div>
                           <br><br>
 
-                  <div style="font-size: 1em;color: #FABD4A;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.7;"><span >From : </span>
+                  <div style="font-size: 1em;color: #FFFFFF;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.7;"><span >FROM : </span>
                           <span id="slider-margin-value-min" style="color:#ffffff;"></span>
                         </div>
 
-                          <div style="font-size: 1em;color: #FABD4A;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.7;"><span class="">To : </span>
+                          <div style="font-size: 1em;color: #FFFFFF;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.7;"><span class="">TO : </span>
                             <span id="slider-margin-value-max" style="color:#ffffff;"></span>
                              </div>
              </div> 

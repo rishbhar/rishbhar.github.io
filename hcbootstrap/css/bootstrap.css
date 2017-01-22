@@ -2674,7 +2674,7 @@ input[type="search"] {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
-  margin-left: -20px;
+  /*margin-left: -20px;rishabh commented this*/
   margin-top: 4px \9;
 }
 .radio + .radio,
@@ -3165,27 +3165,39 @@ fieldset[disabled] .btn-default.active {
   background-color: #333333;
 }
 .btn-primary {
-  color: #ffffff;
+  color: #ffffff; /*CHANGED WHITE COLOR*/
+  /*
   background-color: #337ab7;
-  border-color: #2e6da4;
+  border-color: #2e6da4;COMMENTED BY RISHABH FOR TAGS*/
+  border-color: #FABD4A;
+   background-color: none;
 }
+
 .btn-primary:focus,
 .btn-primary.focus {
-  color: #ffffff;
-  background-color: #286090;
-  border-color: #122b40;
+  color: #fabd4a;
+  /*background-color: #286090;*/
+  background-color: #012E40;
+  border-color: #fabd4a;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .btn-primary:hover {
-  color: #ffffff;
-  background-color: #286090;
-  border-color: #204d74;
+  color: #fabd4a;
+  /*background-color: #286090;*/
+  background-color: #012E40;
+  border-color: #fabd4a;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #286090;
-  border-color: #204d74;
+  color: #012E40;
+  background-color: #fabd4a;
+  border-color: #fabd4a;
+  box-shadow: none;
+  /*background-color: #286090; COMMENTED BY RISHABH*/
+  /*background-color: #fcdea4;*/
+  /*border-color: #204d74;COMMENTED BY RISHABH*/
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -3196,9 +3208,11 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active.focus,
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
-  color: #ffffff;
-  background-color: #204d74;
-  border-color: #122b40;
+  color: #012E40;
+  background-color: #fabd4a;
+  border-color: #fabd4a;
+  /*background-color: #204d74;
+  border-color: #122b40;*/
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3793,19 +3807,19 @@ tbody.collapse.in {
   margin-left: 5px;
 }
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
-  border-radius: 0;
+  border-radius: 5; /*changed from 0 to 5 rishabh for tags*/
 }
 .btn-group > .btn:first-child {
   margin-left: 0;
 }
 .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+  border-bottom-right-radius: 5;/*changed from 0 to 5 rishabh for tags*/
+  border-top-right-radius: 5;/*changed from 0 to 5 rishabh for tags*/
 }
 .btn-group > .btn:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+  border-bottom-left-radius: 5;/*changed to 5 by Rishabh for tags*/
+  border-top-left-radius: 5;
 }
 .btn-group > .btn-group {
   float: left;
