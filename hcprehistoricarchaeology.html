@@ -178,12 +178,12 @@ selectedFilters.remove($(this).attr('id'));
 else
 selectedFilters.push($(this).attr('id'));
 
-//alert(selectedFilters);
+alert(selectedFilters);
 shuffleDiscoveries();
 });
 
-var Dikika = ["eastafrica","australopithecus","preoldowan"];
-var Lomekwi = ["eastafrica", "preoldowan", "australopithecus"];
+var Dikika = ["eastafrica","australopithecus","preoldo"];
+var Lomekwi = ["eastafrica", "preoldo", "australopithecus"];
 var Gona = ["eastafrica","oldowan", "planning", "problem-solving", "imitation"];
 var KanjeraSouth = ["eastafrica","oldowan", "planning", "hunting", "imitation"];
 
@@ -615,7 +615,7 @@ function shuffleDiscoveries()
                 </div>
 
                   <div id="behavioursTagOptionsBlock" class="btn-group" data-toggle="buttons" style="margin-top:2.5%;display:none">
-                    <label class="btn btn-primary tagMargin" id="preoldowan">
+                    <label class="btn btn-primary tagMargin" id="preoldo">
                       <input type="checkbox" autocomplete="off" >  pre-Oldowan
                     </label>
                     <label class="btn btn-primary tagMargin" id="oldowan">
