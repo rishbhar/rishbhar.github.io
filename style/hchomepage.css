@@ -102,6 +102,18 @@ a:hover{
   text-decoration: none;
 }
 
+a:visited{
+  color:#FABD4A;
+  cursor:pointer;
+  text-decoration: none;
+}
+
+a:visited:hover{
+  color:#fcdea4;
+  cursor:pointer;text-decoration: none;
+}
+
+
 .hcLogoText
 {
   font-family: 'Cormorant Garamond', serif;
@@ -981,10 +993,29 @@ a{
   cursor:pointer;
 }
 
+
 a:hover{
   color:#fcdea4;
   cursor:pointer;text-decoration: none;
 }
+
+a:visited{
+  color:#FABD4A;
+  cursor:pointer;text-decoration: none;
+}
+
+a:visited:after{
+  color:#FABD4A;
+  cursor:pointer;text-decoration: none;
+}
+
+
+a:visited:hover{
+  color:#fcdea4;
+  cursor:pointer;text-decoration: none;
+}
+
+
 
 nav.navbar.shrink {
   min-height: 70px;
