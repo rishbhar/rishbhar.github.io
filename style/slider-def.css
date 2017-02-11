@@ -89,9 +89,10 @@
 }
 
 .content-txt{
-  width:50%;
-  height:132px;
-  padding:0 2% 0 2%;
+  width:55%;
+  background:rgba(0,0,0,0.5);
+  height:auto;
+  padding:0% 1% 1% 1%;
   float:left;
   position:relative;
   /*background-color: rgba(0,0,0,0.3);*/
@@ -105,8 +106,11 @@
 font-family: 'Open Sans', sans-serif;font-weight:400;
   font-size:24px;
   color:#fff;
+  margin-top: 10px;
   text-align:left;
-  font-size:1.5em;
+  /*font-size:1.5em;*/ /*commente by Rishabh*/
+  font-size:1.4em;
+  line-height: 1.3;/*added by Rishabh*/
   padding-bottom:0px;
    /*text-shadow: 2px 2px #000000;*/
 }
@@ -260,32 +264,33 @@ font-family: 'Open Sans', sans-serif;font-weight:300;
   }
 }
 
+/* content-txt over home page banner image*/
 @-webkit-keyframes content-s{
-  0%{left:-440px;}
+  0%{left:-680px;} /*edited by Rishabh*/
   10%{left:0px;}
   30%{left:0px;}
   40%{left:0px;}
   50%{left:0px;}
   60%{left:0px;}
   70%{left:0;}
-  80%{left:-440px;}
-  90%{left:-440px;}
-  100%{left:-440px;}
+  80%{left:-680px;}
+  90%{left:-680px;}
+  100%{left:-680px;}
 }
 @-moz-keyframes content-s{
-  0%{left:-440px;}
+  0%{left:-680px;}
   10%{left:0px;}
   30%{left:0px;}
   40%{left:0px;}
   50%{left:0px;}
   60%{left:0px;}
   70%{left:0;}
-  80%{left:-440px;}
-  90%{left:-440px;}
-  100%{left:-440px;}
+  80%{left:-680px;}
+  90%{left:-680px;}
+  100%{left:-680px;}
 }
 @keyframes content-s{
-  0%{left:-440px;}
+  0%{left:-680px;}
   10%{left:20px;}
   15%{left:0px;}
   30%{left:0px;}
@@ -293,9 +298,9 @@ font-family: 'Open Sans', sans-serif;font-weight:300;
   50%{left:0px;}
   60%{left:0px;}
   70%{left:0;}
-  80%{left:-440px;}
-  90%{left:-440px;}
-  100%{left:-440px;}
+  80%{left:-680px;}
+  90%{left:-680px;}
+  100%{left:-680px;}
 }
 
 @-webkit-keyframes on{
