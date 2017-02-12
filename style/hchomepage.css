@@ -44,6 +44,8 @@ CSS for mobile
 
 @media screen and (max-width: 767px) {
 
+
+
 .readmoreMargin
 {
   margin-top:2%; 
@@ -901,6 +903,9 @@ CSS for laptops
 
 
 @media screen and (min-width: 1200px) {
+
+
+
 
 .readmoreMargin
 {
