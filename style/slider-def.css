@@ -266,31 +266,31 @@ font-family: 'Open Sans', sans-serif;font-weight:300;
 
 /* content-txt over home page banner image*/
 @-webkit-keyframes content-s{
-  0%{left:-680px;} /*edited by Rishabh*/
+  0%{left:-740px;} /*edited by Rishabh*/
   10%{left:0px;}
   30%{left:0px;}
   40%{left:0px;}
   50%{left:0px;}
   60%{left:0px;}
   70%{left:0;}
-  80%{left:-680px;}
-  90%{left:-680px;}
-  100%{left:-680px;}
+  80%{left:-740px;}
+  90%{left:-740px;}
+  100%{left:-740px;}
 }
 @-moz-keyframes content-s{
-  0%{left:-680px;}
+  0%{left:-740px;}
   10%{left:0px;}
   30%{left:0px;}
   40%{left:0px;}
   50%{left:0px;}
   60%{left:0px;}
   70%{left:0;}
-  80%{left:-680px;}
-  90%{left:-680px;}
-  100%{left:-680px;}
+  80%{left:-740px;}
+  90%{left:-740px;}
+  100%{left:-740px;}
 }
 @keyframes content-s{
-  0%{left:-680px;}
+  0%{left:-740px;}
   10%{left:20px;}
   15%{left:0px;}
   30%{left:0px;}
@@ -298,9 +298,9 @@ font-family: 'Open Sans', sans-serif;font-weight:300;
   50%{left:0px;}
   60%{left:0px;}
   70%{left:0;}
-  80%{left:-680px;}
-  90%{left:-680px;}
-  100%{left:-680px;}
+  80%{left:-740px;}
+  90%{left:-740px;}
+  100%{left:-740px;}
 }
 
 @-webkit-keyframes on{

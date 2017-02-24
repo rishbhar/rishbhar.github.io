@@ -880,11 +880,11 @@ div#slider figure {
 
 .ourVision
 {
-  
+      text-align: center;
   height:auto;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size:1.8em;
+  font-size:1.3em;
   color:#ffffff;
   background-color:#2A5769;
 
@@ -1835,11 +1835,11 @@ div#slider figure {
 
 .ourVision
 {
-  
+      text-align: center;
   height:auto;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size:1.8em;
+  font-size:1.3em;
   color:#ffffff;
   background-color:#2A5769;
 
