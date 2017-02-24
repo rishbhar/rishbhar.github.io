@@ -311,6 +311,7 @@ nav.navbar{
 .footerHeads{
    color:#ffffff;
   font-size: 1em;
+  font-weight:300;
 }
 
 .footerHeadsRight
@@ -323,6 +324,7 @@ nav.navbar{
  
   font-size: 1em;
   color:#FABD4A;
+  font-weight:300;
 }
 
 .footerHeadsContent:hover
@@ -1196,6 +1198,7 @@ nav.navbar{
 .footerHeads{
    color:#ffffff;
   font-size: 1em;
+  font-weight:300;
 }
 
 .footerHeadsRight
@@ -1208,12 +1211,14 @@ nav.navbar{
    color:#ffffff;
   font-size: 1em;
   text-transform: uppercase;
+  
 }
 
 .footerHeadsContent{
  
   font-size: 1em;
   color:#FABD4A;
+  font-weight:300;
 }
 
 .footerHeadsContent:hover
