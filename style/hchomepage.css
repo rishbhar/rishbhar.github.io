@@ -310,18 +310,18 @@ nav.navbar{
 
 .footerHeads{
    color:#ffffff;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .footerHeadsRight
 {
  float: right;
- font-size: 0.9em;
+ font-size: 1em;
 }
 
 .footerHeadsContent{
  
-  font-size: 0.9em;
+  font-size: 1em;
   color:#FABD4A;
 }
 
@@ -1195,24 +1195,24 @@ nav.navbar{
 
 .footerHeads{
    color:#ffffff;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .footerHeadsRight
 {
  float: right;
- font-size: 0.9em;
+ font-size: 1em;
 }
 
 .footerHeadsUpdate{
    color:#ffffff;
-  font-size: 0.9em;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
 .footerHeadsContent{
  
-  font-size: 0.9em;
+  font-size: 1em;
   color:#FABD4A;
 }
 
