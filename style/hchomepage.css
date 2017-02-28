@@ -42,14 +42,62 @@ CSS for mobile
 *****************************************************/
 
 
-@media screen and (max-width: 767px) {
+
+@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait){ 
+
+/* STYLES GO HERE */ 
 
 
+.aboutNewsItemTextStyle
+{
+  font-size:1.1em;color:#ffffff;font-weight:300;
+}
+
+.moreAboutUsBlock
+{
+  margin-top:8%;
+}
+
+
+.aboutNewsItemTextBlock
+{
+border:orange;color:#ffffff; padding:3% 1% 3% 0%;
+}
+
+
+.homeNewsItemText{
+  font-size:1.1em;color:#ffffff;font-weight:300;"
+}
+
+
+.paddingHomeNewsImages
+{
+  padding-top:4%;
+  padding-bottom:8%;
+}
+
+.exploreCognitionBlock
+{
+  margin-top:10%;
+}
+
+#cursorImages
+{
+  margin: 4% 0% 8% 0%;
+}
 
 .readmoreMargin
 {
   margin-top:2%; 
 }
+
+
+.images img
+{
+  width:200%;
+  height:200%;
+}
+
 
 
 .tagMargin
@@ -72,7 +120,7 @@ font-size:.9em;color:#FABD4A;font-family: 'Open Sans', sans-serif;font-weight:30
 
 .exlpore-cognition-blocks-links
 {
-  font-size:1em;
+  font-size:1.1em;
   color:#FABD4A;
   font-family: 'Open Sans', sans-serif;font-weight:300;
   padding:3% 0 3% 0;
@@ -900,12 +948,10 @@ div#slider figure {
 } 
 
 
-/*****************************************************
 
-CSS for laptops
 
-*****************************************************/
 
+}
 
 
 
@@ -914,7 +960,17 @@ CSS for laptops
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
 
+.aboutNewsItemTextBlock
+{
+border:orange;color:#ffffff; padding:3% 1% 3% 4%;
+}
 
+
+
+.exploreCognitionBlock
+{
+  margin-top:0.5%;
+}
 
 
 .readmoreMargin
@@ -1656,7 +1712,8 @@ b
 .hcBodyBackground
 {
   background-color:#00202c;
-    padding:0 8% 0% 8%;
+    
+    padding:0 8% 5% 8%;
 }
 
 
@@ -1861,8 +1918,25 @@ div#slider figure {
 
 @media screen and (min-width: 1200px) {
 
+.aboutNewsItemTextStyle
+{
+  font-size:1em;color:#ffffff;font-weight:300;
+}
+
+.moreAboutUsBlock
+{
+  margin-top:6.3%;
+}
 
 
+.aboutNewsItemTextBlock
+{
+border:orange;color:#ffffff; padding:3% 1% 3% 4%;
+}
+
+.homeNewsItemText{
+  font-size:1em;color:#ffffff;font-weight:300;
+}
 
 .readmoreMargin
 {
@@ -1920,7 +1994,10 @@ font-size:.9em;color:#FABD4A;font-family: 'Open Sans', sans-serif;font-weight:30
 
 #cursorImages img{
   cursor: pointer;
+
 }
+
+
 
 
 .hoverImage:hover
