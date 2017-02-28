@@ -47,6 +47,11 @@ CSS for mobile
 
 /* STYLES GO HERE */ 
 
+.homeLatestNewsBlock
+{
+  margin-top:0.5%;
+}
+
 
 .aboutNewsItemTextStyle
 {
@@ -1917,6 +1922,13 @@ div#slider figure {
 
 
 @media screen and (min-width: 1200px) {
+
+
+.homeLatestNewsBlock
+{
+  margin-top:0.5%;
+  margin-bottom: 8%;
+}
 
 .aboutNewsItemTextStyle
 {
