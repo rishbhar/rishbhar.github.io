@@ -43,9 +43,72 @@ CSS for mobile
 
 
 
-@media only screen and (min-width : 375px) and (max-width : 667px) and (orientation : portrait){ 
+@media only screen and (min-width : 320px) and (max-width : 667px) and (orientation : portrait){ 
 
 /* STYLES GO HERE */ 
+
+.newseventsEachBlockMargin  
+{
+  margin-top:15%;
+}
+
+.topMarginFirstNewsEventsBlock
+{
+  margin-top: 5%;
+}
+
+.researchEachBlockMargin  
+{
+  margin-top:15%;
+}
+
+.topMarginFirstResearchBlock
+{
+  margin-top: 5%;
+}
+
+.moreAboutUsContentBlock
+{
+  margin-top:2%;background-color:#012E40;border-bottom:1px solid #547887;
+}
+
+.newsBlockTopPadding
+{
+  margin-top: 10%;
+}
+
+.newsItemImageMobile
+{
+  max-width: 40%;
+  display: inline;
+}
+
+.newsImageBlockMobile
+{
+  display:inline;
+}
+
+.newsTextBlockMobile
+{
+  display:inline;
+}
+
+.homeNewsItemImageMobile
+{
+  max-width: 40%;
+  display: inline;
+}
+
+
+.homeNewsItemBlock
+{
+    border: orange;
+    color: #ffffff;
+    padding: 1% 1% 3% 3%;
+    display: inline;
+    float: right;
+    width: 60%;
+}
 
 .homeLatestNewsBlock
 {
@@ -66,7 +129,9 @@ CSS for mobile
 
 .aboutNewsItemTextBlock
 {
-border:orange;color:#ffffff; padding:3% 1% 3% 0%;
+border:orange;color:#ffffff; padding:1% 1% 3% 3%;
+float: right;
+width: 60%;
 }
 
 
@@ -964,6 +1029,50 @@ div#slider figure {
 
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
+
+.newseventsEachBlockMargin  
+{
+  margin-top:8%;
+}
+
+.topMarginFirstNewsEventsBlock
+{
+  margin-top: 3.1%;
+}
+
+.researchEachBlockMargin  
+{
+  margin-top:8%;
+}
+
+  .topMarginFirstResearchBlock
+{
+  margin-top: 3.1%;
+}
+
+.moreAboutUsContentBlock
+{
+  margin-top:5%;background-color:#012E40;border-bottom:1px solid #547887;
+}
+
+.newsBlockTopPadding
+{
+  margin-top: 7%;
+}
+
+
+.homeNewsItemImageMobile
+{
+}
+
+
+.homeNewsItemBlock
+{
+    border: orange;
+    color: #ffffff;
+    padding: 4% 1% 3% 0%;
+    
+}
 
 .aboutNewsItemTextBlock
 {
@@ -1923,6 +2032,50 @@ div#slider figure {
 
 @media screen and (min-width: 1200px) {
 
+.newseventsEachBlockMargin  
+{
+  margin-top:8%;
+}
+
+.topMarginFirstNewsEventsBlock
+{
+  margin-top: 3.1%;
+}
+
+  .researchEachBlockMargin  
+{
+  margin-top:8%;
+}
+
+  .topMarginFirstResearchBlock
+{
+  margin-top: 3.1%;
+}
+
+.moreAboutUsContentBlock
+{
+  margin-top:5%;background-color:#012E40;border-bottom:1px solid #547887;
+}
+
+
+.newsBlockTopPadding
+{
+  margin-top: 7%;
+}
+
+
+.homeNewsItemImageMobile
+{
+}
+
+
+.homeNewsItemBlock
+{
+    border: orange;
+    color: #ffffff;
+    padding: 4% 1% 3% 0%;
+    
+}
 
 .homeLatestNewsBlock
 {
