@@ -416,6 +416,11 @@ nav.navbar{
 }
 
 
+.footerPadding
+{
+  padding:10% 3% 3% 7%;
+}
+
 .footer_content
 {
   /*padding-left: 13%;
@@ -423,13 +428,15 @@ nav.navbar{
   /*border-top: 1px solid #e7e7e7;*/
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: 'Open Sans', sans-serif;
-  padding-top: 2%;
+  /*padding-top: 2%;*/
+  padding:3% 3% 3% 4%;
 }
 
 .footerHeads{
    color:#ffffff;
   font-size: 1em;
   font-weight:300;
+  padding-top: 12%;
 }
 
 .footerHeadsRight
@@ -942,6 +949,10 @@ body{
   min-height: 100px;
 }
 
+.homePageFiller{
+  min-height: 60px;
+}
+
 .navbar-form {
    padding-left: 0;
 }
@@ -1030,6 +1041,14 @@ div#slider figure {
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
 
+.footerPadding
+{
+  padding:4% 3% 3% 7%;
+}
+
+.homePageFiller{
+  min-height: 100px;
+}
 
 
 .homeLatestNewsBlock
@@ -1375,7 +1394,8 @@ nav.navbar{
   /*border-top: 1px solid #e7e7e7;*/
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: 'Open Sans', sans-serif;
-  padding-top: 2%;
+  /*padding-top: 2%;*/
+  padding:4% 3% 3% 7%;
 }
 
 .footerHeads{
@@ -2040,6 +2060,15 @@ div#slider figure {
 
 @media screen and (min-width: 1200px) {
 
+.footerPadding
+{
+  padding:4% 3% 3% 7%;
+}
+
+.homePageFiller{
+  min-height: 100px;
+}
+
 .newseventsEachBlockMargin  
 {
   margin-top:8%;
@@ -2394,7 +2423,8 @@ nav.navbar{
   /*border-top: 1px solid #e7e7e7;*/
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: 'Open Sans', sans-serif;
-  padding-top: 2%;
+    /*padding-top: 2%;*/
+  padding:4% 3% 3% 7%;
 }
 
 .footerHeads{
