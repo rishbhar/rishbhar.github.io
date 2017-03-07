@@ -48,7 +48,14 @@ CSS for mobile
 /* STYLES GO HERE */ 
 
 .navbar-default .navbar-toggle {
+background-color: none;
+
+}
+
+
+.navbar-default .navbar-toggle {
   border-color: #FABD4A;
+  margin-top:-15%;
  /* background-color: #ffffff;*/
   }
 
