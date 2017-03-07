@@ -48,7 +48,7 @@ CSS for mobile
 /* STYLES GO HERE */ 
 
 .navbar-default .navbar-toggle {
-background-color: none;
+background-color: none !important;
 
 }
 
