@@ -1055,7 +1055,7 @@ div#slider figure {
 
 .additionalMargin
 {
-  margin-left:3%;
+  margin-left:3% !important;
 }
 
 .titleBarHeight
@@ -2085,7 +2085,7 @@ div#slider figure {
 
 .additionalMargin
 {
-  margin-left:3%;
+  margin-left:3% !important;
 }
 
 .titleBarHeight
