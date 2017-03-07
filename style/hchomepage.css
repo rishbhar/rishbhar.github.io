@@ -47,6 +47,24 @@ CSS for mobile
 
 /* STYLES GO HERE */ 
 
+.navbar-default .navbar-toggle {
+  border-color: #FABD4A;
+ /* background-color: #ffffff;*/
+  }
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FABD4A;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+ background-color: #FABD4A;
+
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
+ background-color: #00202c;
+  }
+
 .noTopBorder
 {
   border-top: 0px;
