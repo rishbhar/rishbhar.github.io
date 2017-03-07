@@ -280,9 +280,9 @@ a:visited:hover{
 
 .hcLogoText
 {
-  font-family: 'Cormorant Garamond', serif;
+  /*font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
-  font-size:2.4em;
+  font-size:2.4em;*/
   color:#ffffff;
   width:50%;
   margin-top: 0%;
@@ -1989,9 +1989,9 @@ body{
 
 .hcLogoText
 {
-  font-family: 'Cormorant Garamond', serif;
+   /*font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
-  font-size:2.4em;
+  font-size:2.4em;*/
   color:#ffffff;
 
   width:50%;
@@ -3039,9 +3039,9 @@ body{
 
 .hcLogoText
 {
-  font-family: 'Cormorant Garamond', serif;
+  /*font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
-  font-size:2.4em;
+  font-size:2.4em;*/
   color:#ffffff;
 
   width:50%;
