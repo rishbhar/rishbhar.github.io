@@ -64,12 +64,12 @@ background-color: transparent !important;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
- background-color: #FABD4A;
+ background-color: #FABD4A !important;
 
 }
 
 .navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
- background-color: #FABD4A;
+ background-color: #00202c;
   }
 
 .noTopBorder
