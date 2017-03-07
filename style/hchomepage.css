@@ -47,9 +47,17 @@ CSS for mobile
 
 /* STYLES GO HERE */ 
 
+
+
+.titleTextStyle
+{
+  font-family:'Open Sans', sans-serif;font-weight:400;font-size:1.8em;margin-top:1%;width:50%;
+}
+
+
 .navbar-default .navbar-toggle {
 background-color: transparent !important;
-
+margin-right: 0 !important;
 }
 
 
@@ -79,7 +87,7 @@ background-color: transparent !important;
 
 .titleBarHeight
 {
-  height:150px !important;
+  height:126px !important;
 }
 
 
@@ -1076,6 +1084,12 @@ div#slider figure {
 
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
+
+
+.titleTextStyle
+{
+  font-family:'Open Sans', sans-serif;font-weight:400;font-size:2.2em;margin-top:1%;width:50%;
+}
 
 
 .titlePadding
@@ -2111,6 +2125,12 @@ div#slider figure {
 
 
 @media screen and (min-width: 1200px) {
+
+
+.titleTextStyle
+{
+  font-family:'Open Sans', sans-serif;font-weight:400;font-size:2.2em;margin-top:1%;width:50%;
+}
 
 
 .titlePadding
