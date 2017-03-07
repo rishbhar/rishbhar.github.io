@@ -52,6 +52,7 @@ CSS for mobile
 .titleTextStyle
 {
   font-family:'Open Sans', sans-serif;font-weight:400;font-size:1.8em;margin-top:1%;width:50%;
+  color:#ffffff;
 }
 
 
@@ -280,9 +281,9 @@ a:visited:hover{
 
 .hcLogoText
 {
-  /*font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
-  font-size:2.4em;*/
+  font-size:2.4em;
   color:#ffffff;
   width:50%;
   margin-top: 0%;
@@ -1089,6 +1090,10 @@ div#slider figure {
 .titleTextStyle
 {
   font-family:'Open Sans', sans-serif;font-weight:400;font-size:2.2em;margin-top:1%;width:50%;
+
+  color:#ffffff;
+  
+  
 }
 
 
@@ -1989,9 +1994,9 @@ body{
 
 .hcLogoText
 {
-   /*font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
-  font-size:2.4em;*/
+  font-size:2.4em;
   color:#ffffff;
 
   width:50%;
@@ -2130,6 +2135,7 @@ div#slider figure {
 .titleTextStyle
 {
   font-family:'Open Sans', sans-serif;font-weight:400;font-size:2.2em;margin-top:1%;width:50%;
+  color:#ffffff;
 }
 
 
@@ -3039,9 +3045,9 @@ body{
 
 .hcLogoText
 {
-  /*font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
-  font-size:2.4em;*/
+  font-size:2.4em;
   color:#ffffff;
 
   width:50%;
