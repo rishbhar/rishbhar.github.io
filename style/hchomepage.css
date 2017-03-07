@@ -47,7 +47,11 @@ CSS for mobile
 
 /* STYLES GO HERE */ 
 
+.teamMemberBioText
+{
 
+  font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:2% 4% 3% 4%;line-height:1.7;
+}
 
 .titleTextStyle
 {
@@ -1086,6 +1090,12 @@ div#slider figure {
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
 
+
+.teamMemberBioText
+{
+
+  font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;
+}
 
 .titleTextStyle
 {
@@ -2131,6 +2141,11 @@ div#slider figure {
 
 @media screen and (min-width: 1200px) {
 
+.teamMemberBioText
+{
+
+  font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;
+}
 
 .titleTextStyle
 {
