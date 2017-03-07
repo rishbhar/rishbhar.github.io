@@ -1078,6 +1078,11 @@ div#slider figure {
 @media screen and (min-width: 767px) and (max-width: 1200px) {
 
 
+.titlePadding
+{
+padding:0 2% 0 7%;
+}
+
 .additionalMargin
 {
   margin-left:3% !important;
@@ -2107,6 +2112,11 @@ div#slider figure {
 
 @media screen and (min-width: 1200px) {
 
+
+.titlePadding
+{
+  padding:0 2% 0 7%;
+}
 
 .additionalMargin
 {
