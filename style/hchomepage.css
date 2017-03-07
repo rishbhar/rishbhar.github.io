@@ -47,6 +47,17 @@ CSS for mobile
 
 /* STYLES GO HERE */ 
 
+.noTopBorder
+{
+  border-top: 0px;
+}
+
+.titleBarHeight
+{
+  height:150px;
+}
+
+
 .newseventsEachBlockMargin  
 {
   margin-top:15%;
@@ -285,7 +296,7 @@ nav.navbar{
   color:#FABD4A;
   font-family: 'Open Sans', sans-serif;
    font-size: 13px;
-  background-color: #2A5769;
+ /* background-color: #2A5769;*/
   font-weight: 400;
 }
 
@@ -1040,6 +1051,17 @@ div#slider figure {
 
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
+
+
+.additionalMargin
+{
+  margin-left:3%;
+}
+
+.titleBarHeight
+{
+  height:125px;
+}
 
 .footerPadding
 {
@@ -2059,6 +2081,17 @@ div#slider figure {
 
 
 @media screen and (min-width: 1200px) {
+
+
+.additionalMargin
+{
+  margin-left:3%;
+}
+
+.titleBarHeight
+{
+  height:125px;
+}
 
 .footerPadding
 {
