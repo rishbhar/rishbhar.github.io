@@ -582,8 +582,9 @@ $("#footer").load("footer.html");
       </div>
 
 <script type="text/javascript">  
-if (matchMedia('only screen and (max-width: 480px)').matches) { alert("mobile");alert($(".images img").css("height"));
+if (matchMedia('only screen and (max-width: 480px)').matches) { 
   // smartphone/iphone... maybe run some small-screen related dom scripting?
+     if($(".images img").height()!=0)
      $(".content-txt").css('height',($(".images img").css("height")));
 }      
  
