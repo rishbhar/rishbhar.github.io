@@ -47,6 +47,13 @@ CSS for mobile
 
 /* STYLES GO HERE */ 
 
+
+
+.blockHeadsTitles
+{
+  font-size:1.5em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;
+}
+
 .teamMemberBioText
 {
 
@@ -1088,12 +1095,27 @@ div#slider figure {
 /** CSS for width between 767 and 1200 ***/
 
 
-@media screen and (min-width: 767px) and (max-width: 1200px) {
 
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:portrait){ 
+    /* Styles */
+
+
+
+
+.ourVision
+{
+  text-align: center;
+  height:auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size:1.3em;
+  color:#ffffff;
+  background-color:#2A5769;
+  
+}
 
 .teamMemberBioText
 {
-
   font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;
 }
 
@@ -2118,18 +2140,6 @@ div#slider figure {
 
 
 
-.ourVision
-{
-      text-align: center;
-  height:auto;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size:1.3em;
-  color:#ffffff;
-  background-color:#2A5769;
-
-  
-}
 
 
 
@@ -2140,6 +2150,12 @@ div#slider figure {
 
 
 @media screen and (min-width: 1200px) {
+
+
+.blockHeadsTitles
+{
+  font-size:1.5em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;
+}
 
 .teamMemberBioText
 {
