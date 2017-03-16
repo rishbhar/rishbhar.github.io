@@ -1378,17 +1378,14 @@ width: 66%;
 
 .titleTextStyle
 {
-  font-family:'Open Sans', sans-serif;font-weight:400;font-size:2.2em;margin-top:1%;width:50%;
-
+  font-family:'Open Sans', sans-serif;font-weight:400;font-size:1.8em;margin-top:1%;width:50%;
   color:#ffffff;
-  
-  
 }
 
 
 .titlePadding
 {
-padding:0 2% 0 7%;
+padding:0 2% 0 0%;
 }
 
 .additionalMargin
@@ -1747,13 +1744,14 @@ nav.navbar{
   font-family: "Lato" ,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: 'Open Sans', sans-serif;
   /*padding-top: 2%;*/
-  padding:4% 3% 3% 7%;
+  padding:0% 3% 3% 3%;
 }
 
 .footerHeads{
    color:#ffffff;
   font-size: 1em;
   font-weight:300;
+  padding-top: 10%;
 }
 
 .footerHeadsRight
