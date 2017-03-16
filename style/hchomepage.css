@@ -2169,6 +2169,23 @@ div#slider figure {
 @media screen and (min-width: 1200px) {
 
 
+.content-txt{
+  width:55%;
+  background:rgba(0,0,0,0.5);
+  height:auto;
+  padding:0% 1% 1% 1%;
+  float:left;
+  position:relative;
+  /*background-color: rgba(0,0,0,0.3);*/
+  top:260px;
+  font-size: 1.5em;
+  margin-left:30px;
+  -webkit-animation:content-s 7.5s infinite;
+  -moz-animation:content-s 7.5s infinite;
+  animation:content-s 7.5s infinite;
+}
+
+
 .blockHeadsTitles
 {
   font-size:1.5em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;
