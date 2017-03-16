@@ -48,6 +48,23 @@ CSS for mobile
 /* STYLES GO HERE */ 
 
 
+.images{
+
+  margin-top: 0px;
+  width:100%;
+  position: absolute;
+}
+
+.switch{
+  margin-top:10%;
+  width:120px;
+  height:5px;
+  position:absolute;
+  bottom:20px;
+  z-index:99;
+  left:41%;
+}
+
 
 .blockHeadsTitles
 {
@@ -220,8 +237,8 @@ width: 60%;
 
 .images img
 {
-  width:200%;
-  height:200%;
+  width:100%;
+  height:100%;
 }
 
 
@@ -1069,7 +1086,7 @@ div#slider figure {
   height:auto;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size:1.3em;
+  font-size:1.1em;
   color:#ffffff;
   background-color:#2A5769;
 
