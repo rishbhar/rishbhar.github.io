@@ -1378,14 +1378,20 @@ width: 66%;
 
 .titleTextStyle
 {
-  font-family:'Open Sans', sans-serif;font-weight:400;font-size:1.8em;margin-top:1%;width:50%;
+  font-family:'Open Sans', sans-serif;font-weight:400;font-size:1.8em;margin-top:1%;width:60%;
   color:#ffffff;
 }
+
+.iPadProPadding
+{
+  padding: 2.8% 0px 0% 1% !important;
+}
+
 
 
 .titlePadding
 {
-padding:0 2% 0 0%;
+padding:0 2% 0 1%;
 }
 
 .additionalMargin
