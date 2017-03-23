@@ -2169,6 +2169,15 @@ div#slider figure {
 @media screen and (min-width: 1200px) {
 
 
+.prehistDiscovimage
+{
+    width:50em;
+    height:25em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .content-txt{
   width:55%;
   background:rgba(0,0,0,0.5);
