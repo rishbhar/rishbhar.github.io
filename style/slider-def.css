@@ -1287,7 +1287,30 @@ div#slider figure {
 }
 
 
+.images img{
+  width:100%;
+  height:100%;
+}
+
+
+.content-txt{
+  width:60%;
+  background:rgba(0,0,0,0.5);
+  height:auto;
+  padding:0% 1% 1% 1%;
+  float:left;
+  position:relative;
+  /*background-color: rgba(0,0,0,0.3);*/
+  top:0px !important!; 
+  margin-left:30px;
+  -webkit-animation:content-s 7.5s infinite;
+  -moz-animation:content-s 7.5s infinite;
+  animation:content-s 7.5s infinite;
+}
+
 /******** css for iPads for the whole website starts********/
+
+
 
 
 .container
@@ -3571,6 +3594,9 @@ div#slider figure {
 
 }
 
+
+
+
 .content-txt{
   width:55%;
   background:rgba(0,0,0,0.5);
@@ -3585,6 +3611,32 @@ div#slider figure {
   -moz-animation:content-s 7.5s infinite;
   animation:content-s 7.5s infinite;
 }
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (max-device-height : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1)  { 
+
+
+.content-txt{
+
+  width:55%;
+  background:rgba(0,0,0,0.5);
+  height:auto;
+  padding:0% 1% 1% 1%;
+  float:left;
+  position:relative;
+  /*background-color: rgba(0,0,0,0.3);*/
+  top:60px;
+  margin-left:30px;
+  -webkit-animation:content-s 7.5s infinite;
+  -moz-animation:content-s 7.5s infinite;
+  animation:content-s 7.5s infinite;
+}
+
+}
+
+
+
 .content-txt h1{
 font-family: 'Open Sans', sans-serif;font-weight:400;
   font-size:24px;
@@ -3597,6 +3649,7 @@ font-family: 'Open Sans', sans-serif;font-weight:400;
   padding-bottom:0px;
    /*text-shadow: 2px 2px #000000;*/
 }
+
 .content-txt h2{
 font-family: 'Open Sans', sans-serif;font-weight:300;
   font-weight:normal;
