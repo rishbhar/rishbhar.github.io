@@ -2169,6 +2169,17 @@ div#slider figure {
 @media screen and (min-width: 1200px) {
 
 
+.forDiscoveriesScroll
+{
+  position:fixed;
+  top: 0;
+  left: 64.5%;
+  width: 30%
+}
+
+
+
+
 .prehistDiscovimage
 {
     width:50em;
