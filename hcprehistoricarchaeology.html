@@ -234,7 +234,7 @@ var cognitionFilters=["planning","imitation","language","imitation","memory","pr
 
 var totalDiscoveriesShown=21;
 
-$('#totalDiscoveriesShown').text(totalDiscoveriesShown+" discoveries");
+//$('#totalDiscoveriesShown').text(totalDiscoveriesShown+" discoveries");
 
 
 
@@ -332,7 +332,7 @@ $('#behaviourFilterApplied').text('');
 $('#speciesFilterApplied').text('');
 $('#cognitionFilterApplied').text('');
       totalDiscoveriesShown=21;
-      $('#totalDiscoveriesShown').text(totalDiscoveriesShown+" discoveries");
+      //$('#totalDiscoveriesShown').text(totalDiscoveriesShown+" discoveries");
       return 1;
   
   }
@@ -429,7 +429,7 @@ if(showEsSkhulCave==1){totalDiscoveriesShown+=1;}
 if(showKrapina==1){totalDiscoveriesShown+=1;}
 if(showBlombosCave==1){totalDiscoveriesShown+=1;}
   //alert(showDikika,showLomekwi,showGona,showKanjeraSouth);
-  $('#totalDiscoveriesShown').text(totalDiscoveriesShown+" discoveries, filters applied");
+  $('#totalDiscoveriesShown').text("("+totalDiscoveriesShown+" discoveries, filters applied)");
 
   $('#discoveriesBlock').css('opacity', '0.6');
   $('#Dikika').fadeOut(500);
@@ -716,7 +716,7 @@ $('html, body').animate({
 
 
                             <div>
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 5% 0;line-height:1.7;"> This page will have a short introduction to what prehistoric archaeology is and the methods that archaeologists use to study the evolution of cognition. Here we can also discuss general trends in cognitive evolution as is evident from the archaeological record, citing specific sites that are discussed in the next section.
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 5% 0;line-height:1.7;"> This page will have a short introduction to what prehistoric archaeology is and the methods that archaeologists use to study the evolution of cognition. Here we can also discuss general trends in cognitive evolution as is evident from the archaeological record, citing specific sites that are discussed in the next section.
                               </div>
                              </div>
 
@@ -749,9 +749,9 @@ $('html, body').animate({
 
                 <div id="prehistoricArchaeologyDiscoveryTitleBlock" class="col-md-12" style="margin-bottom:4%;">
 
-                      <span  style="font-size:1.5em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;text-transform: ;"> Prehistoric Archaeology Discoveries</span>
+                      <span  style="font-size:1.5em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;text-transform: ;"> Archaeological Discoveries that have Contributed to Our Current Understanding of Human Cognitive Evolution</span>
 
-                      <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;text-transform: ;"> (<span id="totalDiscoveriesShown"></span>) </div>
+                      <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;text-transform: ;"> <span id="totalDiscoveriesShown"></span></div>
                      <!--<hr style="margin-left:0;width:80%;margin-top:1%;">-->
                 </div>
 
@@ -768,12 +768,12 @@ $('html, body').animate({
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Afar, Ethiopia
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 3.42 - 3.24 Ma
                                   
                                   </span>
@@ -783,9 +783,9 @@ $('html, body').animate({
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> 
-                              <span style="font-style:italic"> Major Discovery </span></br>
-                              Hominins prior to 2.6 Ma left behind relatively few traces of their cognition and behavior for us to discover in the archaeological record. Possibly the earliest evidence for stone tool use by hominins comes from the site of Dikika in Ethiopia, where a team led by <a target="_blank" href="http://www.calacademy.org/explore-science/zeray-alemseged">Zeray Alemseged</a> of the California Academy of Sciences in San Francisco discovered two 3.4 million-year-old fossilized animal bones that bear potential cut marks caused by stone tools. This finding could indicate that Australopithecus afarensis butchered large mammals with the assistance of stone tools.<br>
+                    <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> 
+                              <span style="font-style:italic"> Major Discovery </span><br>
+                              Hominins prior to 2.6 Ma left behind relatively few traces of their cognition and behavior for us to discover in the archaeological record. Possibly the earliest evidence for stone tool use by hominins comes from the site of Dikika in Ethiopia, where a team led by <a target="_blank" href="http://www.calacademy.org/explore-science/zeray-alemseged">Zeray Alemseged</a> of the California Academy of Sciences in San Francisco discovered two 3.4 million-year-old fossilized animal bones that bear potential cut marks caused by stone tools. This finding could indicate that Australopithecus afarensis butchered large mammals with the assistance of stone tools.
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
                             </div>
@@ -794,13 +794,15 @@ $('html, body').animate({
                             
 
                             <div id="DikikaDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions </span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;">
+                                <!--<span style="font-style:italic">Expert Opinions </span><br>-->
 Potential experts to contact include (pro cut marks) Shannon McPherron, Zeresenay Alemseged, Curtis Marean, Jonathan Wynn, Denne Reed, Denis Geraads, Rene Bob, Hamdallah Bearat, Jessica Thompson, Andrew Barr (con cut marks) Manuel Dominguez-Rodrigo, Travis Pickering, Henry Bunn, Jackson Njau
-
-How it relates to the evolution of cognition: 
+<br><br>
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">
+How it relates to the evolution of cognition: </span><br>
 Because Oldowan toolmakers by 2.6 Ma already demonstrate a high level of skill, several researchers have suggested that a simpler stone tool must have existed prior to the Oldowan industry. If the marks on the Dikika bones are cut marks, then they may have been caused by unmodified stone tools, which would resemble the stone tool use behaviors of modern apes. Australopithecus afarensis was thus likely ape-like in cognition and behavior.    </div>  
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Dominguez-Rodrigo, M., Pickering, T.R., Bunn, H.T. (2012). Experimental study of cut marks made with rocks unmodified by human flaking and its bearing on claims of ~3.4 million-year-old butchery evidence from Dikika, Ethiopia. Journal of Archaeological Science 39, 205-214. doi:10.1016/j.jas.2011.03.010
 <br><br>
@@ -815,7 +817,7 @@ Thompson, J.C., McPherron, S.P., Bobe, R., Reed, D., Barr, W.A., Wynn, G.G., Mar
 
  <div class="goBack" style="margin-top:5%;display:none;" alt="Dikika"><a>< Go Back</a></div>                         
   
-                        </div>
+                        </div></div>
 
                         <!-- block ends-->
 
@@ -836,12 +838,12 @@ Thompson, J.C., McPherron, S.P., Bobe, R., Reed, D., Barr, W.A., Wynn, G.G., Mar
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : West Turkana, Kenya
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 3.3 Ma
                                   
                                   </span>
@@ -851,7 +853,7 @@ Thompson, J.C., McPherron, S.P., Bobe, R., Reed, D., Barr, W.A., Wynn, G.G., Mar
                             </div>
 
                             <div> 
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
                               Stone tools dating back to 3.3 Ma were discovered at Lomekwi by a team led by Sonia Harmand (http://www.stonybrook.edu/commcms/anthropology/faculty/archaeology.html) of Stony Brook University. If this date turns out to be correct, then that would mean that these are the oldest stone tools yet known, and it would push the date of chipped stone technologies back by 700,000 years, before the appearance of the genus Homo.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -860,16 +862,16 @@ Thompson, J.C., McPherron, S.P., Bobe, R., Reed, D., Barr, W.A., Wynn, G.G., Mar
 
 
                                     <div id="LomekwiDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
 Possible experts to contact include (pro earliest tools) Sonia Harmand, Jason Lewis, Craig Feibel, Christopher Lepre, Sandrine Prat, Arnaud Lenoble, Xavier Boes, Rhonda Quinn, Michel Brenet, Adrian Arroyo, Nicholas Taylor, Sophie Clement, Guillaume Daver, Jean-Philip Brugal, Louise Leakey, Richard Mortlock, James Wright, Sammy Lokorodi, Christopher Kirwa, Dennis Kent, Helene Roche (con earliest tools) Manuel Dominguez-Rodrigo, Luis Alcala
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span><br>
 The tools at Lomekwi correspond in time with the small-brained Australopithecus afarensis species, which represents a paradigm shift in paleoanthropology. Scientists have long considered members of the genus Homo to be the first stone toolmakers, but now we have to consider that smaller-brained hominins may have possessed the motor coordination, attention, and inventiveness to make stone tools as well. The sharp flakes found at Lomekwi were likely made by bipolar and passive hammering methods rather than striking a hammer stone against a core (flintknapping) like we see in later industries. These reduction methods presumably involve less skill and planning than flintknapping.</div>
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Dominguez-Rodrigo, M., Alcala, L. (2016). 3.3-million-year-old stone tools and butchery traces? More evidence needed. PaleoAnthropology 2016, 46-53. doi:10.4207/PA.2016.ART99 <br><br>
 Harmand, S., Lewis, J.E., Feibel, C.S., Lepre, C.J., Prat, S., Lenoble, A., Boes, X., Quinn, R.L., Brenet, M., Arroyo, A., Taylor, N., Clement, S., Daver, G., Brugal, J-P., Leakey, L., Mortlock, R.A., Wright, J.D., Lokorodi, S., Kirwa, C., Kent, D.V., Roche, H. (2015). 3.3-million-year-old stone tools from Lomekwi 3, West Turkana, Kenya. Nature 521, 310-315. doi:10.1038/nature14464<br><br>
@@ -899,12 +901,12 @@ Lewis, J.E., Harmand, S. (2016). An earlier origin for stone tool making: Implic
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Afar, Ethiopia
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 2.6 Ma
                                   
                                   </span>
@@ -914,7 +916,7 @@ Lewis, J.E., Harmand, S. (2016). An earlier origin for stone tool making: Implic
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
                               When first reported by <a href="http://www.cenieh.es/en/staff/sileshi-semaw" target="_blank">Sileshi Semaw</a>  and his team in 1997, the 2.6 million-year-old artifacts found at the site of Gona were thought to be the oldest chipped stone tools in the world. With the discovery of 3.3 million-year-old tools at the site of Lomekwi, Gona may now only represent the earliest evidence of the Oldowan industry<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -923,17 +925,18 @@ Lewis, J.E., Harmand, S. (2016). An earlier origin for stone tool making: Implic
 
 
                                   <div id="GonaDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+                                <!--<span style="font-style:italic">Expert Opinions</span><br>-->
 Possible experts to contact include (pro evolutionary leap) Sileshi Semaw, P. Renne, J.W.K. Harris, C.S. Feibel, R.L. Bernor, N. Fesseha, K. Mowbray, Dietrich Stout, Ignacio de la Torre, B.V. Ludwig, J.W.K. Harris, A. Delagnes, H. Roche, D. Braun, Nick Toth, Kathy Schick (con evolutionary leap) T. Wynn, R.A. Hernandez-Aguilar, L.F. Marchant, W.C. McGrew, R.W. Byrne
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 Archaeologists are still in disagreement about the extent to which Oldowan cognition differs from non-human great ape cognition. Some researchers have suggested that the cognition required to make Oldowan tools surpasses that possessed by great apes because even the earliest Oldowan tools at sites like Gona, Omo, and Lokalalei 2C demonstrate a level of planning, flexibility, and problem-solving that is not seen in the tool use behaviors of our close ape relatives. Other researchers claim that many of the motor and cognitive elements usually attributed to Oldowan toolmaking, such as precision handling, accurately aimed and powerful blows, bimanual role differentiation, imitation, sequential planning, hierarchical organization, and manual lateralization, can also be found among the great apes. 
 </div>
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Byrne, R.W. (2004). The manual skills and cognition that lie behind hominid tool use. In A.E. Russon and D.R. Begun (Eds.), The Evolution of Thought: Evolutionary Origins of Great Ape Intelligence (pp. 31-44). Cambridge: Cambridge University Press. <br><br>
 de la Torre, I. (2004). Omo revisited: Evaluating the technological skills of Pliocene hominids. Current Anthropology 45, 439-465. DOI: 10.1086/422079<br><br>
@@ -968,12 +971,12 @@ Wynn, T., Hernandez-Aguilar, R.A., Marchant, L.F., McGrew, W.C. (2011). “An ap
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Kenya
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 2 Ma
                                   
                                   </span>
@@ -983,7 +986,7 @@ Wynn, T., Hernandez-Aguilar, R.A., Marchant, L.F., McGrew, W.C. (2011). “An ap
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              Numerous, relatively complete carcasses of small hoofed animals were found at Kanjera South, where they had been butchered with Oldowan stone tools. These tools were made from raw materials that were transported over 10 km. This site represents the earliest evidence for persistent carnivory by hominins in the archaeological record.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -992,18 +995,18 @@ Wynn, T., Hernandez-Aguilar, R.A., Marchant, L.F., McGrew, W.C. (2011). “An ap
 
 
                               <div id="KanjeraSouthDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
                                 Possible experts to contact include (general discussion of importance of Kanjera to cognitive evolution) J.V. Ferraro, T.W. Plummer, B.L Pobiner, J.S. Oliver, L.C. Bishop, D.R. Braun, P.W. Ditchfield, J.W. Seamann III, K.M. Bineetti, J.W. Seaman Jr., F. Hertel, R. Potts, L.C. Bishop
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 Humans are not the only great apes to eat meat, but humans are the only great apes that persistently consume the flesh of other animals. Regular meat consumption is thought to be a leading reason for why the human brain was able to expand to such a large size over time. Primates that rely on complex ways of obtaining food tend to require enhanced cognitive skills, and this would have been especially the case for early humans as they exploited a wide variety of food items on the grasslands. When we find evidence of meat consumption in the early archaeological record, this also brings up the question of whether hominins were acquiring the meat by scavenging or by hunting. It is usually assumed by researchers that hunting requires increased cooperation among individuals relative to scavenging. The evidence at Kanjera South is suggestive of cooperative hunting, which may mean that this population of early Homo had enhanced social cognition skills, such as imitation, gaze following, and perhaps an enhanced communication system. The long distance transport of rocks to make tools also indicates foresight and planning that surpasses that of modern apes.
 
 </div>
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Ferraro, J.V., Plummer, T.W., Pobiner, B.L., Oliver, J.S., Bishop, L.C., Braun, D.R., Ditchfield, P.W., Seaman III, J.W., Binetti, K.M., Seaman Jr, J.W., Hertel, F., Potts, R. (2013). Earliest archaeological evidence of persistent hominin carnivory. PLOS ONE 8, e62174. doi:10.1371/journal.pone.0062174<br><br>
 Plummer, T.W., Bishop, L.C. (2016). Oldowan hominin behavior and ecology at Kanjera South, Kenya. Journal of Anthropological Sciences 94, 1-12. doi 10.4436/jass.94033<br><br>
@@ -1034,12 +1037,12 @@ Schuppli, C., Graber, S.M., Isler, K., van Schaik, C.P. (2016). Life history, co
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Republic of Georgia
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 1.85-1.78 Ma
                                   
                                   </span>
@@ -1049,7 +1052,7 @@ Schuppli, C., Graber, S.M., Isler, K., van Schaik, C.P. (2016). Life history, co
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              Dmanisi represents the earliest known migration of early humans outside of Africa. The hominins at this site were small in stature and brain size and made Oldowan stone tools.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1058,18 +1061,18 @@ Schuppli, C., Graber, S.M., Isler, K., van Schaik, C.P. (2016). Life history, co
 
 
                                 <div id="DmanisiDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
                                Possible experts to contact include (general discussion of importance of Dmanisi to cognitive evolution) R. Ferring, O. Olms, J. Agusti, F. Berna, M. Nioradze, T. Shelia, M. Tappen, A. Vekua, D. Zhvania, Lordkipanidze, D., F. Cuartero, D. Martin, G. Bidzinashuili, M. Roca, M. Rubio, F.L. Coolidge, T. Wynn
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 Homo erectus is the first species of hominin to migrate out of Africa. Modern human-like body proportions, hunting behavior, and long-distance travel for raw materials--these are all indicators of a new adaptive strategy by H. erectus, one that required large home ranges. This new adaptive strategy may have selected for enhanced spatial cognition and long-term memory.
 </div>
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Baena, J., Lordkipanidze, D., Cuartero, F., Ferring, R., Zhvania, D., Martin, D., Shelia, T., Bidzinashuili, G., Roca, M., Rubio, D. (2010). Technical and technological complexity in the beginning: The study of Dmanisi lithic assemblage. Quaternary International 223-224, 45-53. doi:10.1016/j.quaint.2010.01.019<br><br>
 Coolidge, F.L., Wynn, T. (2009). The Rise of Homo sapiens: The Evolution of Modern Thinking. Oxford: Wiley-Blackwell. <br><br>
@@ -1107,12 +1110,12 @@ Ferring, R., Olms, O., Agusti, J., Berna, F., Nioradze, M., Shelia, T., Tappen, 
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : West Turkana, Kenya
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 1.76 Ma
                                   
                                   </span>
@@ -1122,7 +1125,7 @@ Ferring, R., Olms, O., Agusti, J., Berna, F., Nioradze, M., Shelia, T., Tappen, 
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              After more than 800,000 years of making simple Oldowan flakes, there was a shift toward making large cutting tools and bifacial handaxes, which are characteristic of the Acheulian industry. The earliest dated Acheulian stone tools were discovered by Christopher Lepre (Rutgers University) and his team at the site of Kokiselei 4 and date to 1.76 Ma. Other early occurrences of the Acheulian industry have also been found at Konso, Ethiopia, dated to 1.75 Ma, and FLK West, Olduvai Gorge, Tanzania, dated to 1.7 Ma.  This early appearance of Acheulian tools coincides with an increase in brain size in early Homo. <br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1131,21 +1134,21 @@ Ferring, R., Olms, O., Agusti, J., Berna, F., Nioradze, M., Shelia, T., Tappen, 
 
 
                              <div id="Kokiselei4Details" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
                             Possible experts to contact include (pro planned shape) Tom Wynn (con planned shape) Shannon McPherron, Iain Davidson, William Noble, Mark Moore
 
 
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 The appearance of the Acheulian industry is thought to mark a significant transition in the evolution of hominin cognition and perhaps language because of the apparent complexity of these tools relative to earlier stone tool industries. For example, some researchers have suggested that the transmission of skills associated with the Acheulian industry from one individual to another would require complex imitation and shared intentionality. The general symmetry seen across handaxes has prompted some scholars to propose that Acheulian hominins were capable of planning into the future and holding mental representations of the intended end goal shape. Working memory and hierarchical cognition may have also been important to Acheulian hominins as they held in mind the multiple subgoals of handaxe manufacture. Other scholars, however, are not convinced that the end shape of handaxes was intentional on the toolmaker’s part, which could call into question some of the cognitive features that have been attributed to H. erectus if this turns out to be a valid critique.
 
 </div>
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Arbib, M.A. (2011). From mirror neurons to complex imitation in the evolution of language and tool use. Annual Review of Anthropology 40, 257-273.
 <br><br>
@@ -1187,12 +1190,12 @@ Shipton, C. (2010). Imitation and shared intentionality in the Acheulean. Cambri
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Java, Indonesia
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 1.6 Ma
                                   
                                   </span>
@@ -1202,7 +1205,7 @@ Shipton, C. (2010). Imitation and shared intentionality in the Acheulean. Cambri
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
                               Sangiran is the earliest dated hominin site in Southeast Asia. When H. erectus arrived to this region, they were probably able to walk over land to the now island of Java because of lower sea levels. Changing sea levels over the next million years may have isolated this population from other hominins in Asia. Stone tools from this time period are rare in Java, which means that H. erectus likely relied on perishable materials like shells and bamboo for tools.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1211,13 +1214,13 @@ Shipton, C. (2010). Imitation and shared intentionality in the Acheulean. Cambri
 
 
                                <div id="SangiranDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
                            Possible experts to contact include (general discussion of early Sundaland H. erectus cognition) Russ Ciochon, Art Bettis, Zaim
 
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 We cannot automatically assume that H. erectus on Java lacked the same cognitive skills as their African counterparts because they did not make Acheulian stone tools. If they were exploiting novel materials like shells and bamboo for tools, this points to a certain cognitive flexibility and inventiveness that allowed them to imagine potential uses for natural materials they may have never before seen. This also illustrates that these early technologies were culturally transmitted, which means that knowledge of how to make a certain tool type could be lost to a population, unless reinvented.
 
 
@@ -1225,7 +1228,7 @@ We cannot automatically assume that H. erectus on Java lacked the same cognitive
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Arbib, M.A. (2011). From mirror neurons to complex imitation in the evolution of language and tool use. Annual Review of Anthropology 40, 257-273.
 <br><br>
@@ -1257,12 +1260,12 @@ Boaz, N.T., Ciochon, R.L. (2004). Dragon Bone Hill: An Ice-Age Saga of Homo erec
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Atapuerca, Spain
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 1.2 Ma
                                   
                                   </span>
@@ -1272,7 +1275,7 @@ Boaz, N.T., Ciochon, R.L. (2004). Dragon Bone Hill: An Ice-Age Saga of Homo erec
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              Sima del Elefante is a cave site with the earliest dated hominin fossils and stone artifacts in western Europe. The lithic assemblage is characterized by low technical investment, and the stones were transported over a very short distance. <br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1280,13 +1283,13 @@ Boaz, N.T., Ciochon, R.L. (2004). Dragon Bone Hill: An Ice-Age Saga of Homo erec
                             </div>
 
                                 <div id="SimadelElefanteDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
                       Possible experts to contact include (general discussion of what subsistence strategies might suggest about cognition) R. Huguet, P. Saladie, I. Caceres, C. Diez, J. Rosell, J.L. Arsuaga
 
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 The seasonality of western Europe and the large number of carnivorous mammals in the region may have been challenging for hominins. This could explain the low incidence of hominin sites in this region during the early Pleistocene compared to the Middle Pleistocene. Resources in the vicinity of the cave were abundant, however, and fossil evidence indicates that hominins had primary access to prey, either by hunting or scavenging. The hominins at this site probably possessed similar cognitive skills to African and Asian H. erectus.   
 
 
@@ -1296,7 +1299,7 @@ The seasonality of western Europe and the large number of carnivorous mammals in
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Arbib, M.A. (2011). From mirror neurons to complex imitation in the evolution of language and tool use. Annual Review of Anthropology 40, 257-273.
 <br><br>
@@ -1332,12 +1335,12 @@ de Lombera-Hermida, A., Bargallo, A., Terradillos-Bernal, M., Huguet, R., Vallve
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Flores, Indonesia
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 1.02 Ma
                                   
                                   </span>
@@ -1347,7 +1350,7 @@ de Lombera-Hermida, A., Bargallo, A., Terradillos-Bernal, M., Huguet, R., Vallve
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              Stone tools at this site indicate an early occupation of the island of Flores by early Homo. While we know that fossil humans could reach some Indonesian islands, such as Java, by foot because of low sea levels at the time, Flores is a different story. Located east of the Wallace Line, this island could have only been reached by sea crossing. Occupation of this island may therefore represent the earliest example of manmade watercraft. <br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1356,13 +1359,13 @@ de Lombera-Hermida, A., Bargallo, A., Terradillos-Bernal, M., Huguet, R., Vallve
 
 
                                         <div id="WoloSegeDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
                     Possible experts to contact include (pro manmade watercraft) R.G. Bednarik, M.J. Moorwood, P.B. O’Sullivan, F. Aziz, A. Raza (con manmade watercraft) J.M.B. Smith
 
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 If the first hominins on Flores arrived to the island by traveling on manmade watercraft, this would have important implications for their cognitive and linguistic skills. For example, several researchers have argued that building a sea vessel would require future planning, detailed social collaboration, and language. Only tenuous archaeological evidence for symbolism exists this early in time, however, casting some doubt on the idea of manmade watercraft. Other primates, such as orangutans and gibbons, also inhabit Indonesian islands east of the Wallace line, so it could be more likely that, like other primates, hominins arrived at Flores by accident on natural rafts that got swept out to sea.
 
 
@@ -1372,7 +1375,7 @@ If the first hominins on Flores arrived to the island by traveling on manmade wa
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Arbib, M.A. (2011). From mirror neurons to complex imitation in the evolution of language and tool use. Annual Review of Anthropology 40, 257-273.
 <br><br>
@@ -1411,12 +1414,12 @@ Noble, Davidson, I. (1992).
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : South Africa
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 1 Ma
                                   
                                   </span>
@@ -1426,7 +1429,7 @@ Noble, Davidson, I. (1992).
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              A team of archaeologists returned to Wonderwerk Cave to examine the evidence for Peter Beaumont’s claim for control of fire as early as 1.7 Ma. The hearthlike feature that Beaumont had reported on turned out to be a natural feature and not manmade. The team made an important new discovery, however--evidence for burning of plant and animal remains in a younger layer dated to 1 Ma. These materials were burned within the cave at a temperature of 450-700° C, the temperature of a small campfire. This is the earliest evidence for controlled fire by H. erectus.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1434,13 +1437,13 @@ Noble, Davidson, I. (1992).
                             </div>
 
            <div id="WonderwerkCaveDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
                    Possible experts to contact include (pro early control of fire) F. Berna, P. Goldberg, L.K. Horwitz, J. Bring, S. Holt, M. Bamford, M. Chazan (con early control of fire) D.M. Sandgathe, H.L. Dibble, P. Goldberg, S.P. McPherron, A. Turq, L. Niven, J. Hodgkins
 
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 If hominins were controlling fire as early as 1 Ma, this would have several implications for the cognition of H. erectus. The coordination of multiple individuals was likely necessary for the production and maintenance of a fire, which suggests that H. erectus was capable of joint attention, understanding the intentions of others, and enhanced communication. The multiple steps involved in building a fire would also likely require an extended working memory and future planning, as well as the ability to inhibit behaviors in order to keep the fire from going out.
 
 
@@ -1450,7 +1453,7 @@ If hominins were controlling fire as early as 1 Ma, this would have several impl
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Arbib, M.A. (2011). From mirror neurons to complex imitation in the evolution of language and tool use. Annual Review of Anthropology 40, 257-273.
 <br><br>
@@ -1488,12 +1491,12 @@ Twomey, T. (2013). The cognitive implications of controlled fire use by early hu
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Kenya
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 900 Ka
                                   
                                   </span>
@@ -1503,7 +1506,7 @@ Twomey, T. (2013). The cognitive implications of controlled fire use by early hu
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
                               Olorgesailie is an unusual site because of the thousands of handaxes that have been found there. Pigments older than 340,000 years have also been discovered at the site.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1512,21 +1515,21 @@ Twomey, T. (2013). The cognitive implications of controlled fire use by early hu
 
 
   <div id="OlorgesailieDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
                 Possible experts to contact include (pro throwing) W.H. Calvin, David Samson (con throwing) John Whittaker, Grant McCall
 
 
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 The large quantity of handaxes at Olorgesailie might indicate that this site held some symbolic or indexical significance to the hominins who frequented it. In other words, its place on the landscape may have had some cultural significance to H. erectus. There have also been a number of hypotheses put forward for the function of these handaxes. In 1981, Eileen O’Brien proposed that the Olorgesailie handaxes were used as projectile weapons. William Calvin expanded on this idea, stating that the symmetry and flatness of handaxes was not aesthetic but rather played a more pragmatic role. He argued that they were shaped for accurate throwing. Hurling handaxes may have produced a strong selection pressure for neurons that helped control timing of actions. This may have paved the way for language to evolve, according to Calvin. Experimental research has demonstrated, however, that replicative handaxes are difficult to throw because of their sharp edges and they endure impact damage when thrown, which we do not see on handaxes from the archaeological record. 
 
 </div>
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Arbib, M.A. (2011). From mirror neurons to complex imitation in the evolution of language and tool use. Annual Review of Anthropology 40, 257-273.
 <br><br>
@@ -1564,12 +1567,12 @@ Whittaker, J.C., McCall, G. (2001). Handaxe-hurling hominids: An unlikely story.
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : South Africa
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 550-500 Ka
                                   
                                   </span>
@@ -1579,7 +1582,7 @@ Whittaker, J.C., McCall, G. (2001). Handaxe-hurling hominids: An unlikely story.
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              There have been several important discoveries at the site of Kathu Pan. The lithic assemblage at the site is one of the earliest occurrences of blade technology. They used hard hammer percussion to strike off blades from extensively prepared cores. Some of these blades were then retouched to make them into points. There are also signs on the stone points that they were hafted to a shaft and functioned as spear tips, making this the earliest evidence for hafted multicomponent tools.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1587,13 +1590,13 @@ Whittaker, J.C., McCall, G. (2001). Handaxe-hurling hominids: An unlikely story.
                             </div>
 
 <div id="KathuPanDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
               Possible experts to contact include (general description of cognition needed for composite tool) Stanley Ambrose, Lyn Wadley, 
 
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 Blade technology has generally been considered a feature of modern human behavior. The process of preparing a core to make blade tools has been likened to the combination of meaningless phonemes to form a meaningful word or statement. Composite tools are multicomponent tools. The process of making a composite tool has been argued to require complex, future planning. The ability to haft a stone point to a shaft utilizes mental rotation. To carry out this operation, the hominins at this site would have needed an enhanced working memory and attention span and needed to be capable of complex reasoning. Some researchers have suggested that making blades and hafting spear points were such complex skills to learn that the transmission of these skills would have required language.
 
 
@@ -1601,7 +1604,7 @@ Blade technology has generally been considered a feature of modern human behavio
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Ambrose, S.H. (2010). Coevolution of composite-tool technology, constructive memory, and language: Implications for the evolution of modern human behavior. Current Anthropology 51, S135-S147. DOI: 10.1086/650296</br></br>
 Porat, N., Chazan, M., Grün, R., Aubert, M., Eisenmann, V., Horwitz, L.K. (2010). New radiometric ages for the Fauresmith industry from Kathu Pan, southern Africa: Implications for the Earlier to Middle Stone Age transition. Journal of Archaeological Science 37, 269-283. http://dx.doi.org/10.1016/j.jas.2009.09.038</br></br>
@@ -1634,12 +1637,12 @@ Wilkins, J., Schoville, B.J., Brown, K.S., Chazan, M. (2012). Evidence for early
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : West Sussex, England
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 500 Ka
                                   
                                   </span>
@@ -1649,7 +1652,7 @@ Wilkins, J., Schoville, B.J., Brown, K.S., Chazan, M. (2012). Evidence for early
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              Boxgrove is a Lower Paleolithic site in England that consists of refined Acheulian handaxe tools and butchered animal bones, all of which were found in situ, or in an undisturbed context. The emphasis of the hominins at the site seemed to be on handaxes rather than flakes, as the flakes show no signs of retouch and remain where they fell during handaxe production. The handaxes were reduced almost completely with a soft hammer, such as an antler, rather than with a hard hammer, and the toolmakers prepared platforms on the bifaces to more effectively control the size and shape of the flakes they removed.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1657,12 +1660,12 @@ Wilkins, J., Schoville, B.J., Brown, K.S., Chazan, M. (2012). Evidence for early
                             </div>
 
                             <div id="BoxgroveDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
              Possible experts to contact include (pro handaxe intended tool) Dietrich Stout, Tom Wynn (con handaxe intended tool) Mark Moore
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 There has been some debate over whether handaxes were highly-designed, intended tools or the unintentional result of creating large flakes. The handaxes at Boxgrove support the hypothesis that the shape and form of the biface were intentional on the part of the toolmaker. Symmetry and overall aesthetics of the handaxe were important to the toolmaker, while the flakes were unused and discarded. As intended tools, the level of skill required to make the Boxgrove handaxes would have had specific cognitive demands, including hierarchical behavior organization and enhanced planning. Because of the difficulty of making refined handaxes, it is possible that this skill would have required complex imitation, joint attention, and pedagogy for successful transmission of the skill. 
 
 
@@ -1670,7 +1673,7 @@ There has been some debate over whether handaxes were highly-designed, intended 
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Bergman, C.A., Roberts, M.B. (1988). Flaking technology at the Acheulean site of Boxgrove, West Sussex (England). Revue Archéologique de Picardie 1, 105-113. <br><br>
 Mithen, S. (2003). Handaxes: The first aesthetic artefacts. In E. Voland, K. Grammer (Eds.), Evolutionary Aesthetics (pp. 261-275). Springer Berlin Heidelberg.<br><br>
@@ -1706,12 +1709,12 @@ Stout, D., Apel, J., Commander, J., Roberts, M. (2014). Late Acheulean technolog
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Java, Indonesia
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 500 Ka
                                   
                                   </span>
@@ -1721,7 +1724,7 @@ Stout, D., Apel, J., Commander, J., Roberts, M. (2014). Late Acheulean technolog
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              In a fossil freshwater shell assemblage originally collected by Eugène Dubois in 1891, a team of researchers rediscovered a shell with a geometric design engraved into it. The sediment within the shells date the assemblage to 500 Ka, which means that the abstract design was likely made by H. erectus. This is currently the earliest evidence for abstract engraving in the archaeological record.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1730,11 +1733,11 @@ Stout, D., Apel, J., Commander, J., Roberts, M. (2014). Late Acheulean technolog
 
 
    <div id="TrinilDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
             Possible experts to contact include (general discussion of what shell implies about cognition) J.C.A. Joordens, F. d’Errico, F.P. Wesselingh, S. Munro, J. de Vos, J. Wallinga, C. Ankjærgaard, T. Reimann, J.R. Wijbrans, K.F. Kuiper, H.J. Mücher, H. Coqueugniot, V. Prie, I. Joosten, B. van Os, A.S. Schulp, M. Panuel, V. van der Haas, W. Lustenhouwer, J.G. Reijmer, W. Roebroeks
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 It is usually assumed that modern cognition first originated in Africa, but the discovery of an engraved shell in Indonesia indicates that the story of human cognitive evolution is more complicated than this. The shellfish at this site were a meat source for H. erectus. Their shells were also used as tools and apparently as a canvas for abstract expression. The ability to imagine multiple functions for the same item reflects cognitive flexibility. There is some evidence for cognitive flexibility prior to 500 Ka with the appearance of multipurpose Acheulian handaxes in Africa, and this Trinil shell assemblage is likely an extension of this cognitive skill. Purposeful etching of a geometric design into a shell implies that H. erectus was capable of fine motor control of the hands, abstract thinking, and possibly symbolism, key components of language and modern cognition.
 
 
@@ -1743,7 +1746,7 @@ It is usually assumed that modern cognition first originated in Africa, but the 
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Joordens, J.C.A., d’Errico, F., Wesselingh, F.P., Munro, S., de Vos, J., Wallinga, J., Ankjærgaard, C., Reimann, T., Wijbrans, J.R., Kuiper, K.F., Mücher, H.J., Coqueugniot, H., Prie, V., Joosten, I., van Os, B., Schulp, A.S., Panuel, M., van der Haas, V., Lustenhouwer, W., Reijmer, JJ.G., Roebroeks, W. (2015). Homo erectus at Trinil on Java used shells for tool production and engraving. Nature 518, 228-231. doi:10.1038/nature13962
 
@@ -1763,20 +1766,20 @@ Joordens, J.C.A., d’Errico, F., Wesselingh, F.P., Munro, S., de Vos, J., Walli
                          <div class="col-md-12" style="margin-bottom:10%;" id="Simadeloshuesos">
 
 
-                            <div class="cursor:pointer;hcLogoText discoveryName" style="width:auto;" alt="Simadeloshuesos"> <a> Sima de los huesos </a></div>
+                            <div class="hcLogoText discoveryName" style="width:auto;" alt="Simadeloshuesos"> <a> Sima de los huesos </a></div>
 
-                            <div style="background-image:url('hcimages/prehistoricArchaeology/PrehistArch_SimadelosHuesos.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Simadeloshuesos"></div> 
+                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_SimadelosHuesos.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Simadeloshuesos"></div> 
                             
                             <div style="margin-top:1%;background-color:#2A5769;height:3em;">
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Atapuerca, Spain
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 430 Ka
                                   
                                   </span>
@@ -1786,7 +1789,7 @@ Joordens, J.C.A., d’Errico, F., Wesselingh, F.P., Munro, S., de Vos, J., Walli
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              The fossil bones of at least 28 archaic Neandertals were discovered in a pit of the Cueva Mayor-Cueva del Silo cave system of the Sierra de Atapuerca, along with one quartzite handaxe with no accompanying flake debris. Some researchers have suggested that the bodies of these individuals were purposely thrown down the 13 m shaft post-mortem by other members of their group. This has been a controversial claim, however. Other researchers argue that the presence of other animal remains in the pit in addition to human remains means that animals and hominins alike fell into the pit by accident and then could not get back out. The hominin fossils were all found in the same stratigraphic layer, while other animal remains continued to be deposited after this event. If the hominins at this site were intentionally thrown into the pit, then this would be the earliest evidence of human burial.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1795,12 +1798,12 @@ Joordens, J.C.A., d’Errico, F., Wesselingh, F.P., Munro, S., de Vos, J., Walli
 
 
                              <div id="SimadeloshuesosDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
             Possible experts to contact include (pro burial) E. Carbonell, M. Mosquera, A. Aranburu, J.L. Arsuaga, N. Sala, N. Sala, I. Martinez, A. Gracia-Tellez (con burial) Joao Zilhao
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 If the hominins at this site were intentionally thrown into the pit, this would not automatically mean that the act was symbolic or that the group they belonged to believed in an afterlife. There is very little evidence for symbolic thought this early in time, and the first true burials did not occur for another 200,000 years. Disposal of dead bodies in the pit may have been for practical reasons, such as keeping large carnivores away from camp, for example. Even if the reason behind these individuals’ interment was not symbolic, there are still some important implications to be made about hominin cognition at this time. The deliberate disposal of their dead implies that these hominins were capable of problem-solving and planning. They also had a good understanding of their place within their environment and how to manipulate the environment to a certain extent.
 
 
@@ -1809,7 +1812,7 @@ If the hominins at this site were intentionally thrown into the pit, this would 
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Aranburu, A., Arsuaga, J.L., Sala, N. (2015). The stratigraphy of the Sima de los Huesos (Atapuerca, Spain) and implications for the origin of the fossil hominin accumulation. Quaternary International 1-17.  DOI: 10.1016/j.quaint.2015.02.044</br></br>
 Arsuaga, J.L., Martínez, I., Gracia, A., Carretero, J.M., Lorenzo, C., García, N., Ortega, A.I. (1997). Sima de los Huesos (Sierra de Atapuerca, Spain): The site. Journal of Human Evolution 33, 109-127. doi:10.1006/jhev.1997.0132</br></br>
@@ -1840,12 +1843,12 @@ Sala, N., Arsuaga, J.L., Martínez, I., Gracia-Téllez, A. (2015). Breakage patt
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Nice, France
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 400 Ka
                                   
                                   </span>
@@ -1855,7 +1858,7 @@ Sala, N., Arsuaga, J.L., Martínez, I., Gracia-Téllez, A. (2015). Breakage patt
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              n 1966, archaeologist Henry de Lumley discovered a habitation site in Nice where archaic humans lived along a prehistoric beach around 400 Ka. Here they made Acheulian stone tools and constructed the earliest dated, open-air living structures. de Lumley believed that the huts were probably made out of animal hides on poles, held up by low walls of stone. Within each structure he found ash that suggests early domestication of fire. These claims have been critiqued by Paola Villa, who argued that the position of the stones at the site was caused by natural processes.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1864,19 +1867,19 @@ Sala, N., Arsuaga, J.L., Martínez, I., Gracia-Téllez, A. (2015). Breakage patt
 
 
                               <div id="TerraAmataDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
           Possible experts to contact include (pro structures) Henry de Lumley, C. Falgueres, V. Michel, Y. Yokoyama, G. Shen, G. Pollet, B. Roussel, P. Valensi (con structures) Paola Villa
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 The structures at Terra Amata were large enough to shelter many individuals, and the hearth would have formed the center of attention and social activity. A behavior as complex as building large structures out of multiple materials would have required a high degree of cooperation, problem-solving, and planning.
 
 </div>
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 de Lumley, H. (2006). II y a 400 000 ans: La domestication du feu, un formidable moteur de’hominisation. Comptes Rendus Palevol 5, 149-154.
 de Lumley, H. (2007). La Grande Histoire des Premiers Hommes Européens. Odile Davis.</br></br>
@@ -1905,12 +1908,12 @@ Villa, P. (1983). Terra Amata and the Middle Pleistocene archaeological record o
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Italy
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 200 Ka
                                   
                                   </span>
@@ -1920,7 +1923,7 @@ Villa, P. (1983). Terra Amata and the Middle Pleistocene archaeological record o
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
                               The process of hafting a point onto a shaft was likely developed independently several times in prehistory. At Campitello, however, Neandertals developed the first known synthetic material, an adhesive called pitch, which they made by heating birch bark in an oxygen-free environment at around 650° F for several hours. This dhesive improved the durability of their hafted tools and allowed for a stronger bond between the point and the shaft.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1929,17 +1932,17 @@ Villa, P. (1983). Terra Amata and the Middle Pleistocene archaeological record o
 
 
                                   <div id="CampitelloDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
      Possible experts to contact include (pro enhanced working memory) Wil Roebroeks, Rebecca Sykes (con enhanced working memory) Tom Wynn, Frederick Cooli
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 The process of making pitch would have required Neandertals to have an in-depth understanding of pyrotechnology, enhanced working memory, the ability to conceptualize the past and future, flexibly switch between tasks, as well as innovate. Neandertals also would have needed a complex communication system to coordinate this activity. Their ability to make pitch as one component of a composite tool is currently the best evidence we have that Neandertals’ cognition rivaled that of early modern humans evolving in Africa. 
 </div>
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Mazza, P.P.A, Fabio M., Benedetto, S., Magi, M., Colombini, M.P., Giachi, G., Landucci, F., Lemorini, C., Modugno, F., Ribechini, E. (2006). A new Palaeolithic discovery: Tar-hafted stone tools in a European mid-Pleistocene bone-bearing bed. Journal of Archaeological Science 33, 1310-1318. http://dx.doi.org/10.1016/j.jas.2006.01.006</br></br>
 Roebroeks, W., Soressi, M. (2016). Neandertals revised. PNAS 113, 6372-6379. doi: 10.1073/pnas.1521269113</br></br>
@@ -1967,12 +1970,12 @@ Wynn, T., Coolidge, F.L. (2004). The expert Neandertal mind. Journal of Human Ev
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : South Africa
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 164 Ka
                                   
                                   </span>
@@ -1982,7 +1985,7 @@ Wynn, T., Coolidge, F.L. (2004). The expert Neandertal mind. Journal of Human Ev
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
                               Heat treating certain types of stone, such as silcrete, improves the stone’s flaking abilities. Heat treating stone involves placing unmodified stone into a very hot fire. With increased hardness, these stones are more likely to fracture in the way a toolmaker intends, instead of breaking along internal imperfections in the structure of the stone. This practice became widespread by 72,000 years ago, but the first evidence of this behavior is found at Pinnacle Point 164,000 years ago.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1991,19 +1994,19 @@ Wynn, T., Coolidge, F.L. (2004). The expert Neandertal mind. Journal of Human Ev
 
 
                                <div id="PinnaclePointDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
    Possible experts to contact include (pro complex cognition) Kyle Brown, Curtis Marean, Andy Herries, Zenobia Jacobs, Chantal Tribolo, David Braun, David Roberts, Michael Meyer, Jocelyn Bernatchez (con complex cognition) Patrick Schmidt, Guillaume Porraz, Aneta Slodczyk, Ludovic Bellot-gurlet, William Archer, Christopher Miller
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 Some researchers have suggested that heat-treating stone for its improved flaking properties signals complex cognition. These early humans would have required sophisticated knowledge of pyrotechnology and the principles of applying heat to different materials. Indeed, heat treating flint is a complicated and time-consuming process that requires the creation and maintenance of precise conditions, but the material found at Pinnacle Point is silcrete. The process of heat treating silcrete may not have been as involved as heat treating flint. It could have been easily performed on fires used for cooking or other activities.
 
 </div>
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Brown, K.S., Marean, C.W., Herries, A.I.R., Jacobs, Z., Tribolo, C., Braun, D., Roberts, D.L., Meyer, M.C., Bernatchez, J. (2009). Fire as an engineering tool of early modern humans. Science 325, 859-862. DOI: 10.1126/science.1175028<br><br>
 Schmidt, P., Porraz, G., Slodczyk, A., Bellot-gurlet, L., Archer, W., Miller, C.E. (2013). Heat treatment in the South African Middle Stone Age: Temperature induced transformations of silcrete and their technological implications. Journal of Archaeological Science 40, 3519-3531. http://dx.doi.org/10.1016/j.jas.2012.10.016
@@ -2033,12 +2036,12 @@ Schmidt, P., Porraz, G., Slodczyk, A., Bellot-gurlet, L., Archer, W., Miller, C.
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Israel
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 135-100 Ka
                                   
                                   </span>
@@ -2048,7 +2051,7 @@ Schmidt, P., Porraz, G., Slodczyk, A., Bellot-gurlet, L., Archer, W., Miller, C.
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
                               The rock shelter site known as Skhul was excavated in the 1930s. More recently, a research team discovered shells in the collections that had been recovered from the site. Skhul lies 3.5 km away from the Mediterranean seashore, which means that these shells were purposely selected and transported to the cave by premodern humans. Moreover, they have human-made perforations, and the edges of these perforations are rounded, indicating that the shells were worn on a string as beads. They were also stained with ochre. These shells currently represent the earliest evidence for personal ornamentation using beads. <br>
                            <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -2057,19 +2060,19 @@ Schmidt, P., Porraz, G., Slodczyk, A., Bellot-gurlet, L., Archer, W., Miller, C.
 
 
                               <div id="EsSkhulCaveDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
    Possible experts to contact include (pro beads as evidence of evolving cognition) F. D’Errico, M. Vanhaeren, S.L. Kuhn, M.C. Stiner (con beads as evidence of evolving cognition) Lambros Malafouris
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 Many researchers agree that hominins were more than likely capable of symbolic behavior if they were wearing beads as ornamentation. In this case, their bodies became a medium for communication. This implies that these hominins had a self-awareness akin to that of modern humans. Their cognition was evolving along with changing social and demographic conditions in an ever more complex social landscape. 
 
 </div>
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 D’Errico, F., Vanhaeren, M. (2009). Earliest personal ornaments and their significance for the origin of language debate. In R. Botha, C. Knight (Eds.), The Cradle of Language (pp. 16-40). Oxford: Oxford University Press. ISBN 0191567671</br></br>
 Kuhn, S.L., Stiner, M.C. (2007). Paleolithic ornaments: Implications for cognition, demography and identity. Diogene 54, 40-48. doi: 10.1177/0392192107076870</br></br>
@@ -2099,12 +2102,12 @@ Wadley, L. (2015). Those marvelous millennia: The Middle Stone Age of Southern A
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : Croatia
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 130 Ka
                                   
                                   </span>
@@ -2114,7 +2117,7 @@ Wadley, L. (2015). Those marvelous millennia: The Middle Stone Age of Southern A
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              Symbolic behavior like personal ornamentation through the use of jewelry has long been considered by researchers as a hallmark of modern human cognition. However, this site shows that personal ornamentation may have been independently developed by Neanderthals earlier than previously thought. Researchers have identified cut marks and wear marks on several eagle talons. The wear marks on the talons are consistent with the expected wear marks that would develop if they were strung together on a bracelet or necklace. Krapina also has the distinction of being one of the oldest, undisputed burial sites in the world. <br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -2122,21 +2125,21 @@ Wadley, L. (2015). Those marvelous millennia: The Middle Stone Age of Southern A
                             </div>
 
                                           <div id="KrapinaDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
    Possible experts to contact include (pro Neandertal symbolic behavior) D. Radovčić, A.O. Sršen, J. Radovčić, D.W. Frayer (con Neandertal symbolic behavior) Ian Tattersall
 
 
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 Symbolic items are rarely discovered at Neandertal sites. When modern human-like behaviors are associated with Neandertal remains, it is common for researchers to argue that Neandertals came into contact with Homo sapiens and imitated their behaviors. The early dates at Krapina exclude this possibility, however, which means that Neandertals were making jewelry long before modern humans arrived in Europe. If they were catching the eagles to make the talon pendants, this would have required planning. And if they wore the talons as jewelry, this implies that they had a well-developed theory of mind, a sense of self-awareness, and possibly a symbolic communication system.
 
 </div>
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Radovčić, D., Sršen, A.O., Radovčić, J., Frayer, D.W. (2015). Evidence for Neandertal jewelry: 
 Modified white-tailed eagle claws at Krapina. PLoS ONE 10, e0119802. doi:10.1371/journal.pone.0119802<br><br>
@@ -2164,12 +2167,12 @@ Tattersall, I. (2016). Language origins: An evolutionary framework. Topoi 2016, 
 
                               
                                
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;">
                                     LOCATION : South Africa
                                  
                                   </span>
 
-                                  <span style="font-size: 1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
+                                  <span style="font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;">
                                      DATED TO : 100-75 Ka
                                   
                                   </span>
@@ -2179,7 +2182,7 @@ Tattersall, I. (2016). Language origins: An evolutionary framework. Topoi 2016, 
                             </div>
 
                             <div>
-                            <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
                              Like the presence of an early bone tool and shell bead industry. What really makes it an important site is the engraved ochre found there, which is the earliest evidence of art in the archaeological record. The engravings appear to have been made with the point of a stone tool. Many researchers consider this to be evidence of symbolic or abstract thought. <br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -2188,21 +2191,21 @@ Tattersall, I. (2016). Language origins: An evolutionary framework. Topoi 2016, 
 
 
                                              <div id="BlombosCaveDetails" style="display:none;">
-                              <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">Expert Opinions</span></br>
+                              <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><!--<span style="font-style:italic">Expert Opinions</span><br>-->
    This quote has some different viewpoints worth exploring:
 “Material evidence supporting claims for symbolically mediated behaviour prior to 40 ka from African sites is, however, rare. In part this can be attributed to difficulties in interpreting early ‘symbolic’ objects. Marks or patterns on artefacts interpreted by some as symbolic (e.g., Knight et al., 1995; d’Errico et al., 2001; Henshilwood and Dubreuil, 2009) are argued by others to be natural or not intentional (e.g., Wadley, 2001; Klein and Edgar, 2002). Even when intent is accepted, some authors discount the significance of the claims on the grounds that they do not constitute systematic, continuous, and patterned symbolic behaviour (e.g., Chase and Dibble, 1987; Noble and Davidson, 1996: 210; Klein, 1999; Wadley, 2001; Klein and Edgar, 2002); the latter parameters are regarded, by some, as essential to any claim for behavioural modernity (Henshilwood et al., 2009).”
 
 
     </div>  
 
- <div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
+ <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
 Symbolic thought and everything that goes along with that, behavioral modernity. I think some people also argue that art can relate to religion, group identity, and belief but that seems like a stretch especially for this kind of art. I could see how that would be more relevant for discussions of cave art.
 
 </div>
 
 
 
-<div style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
+<div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Middle Stone Age/Middle Paleolithic
 Berekhat Ram, Israel (230 Ka): possibly earliest Venus
@@ -2267,7 +2270,7 @@ GnJh-03 in the Kapthurin formation of Kenya (285 Ka): earliest known use of red 
 
                <div class="col-md-11 noPadding">
                 <div id="locationCatBar" style="margin-top:1%;height:3em;background-color:#2A5769;margin-bottom:1%;cursor:pointer;"><div style="font-family:'Open Sans', sans-serif;color:white;padding:3% 3% 3% 5%;">LOCATION 
-                 <span style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;text-transform: ;"> <span id="locationFilterApplied"></span>  </span>
+                 <span style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;text-transform: ;"> <span id="locationFilterApplied"></span>  </span>
                   <span id="locationTagToggle" class="glyphicon glyphicon-chevron-down" style="float:right;cursor:pointer"></span></div>
 
                 </div>
@@ -2306,7 +2309,7 @@ GnJh-03 in the Kapthurin formation of Kenya (285 Ka): earliest known use of red 
 
                  <div class="col-md-11 noPadding">
                 <div id="speciesTagBar" style="margin-top:1%;height:3em;background-color:#2A5769;margin-bottom:1%;cursor:pointer;"><div style="font-family:'Open Sans', sans-serif;color:white;padding:3% 3% 3% 5%;">SPECIES
-                    <span style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;text-transform: ;"> <span id="speciesFilterApplied"></span> </span>
+                    <span style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;text-transform: ;"> <span id="speciesFilterApplied"></span> </span>
                   <span id="speciesTagToggle" class="glyphicon glyphicon-chevron-down" style="float:right;cursor:pointer"></span></div>
                 </div>
 
@@ -2335,7 +2338,7 @@ GnJh-03 in the Kapthurin formation of Kenya (285 Ka): earliest known use of red 
 
                  <div class="col-md-11 noPadding">
              <div id="behavioursTagBar" style="margin-top:1%;height:3em;background-color:#2A5769;margin-bottom:1%;cursor:pointer;"><div style="font-family:'Open Sans', sans-serif;color:white;padding:3% 3% 3% 5%;">BEHAVIOURS
-               <span style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;text-transform: ;"> <span id="behaviourFilterApplied"></span> </span>
+               <span style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;text-transform: ;"> <span id="behaviourFilterApplied"></span> </span>
               <span id="behavioursTagToggle" class="glyphicon glyphicon-chevron-down" style="float:right;cursor:pointer"></span></div>
                 </div>
 
@@ -2391,7 +2394,7 @@ GnJh-03 in the Kapthurin formation of Kenya (285 Ka): earliest known use of red 
 
                  <div class="col-md-11 noPadding">
               <div id="cognitionTagBar" style="margin-top:1%;height:3em;background-color:#2A5769;margin-bottom:1%;cursor:pointer;"><div style="font-family:'Open Sans', sans-serif;color:white;padding:3% 3% 3% 5%;">COGNITION
-                 <span style="font-size:1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;text-transform: ;"> <span id="cognitionFilterApplied"></span> </span>
+                 <span style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;text-transform: ;"> <span id="cognitionFilterApplied"></span> </span>
                 <span id="cognitionTagToggle" class="glyphicon glyphicon-chevron-down" style="float:right;cursor:pointer"></span></div>
                 </div>
 
@@ -2453,11 +2456,11 @@ GnJh-03 in the Kapthurin formation of Kenya (285 Ka): earliest known use of red 
                           </div>
                           <br><br>
 
-                  <div style="font-size: 1em;color: #FFFFFF;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.7;"><span >FROM : </span>
+                  <div style="font-size: 1.1em;color: #FFFFFF;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.7;"><span >FROM : </span>
                           <span id="slider-margin-value-min" style="color:#ffffff;"></span>
                         </div>
 
-                          <div style="font-size: 1em;color: #FFFFFF;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.7;"><span class="">TO : </span>
+                          <div style="font-size: 1.1em;color: #FFFFFF;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.7;"><span class="">TO : </span>
                             <span id="slider-margin-value-max" style="color:#ffffff;"></span>
                              </div>
              </div> 
