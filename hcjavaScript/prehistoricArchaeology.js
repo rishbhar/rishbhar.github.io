@@ -610,13 +610,7 @@ $('html, body').animate({
     }, 100);
 }
 
-$(".prehistDiscovimage").on("click", function() {
-   var altValue = $(this).attr("alt");
-   var bg = $('[alt="'+altValue+'"]').css("background-image");
-   bg = bg.replace(/.*\s?url\([\'\"]?/, '').replace(/[\'\"]?\).*/, '');
-   $('#imagepreview').attr('src', bg); // here asign the image to the modal when the user click the enlarge link
-   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
-});
+
 
 
 $("#imagemodal").click(function(e) {
