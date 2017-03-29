@@ -276,6 +276,7 @@ function shuffleDiscoveries()
 $('#behaviourFilterApplied').text('');
 $('#speciesFilterApplied').text('');
 $('#cognitionFilterApplied').text('');
+$('#totalDiscoveriesShown').text('');
       totalDiscoveriesShown=21;
       //$('#totalDiscoveriesShown').text(totalDiscoveriesShown+" discoveries");
       return 1;
@@ -469,9 +470,9 @@ if(showBlombosCave==1){totalDiscoveriesShown+=1;}
   
 
 
-  $('html, body').animate({
-        scrollTop: $("#discoveriesBlock").offset().top-100
-    }, 100);
+  //$('html, body').animate({
+    //    scrollTop: $("#discoveriesBlock").offset().top-100
+   // }, 100);
 
 }
 
@@ -480,10 +481,13 @@ if(showBlombosCave==1){totalDiscoveriesShown+=1;}
 
 var lastPosition=0;
 
-$('.discoveryName').click(function(){
+$('.discoveryName, .readMoreDiscovery').click(function(){
   //alert($(this).attr('alt'));
   showDetails($(this).attr('alt'));
   var attrValue = $(this).attr('alt');
+
+  $('[alt="'+attrValue+'"]').closest(".readMoreDiscovery").toggle();  
+
   //$('[alt="'+attrValue+'"]').css('display','block');
   $('[alt="'+attrValue+'"]').closest(".goBack").css('display','block');
   lastPosition=$('[alt="'+attrValue+'"]').closest('#'+attrValue).position().top;
@@ -497,6 +501,10 @@ $('.goBack').click(function(){
   //alert($(this).attr('alt'));
   goBack($(this).attr('alt'));
   var attrValue = $(this).attr('alt');
+
+
+$('[alt="'+attrValue+'"]').closest(".readMoreDiscovery").toggle();  
+
   $('[alt="'+attrValue+'"]').closest(".goBack").css('display','none');
   //$('.goBack [alt="'+attrValue+'"]').css('display','none');
 });
@@ -552,6 +560,7 @@ function showDetails(discovery)
   $(''+block+'FullImage').fadeIn(100);
   $(''+block+'').fadeIn(100);
   $(''+blockDetails+'').fadeIn(100);
+
   $('#preArchaeologyLink').text(' | '+discovery);
   $(''+blockGoBack+'').css('display','block');
   $(window).scrollTop(0);

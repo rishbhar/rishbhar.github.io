@@ -47,6 +47,75 @@ CSS for mobile
 
 /* STYLES GO HERE */ 
 
+.discoveryFilterCategories
+{
+  font-family:'Open Sans', sans-serif;color:white;padding:3% 3% 3% 5%;
+}
+
+
+.modal-content
+{
+  padding-left: 0% !important;
+}
+
+.modal-dialog
+{
+  margin-top: 30%;
+  margin-left: 5px !important;
+
+}
+
+.modalImage
+{
+  width:20em;
+}
+
+
+.discoveryLocation
+{
+font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;padding:2% 1% 1% 2%;
+display: block;
+} 
+
+.discoveryPeriod 
+{
+font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;padding:2% 1% 1% 2%;
+display: block;
+}
+
+
+.prehistDiscovimage
+{
+    width:50em;
+    height:15em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discoveryLocPeriodBlock
+{
+ margin-top:0%;background-color:#2A5769;height:4em;
+}
+
+.majorDiscoveryBlock
+{
+  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;word-wrap: break-word;
+}
+
+.discoveryName
+{
+  width:auto !important;
+  margin-top:2% !important;
+}
+
+.forDiscoveriesScroll
+{
+  position:fixed;
+  top: 0;
+  left: 64.5%;
+  width: 30%
+}
 
 .images{
 
@@ -1119,6 +1188,86 @@ div#slider figure {
 
 
 
+
+
+.prehistDiscovimage
+{
+    width:50em;
+    height:15em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discoveryLocPeriodBlock
+{
+ margin-top:0%;background-color:#2A5769;height:4em;
+}
+
+.majorDiscoveryBlock
+{
+  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;word-wrap: break-word;
+}
+
+.discoveryName
+{
+  width:auto !important;
+  margin-top:2% !important;
+}
+
+.forDiscoveriesScroll
+{
+  position:fixed;
+  top: 0;
+  left: 64.5%;
+  width: 30%
+}
+
+.discoveryLocation
+{
+font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;
+} 
+
+.discoveryPeriod 
+{
+font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;
+}
+
+
+.prehistDiscovimage
+{
+    width:50em;
+    height:15em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discoveryLocPeriodBlock
+{
+ margin-top:0%;background-color:#2A5769;height:3em;
+}
+
+.majorDiscoveryBlock
+{
+  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;
+}
+
+.discoveryName
+{
+  width:auto !important;
+  margin-top:2% !important;
+}
+
+.forDiscoveriesScroll
+{
+  position:fixed;
+  top: 0;
+  left: 64.5%;
+  width: 30%
+}
+
+
 .ourVision
 {
   text-align: center;
@@ -2167,6 +2316,23 @@ div#slider figure {
 
 
 @media screen and (min-width: 1200px) {
+
+
+.discoveryFilterCategories
+{
+  font-family:'Open Sans', sans-serif;color:white;padding:3% 3% 3% 5%;
+}
+
+
+.discoveryLocation
+{
+font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;
+} 
+
+.discoveryPeriod 
+{
+font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;
+}
 
 .discoveryLocPeriodBlock
 {

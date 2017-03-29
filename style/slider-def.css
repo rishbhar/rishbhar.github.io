@@ -118,6 +118,76 @@
 
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1)  { 
 
+.discoveryFilterCategories
+{
+  font-family:'Open Sans', sans-serif;color:white;padding:3% 3% 3% 5%;
+}
+
+
+.modal-content
+{
+  padding-left: 0% !important;
+}
+
+.modal-dialog
+{
+  margin-top: 10%;
+  margin-left: 5px !important;
+
+}
+
+.modalImage
+{
+  width:20em;
+}
+
+
+.discoveryLocation
+{
+font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;padding:2% 1% 1% 2%;float: left;
+
+} 
+
+.discoveryPeriod 
+{
+font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;padding:2% 1% 1% 2%;float: right;
+
+}
+
+
+.prehistDiscovimage
+{
+    width:50em;
+    height:15em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discoveryLocPeriodBlock
+{
+ margin-top:0%;background-color:#2A5769;height:3em;
+}
+
+.majorDiscoveryBlock
+{
+  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;word-wrap: break-word;
+}
+
+.discoveryName
+{
+  width:auto !important;
+  margin-top:2% !important;
+}
+
+.forDiscoveriesScroll
+{
+  position:fixed;
+  top: 0;
+  left: 64.5%;
+  width: 30%
+}
+
 .content{
 
   width:100%;
@@ -1264,6 +1334,73 @@ div#slider figure {
 
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (max-device-height : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1)  { 
+
+
+.modal-content
+{
+  padding-left: 0% !important;
+}
+
+.modal-dialog
+{
+  margin-top: 30%;
+  margin-left: 5px !important;
+
+}
+
+.modalImage
+{
+  width:40em;
+}
+
+.discoveryFilterCategories
+{
+  font-family:'Open Sans', sans-serif;color:white;padding:1.5% 3% 3% 2%;
+}
+
+
+.prehistDiscovimage
+{
+    width:55em;
+    height:15em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discoveryLocPeriodBlock
+{
+ margin-top:0%;background-color:#2A5769;height:4em;
+}
+
+.majorDiscoveryBlock
+{
+  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;word-wrap: break-word;
+}
+
+.discoveryName
+{
+  width:auto !important;
+  margin-top:2% !important;
+}
+
+.forDiscoveriesScroll
+{
+  position:fixed;
+  top: 0;
+  left: 64.5%;
+  width: 30%
+}
+
+.discoveryLocation
+{
+font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;
+} 
+
+.discoveryPeriod 
+{
+font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;
+}
 
 .content{
 
@@ -2434,6 +2571,74 @@ div#slider figure {
 
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  { 
+
+
+.discoveryFilterCategories
+{
+  font-family:'Open Sans', sans-serif;color:white;padding:3% 3% 3% 5%;
+}
+
+
+.modal-content
+{
+  padding-left: 0% !important;
+}
+
+.modal-dialog
+{
+  margin-top: 10%;
+  margin-left: 5px !important;
+
+}
+
+.modalImage
+{
+  width:40em;
+}
+
+.prehistDiscovimage
+{
+    width:55em;
+    height:15em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discoveryLocPeriodBlock
+{
+ margin-top:0%;background-color:#2A5769;height:4em;
+}
+
+.majorDiscoveryBlock
+{
+  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;word-wrap: break-word;
+}
+
+.discoveryName
+{
+  width:auto !important;
+  margin-top:2% !important;
+}
+
+.forDiscoveriesScroll
+{
+  position:fixed;
+  top: 0;
+  left: 64.5%;
+  width: 30%
+}
+
+.discoveryLocation
+{
+font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:left;padding:2% 1% 1% 2%;
+} 
+
+.discoveryPeriod 
+{
+font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight: 300;line-height:1.2;float:right;padding:2% 2% 1% 1%;
+}
+
 
 .content{
 
