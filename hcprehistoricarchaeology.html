@@ -21,6 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="hcjavaScript/index.js"></script>
  <script src="hcjavaScript/nouislider.min.js"></script>
+ <script src="hcjavaScript/prehistoricArchaeology.js"></script>
    
    
 
@@ -53,614 +54,7 @@ $("#footer").load("footer.html");
 
 
 
-$( document ).ready(function() {
-   var handlesSlider = document.getElementById('slider-handles');
 
-noUiSlider.create(handlesSlider, {
-  start: [ 1820,2000 ],
-  step: 10,
-  range: {
-    'min': [ 1800 ],
-    'max': [ 2016 ]
-  },
-  format: {
-    to: function ( value ) {
-    return value;
-    },
-    from: function ( value ) {
-    return value;
-    }
-  }
-});
-
-var marginMin = document.getElementById('slider-margin-value-min'),
-  marginMax = document.getElementById('slider-margin-value-max');
-
-handlesSlider.noUiSlider.on('update', function ( values, handle ) {
-  if ( handle ) {
-    marginMax.innerHTML = values[handle];
-  } else {
-    marginMin.innerHTML = values[handle];
-  }
-});
-
-
-$('#locationCatBar').click(function(){
-      if ( $('#locationTagToggle').hasClass( "glyphicon-minus" ) ) {
-
-        $('#locationTagToggle').removeClass('glyphicon-minus');
-        $('#locationTagToggle').addClass('glyphicon-chevron-down');
-
-      }
-      else 
-        {
-          $('#locationTagToggle').removeClass('glyphicon-chevron-down');
-          $('#locationTagToggle').addClass('glyphicon-minus');
-  
-        }
-
-    $('#locationTagOptionsBlock').slideToggle(100,function(){});
-});
-
-$('#speciesTagBar').click(function(){
-  if ( $('#speciesTagToggle').hasClass( "glyphicon-minus" ) ) {
-
-        $('#speciesTagToggle').removeClass('glyphicon-minus');
-        $('#speciesTagToggle').addClass('glyphicon-chevron-down');
-
-      }
-      else 
-        {
-          $('#speciesTagToggle').removeClass('glyphicon-chevron-down');
-          $('#speciesTagToggle').addClass('glyphicon-minus');
-  
-        }
-    $('#speciesTagOptionsBlock').slideToggle(100,function(){});
-});
-
-$('#behavioursTagBar').click(function(){
-   if ( $( '#behavioursTagToggle' ).hasClass( "glyphicon-minus" ) ) {
-
-        $('#behavioursTagToggle').removeClass('glyphicon-minus');
-        $('#behavioursTagToggle').addClass('glyphicon-chevron-down');
-
-      }
-      else 
-        {
-          $('#behavioursTagToggle').removeClass('glyphicon-chevron-down');
-          $('#behavioursTagToggle').addClass('glyphicon-minus');
-  
-        }
-    $('#behavioursTagOptionsBlock').slideToggle(100,function(){});
-});
-
-$('#cognitionTagBar').click(function(){
-  if ( $( '#cognitionTagToggle' ).hasClass( "glyphicon-minus" ) ) {
-
-        $('#cognitionTagToggle').removeClass('glyphicon-minus');
-        $('#cognitionTagToggle').addClass('glyphicon-chevron-down');
-
-      }
-      else 
-        {
-          $('#cognitionTagToggle').removeClass('glyphicon-chevron-down');
-          $('#cognitionTagToggle').addClass('glyphicon-minus');
-  
-        }
-    $('#cognitionTagOptionsBlock').slideToggle(100,function(){});
-});
-
-var selectedFilters = ["dummy"];
-
-Array.prototype.remove= function(){
-    var what, a= arguments, L= a.length, ax;
-    while(L && this.length){
-        what= a[--L];
-        while((ax= this.indexOf(what))!= -1){
-            this.splice(ax, 1);
-        }
-    }
-    return this;
-}
-
-function searchStringInArray (str, strArray) {
-    for (var j=0; j<strArray.length; j++) {
-        if (strArray[j].match(str)) return 1;
-    }
-    return -1;
-}
-
-
-// $('#filterForDiscoveries').affix({
-//   offset: {top: 340}
-// });
-
-/*
-var fixmeTop = $('#filterForDiscoveries').offset().top;       // get initial position of the element
-
-$(window).scroll(function() {                  // assign scroll event listener
-
-    var currentScroll = $(window).scrollTop(); // get current position
-
-    if (currentScroll >= fixmeTop) {           // apply position: fixed if you
-        $('#filterForDiscoveries').addClass("forDiscoveriesScroll");                     // scroll to that element or below it);
-    } 
-    
-    else {                                   // apply position: static
-        $('#filterForDiscoveries').removeClass("forDiscoveriesScroll");
-      }
-
-});*/
-
-
-$('.tagMargin').click(function(){
-
-if(searchStringInArray($(this).attr('id'),selectedFilters)>0)
-selectedFilters.remove($(this).attr('id'));
-else
-selectedFilters.push($(this).attr('id'));
-
-//alert(selectedFilters);
-shuffleDiscoveries();
-});
-
-var Dikika = ["eastafrica","australopithecus","preoldo"];
-var Lomekwi = ["eastafrica", "preoldo", "australopithecus"];
-var Gona = ["eastafrica","oldowan", "planning", "problem-solving", "imitation"];
-var Dmanisi = ["westafrica","oldowan", "homoerectus", "memory"];
-var KanjeraSouth = ["eastafrica","oldowan", "planning", "hunting", "imitation","butchery"];
-var Kokiselei4 = ["africa","acheulian", "planning", "imitation","memory","language"];
-var Sangiran = ["southasia","homoerectus"];
-var SimadelElefante = ["westeurope","hunting"];
-var WoloSege = ["southasia","seafaring","planning","language"];
-var WonderwerkCave = ["southafrica","fire", "homoerectus", "memory","planning","language"];
-var Olorgesailie = ["eastafrica","language","acheulian"];
-var KathuPan = ["southafrica","haftedtools", "planning","language","memory"];
-var Boxgrove = ["westeurope","acheulian","butchery","planning","imitation"];
-var Trinil = ["southasia","homoerectus","language","art"];
-var Simadeloshuesos = ["westeurope","acheulian","burial","planning","problem-solving"];
-var TerraAmata = ["westeurope","fire","livingstructures","problem-solving","planning"];
-var Campitello = ["southeurope","haftedtools","homoneanderthalensis","fire","memory","language"];
-var PinnaclePoint = ["fire","problem-solving","southafrica"];
-var EsSkhulCave = ["westasia", "ornamentation"];
-var Krapina = ["southeurope","ornamentation","homoneanderthalensis","planning","burial","language"];
-var BlombosCave = ["southafrica","art"];
-
-
-var locationFilters=["eastafrica", "westeurope", "westasia", "southafrica","southeurope","southasia"];
-var behaviourFilters=["preoldo","oldowan","art","butchery","acheulian","hunting","seafaring","fire","livingstructures","haftedtools","burials"];
-var speciesFilters=["australopithecus","homoerectus","homoneanderthalensis"];
-var cognitionFilters=["planning","imitation","language","imitation","memory","problem-solving"];
-
-var totalDiscoveriesShown=21;
-
-//$('#totalDiscoveriesShown').text(totalDiscoveriesShown+" discoveries");
-
-
-
-function arraysAreIdentical(arr1, arr2){
-   var equals = 0;
-
-  for (var i = 0, len1 = arr1.length; i < len1; i++){
-        for (var j = 0, len2 = arr2.length; j < len2; j++){
-        if (arr1[i] == arr2[j]){
-            equals++;
-        }
-      }
-    }
-    //alert(equals);
-    
-    if(selectedFilters.length == (equals+1))
-    {return 1;}
-    else 
-    return 2;
-}
-
-
-function filterInUseCompareFunction(arr1, arr2){
-   var equals = 0;
-
-  for (var i = 0, len1 = arr1.length; i < len1; i++){
-        for (var j = 0, len2 = arr2.length; j < len2; j++){
-        if (arr1[i] == arr2[j]){
-            equals++;
-        }
-      }
-    }
-    //alert(equals);
-    if(equals>0)
-    return 1;
-    else if(equals==0)
-    return 2;
-}
-
-
-
-function shuffleDiscoveries()
-{
-
-  
-  if(selectedFilters.length ==1)
-  {
-      $('#discoveriesBlock').css('opacity', '0.6');
-      $('#Dikika').fadeOut(500);
-      $('#Lomekwi').fadeOut(500);
-      $('#Gona').fadeOut(500);
-      $('#KanjeraSouth').fadeOut(500);
-      $('#Dmanisi').fadeOut(500);
-      $('#Kokiselei4').fadeOut(500);
-      $('#Sangiran').fadeOut(500);
-      $('#SimadelElefante').fadeOut(500);
-      $('#WoloSege').fadeOut(500);
-      $('#WonderwerkCave').fadeOut(500);
-      $('#Olorgesailie').fadeOut(500);
-      $('#KathuPan').fadeOut(500);
-      $('#Boxgrove').fadeOut(500);
-      $('#Trinil').fadeOut(500);
-      $('#Simadeloshuesos').fadeOut(500);
-      $('#TerraAmata').fadeOut(500);
-      $('#Campitello').fadeOut(500);
-      $('#PinnaclePoint').fadeOut(500);
-      $('#EsSkhulCave').fadeOut(500);
-      $('#Krapina').fadeOut(500);
-      $('#BlombosCave').fadeOut(500);
-
-      $('#discoveriesBlock').css('opacity', '1');
-      $('#Dikika').fadeIn(500);
-      $('#Lomekwi').fadeIn(500);
-      $('#Gona').fadeIn(500);
-      $('#KanjeraSouth').fadeIn(500);
-      $('#Dmanisi').fadeIn(500);
-      $('#Kokiselei4').fadeIn(500);
-      $('#Sangiran').fadeIn(500);
-      $('#SimadelElefante').fadeIn(500);
-      $('#WoloSege').fadeIn(500);
-      $('#WonderwerkCave').fadeIn(500);
-      $('#Olorgesailie').fadeIn(500);
-      $('#KathuPan').fadeIn(500);
-      $('#Boxgrove').fadeIn(500);
-      $('#Trinil').fadeIn(500);
-      $('#Simadeloshuesos').fadeIn(500);
-      $('#TerraAmata').fadeIn(500);
-      $('#Campitello').fadeIn(500);
-      $('#PinnaclePoint').fadeIn(500);
-      $('#EsSkhulCave').fadeIn(500);
-      $('#Krapina').fadeIn(500);
-      $('#BlombosCave').fadeIn(500);
-      $('#locationFilterApplied').text('');
-$('#behaviourFilterApplied').text('');
-$('#speciesFilterApplied').text('');
-$('#cognitionFilterApplied').text('');
-      totalDiscoveriesShown=21;
-      //$('#totalDiscoveriesShown').text(totalDiscoveriesShown+" discoveries");
-      return 1;
-  
-  }
-
-
-  var showDikika = arraysAreIdentical(selectedFilters,Dikika);
-  var showLomekwi= arraysAreIdentical(selectedFilters,Lomekwi);
-  var showGona = arraysAreIdentical(selectedFilters,Gona);
-  var showKanjeraSouth = arraysAreIdentical(selectedFilters,KanjeraSouth);
-  var showDmanisi = arraysAreIdentical(selectedFilters,Dmanisi);
-  var showKokiselei4 = arraysAreIdentical(selectedFilters,Kokiselei4);
-  var showSangiran = arraysAreIdentical(selectedFilters,Sangiran);
-  var showSimadelElefante = arraysAreIdentical(selectedFilters,SimadelElefante);
-  var showWoloSege = arraysAreIdentical(selectedFilters,WoloSege);
-  var showWonderwerkCave = arraysAreIdentical(selectedFilters,WonderwerkCave);
-  var showOlorgesailie = arraysAreIdentical(selectedFilters,Olorgesailie);
-  var showKathuPan = arraysAreIdentical(selectedFilters,KathuPan);
-  var showBoxgrove = arraysAreIdentical(selectedFilters,Boxgrove);
-  var showTrinil = arraysAreIdentical(selectedFilters,Trinil);
-
-  var showSimadeloshuesos = arraysAreIdentical(selectedFilters,Simadeloshuesos);
-  var showTerraAmata = arraysAreIdentical(selectedFilters,TerraAmata);
-  var showCampitello = arraysAreIdentical(selectedFilters,Campitello);
-  var showPinnaclePoint = arraysAreIdentical(selectedFilters,PinnaclePoint);
-  var showEsSkhulCave = arraysAreIdentical(selectedFilters,EsSkhulCave);
-  var showKrapina = arraysAreIdentical(selectedFilters,Krapina);
-  var showBlombosCave = arraysAreIdentical(selectedFilters,BlombosCave);
-
-
-//alert(selectedFilters);
-
-
-var locationFilterApplied = filterInUseCompareFunction(selectedFilters,locationFilters);
-var speciesFilterApplied = filterInUseCompareFunction(selectedFilters,speciesFilters);
-var behaviourFilterApplied = filterInUseCompareFunction(selectedFilters,behaviourFilters);
-var cognitionFilterApplied = filterInUseCompareFunction(selectedFilters,cognitionFilters);
-
-
-// alert("location"+arraysAreIdentical(selectedFilters,locationFilters));
-// alert("behavior"+arraysAreIdentical(selectedFilters,behaviourFilters));
-// alert("spec"+arraysAreIdentical(selectedFilters,speciesFilters));
-// alert("cognition"+arraysAreIdentical(selectedFilters,cognitionFilters));
-
-
-  if(locationFilterApplied==1)
-   { $('#locationFilterApplied').text('(filter in use)');}
-  else if(locationFilterApplied==2)
-    {$('#locationFilterApplied').text('');}
-
-
-
-  if(behaviourFilterApplied==1)
-   {$('#behaviourFilterApplied').text('(filter in use)');}
- else if(behaviourFilterApplied==2)
-  {$('#behaviourFilterApplied').text('');}
-
-
-
-  if(speciesFilterApplied==1)
-     {$('#speciesFilterApplied').text('(filter in use)');}
-   else if(speciesFilterApplied==2)
-    {$('#speciesFilterApplied').text('');
-}
-
-
-
-  if(cognitionFilterApplied==1)  
-     {$('#cognitionFilterApplied').text('(filter in use)');}
-   else if(cognitionFilterApplied==2)  
-    {$('#cognitionFilterApplied').text('');}
-
-
-totalDiscoveriesShown=0;
-  
-if(showDikika==1) {totalDiscoveriesShown+=1;}
-if(showLomekwi==1){totalDiscoveriesShown+=1;}
-if(showGona==1){totalDiscoveriesShown+=1;}
-if(showKanjeraSouth==1){totalDiscoveriesShown+=1;}
-if(showDmanisi==1){totalDiscoveriesShown+=1;}
-if(showKokiselei4==1){totalDiscoveriesShown+=1;}
-if(showSangiran==1){totalDiscoveriesShown+=1;}
-if(showSimadelElefante==1){totalDiscoveriesShown+=1;}
-if(showWoloSege==1){totalDiscoveriesShown+=1;}
-if(showWonderwerkCave==1){totalDiscoveriesShown+=1;}
-if(showOlorgesailie==1){totalDiscoveriesShown+=1;}
-if(showKathuPan==1){totalDiscoveriesShown+=1;}
-if(showTrinil==1){totalDiscoveriesShown+=1;}
-if(showBoxgrove==1){totalDiscoveriesShown+=1;}
-if(showSimadeloshuesos==1){totalDiscoveriesShown+=1;}
-if(showTerraAmata==1){totalDiscoveriesShown+=1;}
-if(showCampitello==1){totalDiscoveriesShown+=1;}
-if(showPinnaclePoint==1){totalDiscoveriesShown+=1;}
-if(showEsSkhulCave==1){totalDiscoveriesShown+=1;}
-if(showKrapina==1){totalDiscoveriesShown+=1;}
-if(showBlombosCave==1){totalDiscoveriesShown+=1;}
-  //alert(showDikika,showLomekwi,showGona,showKanjeraSouth);
-  $('#totalDiscoveriesShown').text("("+totalDiscoveriesShown+" discoveries, filters applied)");
-
-  $('#discoveriesBlock').css('opacity', '0.6');
-  $('#Dikika').fadeOut(500);
-  $('#Lomekwi').fadeOut(500);
-  $('#Gona').fadeOut(500);
-  $('#KanjeraSouth').fadeOut(500);
-  $('#Dmanisi').fadeOut(500);
-  $('#Kokiselei4').fadeOut(500);
-  $('#Sangiran').fadeOut(500);
-  $('#SimadelElefante').fadeOut(500);
-  $('#WoloSege').fadeOut(500);
-  $('#WonderwerkCave').fadeOut(500);
-  $('#Olorgesailie').fadeOut(500);
-  $('#KathuPan').fadeOut(500);
-  $('#Trinil').fadeOut(500);
-  $('#Boxgrove').fadeOut(500);
-  $('#Simadeloshuesos').fadeOut(500);
-  $('#TerraAmata').fadeOut(500);
-  
-  $('#Campitello').fadeOut(500);
-  $('#PinnaclePoint').fadeOut(500);
-  $('#EsSkhulCave').fadeOut(500);
-  $('#Krapina').fadeOut(500);
-  $('#BlombosCave').fadeOut(500);
-
-
-  $('#discoveriesBlock').css('opacity', '1');
-  if(showDikika==1)
-  $('#Dikika').fadeIn(500);
-
-  if(showLomekwi==1)
-  $('#Lomekwi').fadeIn(500);
-
-  if(showGona==1)
-  $('#Gona').fadeIn(500);
-
-  if(showKanjeraSouth==1)
-  $('#KanjeraSouth').fadeIn(500);
-
-   if(showDmanisi==1)
-  $('#Dmanisi').fadeIn(500);
-
-  if(showKokiselei4==1)
-  $('#Kokiselei4').fadeIn(500);
-
-  if(showSangiran==1)
-  $('#Sangiran').fadeIn(500);
-
-  if(showSimadelElefante==1)
-  $('#SimadelElefante').fadeIn(500);
-
-   if(showWoloSege==1)
-  $('#WoloSege').fadeIn(500);
-
-  if(showWonderwerkCave==1)
-  $('#WonderwerkCave').fadeIn(500);
-
-  if(showOlorgesailie==1)
-  $('#Olorgesailie').fadeIn(500);
-
-
-
-   if(showKathuPan==1)
-  $('#KathuPan').fadeIn(500);
-
-  if(showTrinil==1)
-  $('#Trinil').fadeIn(500);
-
-  if(showBoxgrove==1)
-  $('#Boxgrove').fadeIn(500);
-
-  if(showSimadeloshuesos==1)
-  $('#Simadeloshuesos').fadeIn(500);
-
-   if(showTerraAmata==1)
-  $('#TerraAmata').fadeIn(500);
-
-  if(showCampitello==1)
-  $('#Campitello').fadeIn(500);
-
-  if(showPinnaclePoint==1)
-  $('#PinnaclePoint').fadeIn(500);
-
-  if(showEsSkhulCave==1)
-  $('#EsSkhulCave').fadeIn(500);
-  
-  if(showKrapina==1)
-  $('#Krapina').fadeIn(500);
-
-  if(showBlombosCave==1)
-  $('#BlombosCave').fadeIn(500);
-  
-
-
-  $('html, body').animate({
-        scrollTop: $("#discoveriesBlock").offset().top-100
-    }, 100);
-
-}
-
-
-
-
-var lastPosition=0;
-
-$('.discoveryName').click(function(){
-  //alert($(this).attr('alt'));
-  showDetails($(this).attr('alt'));
-  var attrValue = $(this).attr('alt');
-  //$('[alt="'+attrValue+'"]').css('display','block');
-  $('[alt="'+attrValue+'"]').closest(".goBack").css('display','block');
-  lastPosition=$('[alt="'+attrValue+'"]').closest('#'+attrValue).position().top;
-  //alert(""+lastPosition);
-});
-
-
-
-
-$('.goBack').click(function(){
-  //alert($(this).attr('alt'));
-  goBack($(this).attr('alt'));
-  var attrValue = $(this).attr('alt');
-  $('[alt="'+attrValue+'"]').closest(".goBack").css('display','none');
-  //$('.goBack [alt="'+attrValue+'"]').css('display','none');
-});
-
-
-
-
-function showDetails(discovery)
-  {
-    //alert($(this).attr("class"));
-//alert($(this).parent().css().position().top);
-// var block='#'+discovery;
-//     lastPosition=$(''+block+'').position().top;
-    
-  $('#discoveriesBlock').css('opacity', '0.6');
-  $('#Dikika').fadeOut(100);
-  $('#Lomekwi').fadeOut(100);
-  $('#Gona').fadeOut(100);
-  $('#KanjeraSouth').fadeOut(100);
-  $('#Dmanisi').fadeOut(100);
-  $('#Kokiselei4').fadeOut(100);
-  $('#Sangiran').fadeOut(100);
-  $('#SimadelElefante').fadeOut(100);
-  $('#WoloSege').fadeOut(100);
-  $('#WonderwerkCave').fadeOut(100);
-  $('#Olorgesailie').fadeOut(100);
-  $('#KathuPan').fadeOut(100);
-  $('#Trinil').fadeOut(100);
-  $('#Boxgrove').fadeOut(100);
-  $('#Simadeloshuesos').fadeOut(100);
-  $('#TerraAmata').fadeOut(100);
-  
-  $('#Campitello').fadeOut(100);
-  $('#PinnaclePoint').fadeOut(100);
-  $('#EsSkhulCave').fadeOut(100);
-  $('#Krapina').fadeOut(100);
-  $('#BlombosCave').fadeOut(100);
-
-  
-  $('#prehistoricArchaeologyTitleBlock').css('margin-top','0%')
-  $('#filterForDiscoveries').fadeOut(100);
-  $('#prehistoricArchaeologyDiscoveryTitleBlock').fadeOut(100);
-  $('#prehistoricArchaeologyTitle').fadeOut(100);
-  $('#prehistoricArchaeologyBlurlb').fadeOut(100);
-
-  var block = "#"+discovery+"";
-  var blockDetails = "#"+discovery+"Details";
-  var blockGoBack = "#goBack"+discovery;
-  $('#discoveriesBlock').css('opacity', '1');
-  $(''+block+'').fadeIn(100);
-  $(''+blockDetails+'').fadeIn(100);
-  $('#preArchaeologyLink').text(' | '+discovery);
-  $(''+blockGoBack+'').css('display','block');
-  $(window).scrollTop(0);
-  
-
-  }
-
- function goBack(discovery){
-  var block = "#"+discovery+"";
-  var blockDetails = "#"+discovery+"Details";
-  var blockGoBack = "#goBack"+discovery;
-  $(''+block+'').fadeOut(100);
-  $(''+blockDetails+'').fadeOut(100);
-  
-  $('#prehistoricArchaeologyTitleBlock').css('margin-top','2.4%');
-  $('#filterForDiscoveries').fadeIn(100);
-  $('#prehistoricArchaeologyDiscoveryTitleBlock').fadeIn(100);
-  $('#prehistoricArchaeologyTitle').fadeIn(100);
-  $('#prehistoricArchaeologyBlurlb').fadeIn(100);
-  
-
-  /*$('#Dikika').fadeIn(100);
-  $('#Lomekwi').fadeIn(100);
-  $('#Gona').fadeIn(100);
-  $('#KanjeraSouth').fadeIn(100);
-  $('#Dmanisi').fadeIn(100);
-  $('#Kokiselei4').fadeIn(100);
-  $('#Sangiran').fadeIn(100);
-  $('#SimadelElefante').fadeIn(100);
-  $('#WoloSege').fadeIn(100);
-  $('#WonderwerkCave').fadeIn(100);
-  $('#Olorgesailie').fadeIn(100);
-  $('#KathuPan').fadeIn(100);
-  $('#Trinil').fadeIn(100);
-  $('#Boxgrove').fadeIn(100);
-  $('#Simadeloshuesos').fadeIn(100);
-  $('#TerraAmata').fadeIn(100);
-  
-  $('#Campitello').fadeIn(100);
-  $('#PinnaclePoint').fadeIn(100);
-  $('#EsSkhulCave').fadeIn(100);
-  $('#Krapina').fadeIn(100);
-  $('#BlombosCave').fadeIn(100);*/
-  shuffleDiscoveries();
-  
-  
-  $('#preArchaeologyLink').text('');
-  //$(window).scrollTop($("#discoveriesBlock").offset().top-50);
-  //alert(lastPosition);
-  lastPosition+=280;//alert(lastPosition);
-//$(window).scrollTop(lastPosition);$(window).scrollTop(lastPosition);
-$('html, body').animate({
-        scrollTop: lastPosition
-    }, 100);
-}
-
-
-});
 
 
 
@@ -757,14 +151,21 @@ $('html, body').animate({
 
 
                         <!-- block starts-->
-                        <div class="col-md-12" id="Dikika" style="margin-bottom:10%;">
+                        <div class="col-md-12" id="Dikika" style="margin-bottom:15%;">
 
-                            <div class="hcLogoText discoveryName" style="width:auto;"  alt="Dikika"> <a>Dikika</a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Dikika.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Dikika"></div> 
-                             
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                          <script>
+
+                          </script>
+
+                          
+                            <div id="DikikaImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Dikika.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="Dikika"></div> 
+
+                            <span id="DikikaFullImage" style="display:none;">
+                               <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Dikika.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+                            
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -782,8 +183,10 @@ $('html, body').animate({
 
                             </div>
 
+                            <div class="hcLogoText discoveryName"   alt="Dikika"> <a>Dikika</a></div>
+
                             <div>
-                    <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> 
+                    <div class="majorDiscoveryBlock" > 
                               <span style="font-style:italic"> Major Discovery </span><br>
                               Hominins prior to 2.6 Ma left behind relatively few traces of their cognition and behavior for us to discover in the archaeological record. Possibly the earliest evidence for stone tool use by hominins comes from the site of Dikika in Ethiopia, where a team led by <a target="_blank" href="http://www.calacademy.org/explore-science/zeray-alemseged">Zeray Alemseged</a> of the California Academy of Sciences in San Francisco discovered two 3.4 million-year-old fossilized animal bones that bear potential cut marks caused by stone tools. This finding could indicate that Australopithecus afarensis butchered large mammals with the assistance of stone tools.
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
@@ -825,16 +228,16 @@ Thompson, J.C., McPherron, S.P., Bobe, R., Reed, D., Barr, W.A., Wynn, G.G., Mar
 
 
                          <!-- block starts-->
-                         <div class="col-md-12"  id="Lomekwi" style="margin-bottom:10%;">
+                         <div class="col-md-12"  id="Lomekwi" style="margin-bottom:15%;">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="Lomekwi"><a> Lomekwi </a></div>
-
-                            
-                             <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Lomekwi.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Lomekwi"></div> 
+                             <div id="LomekwiImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Lomekwi.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="Lomekwi"></div> 
                              
-                            
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                             <span id="LomekwiFullImage" style="display:none;">
+                               <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Lomekwi.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                             <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -852,12 +255,16 @@ Thompson, J.C., McPherron, S.P., Bobe, R., Reed, D., Barr, W.A., Wynn, G.G., Mar
 
                             </div>
 
+                             <div class="hcLogoText discoveryName" alt="Lomekwi"><a> Lomekwi </a></div>
+
+
                             <div> 
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"> <span style="font-style:italic"> Major Discovery </span></br>
                               Stone tools dating back to 3.3 Ma were discovered at Lomekwi by a team led by Sonia Harmand (http://www.stonybrook.edu/commcms/anthropology/faculty/archaeology.html) of Stony Brook University. If this date turns out to be correct, then that would mean that these are the oldest stone tools yet known, and it would push the date of chipped stone technologies back by 700,000 years, before the appearance of the genus Homo.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
-                            
+                           
                             </div>
+                             <!-- <hr style="margin-top:0;border:1px solid #2A5769;"></hr>-->
                             </div>
 
 
@@ -890,14 +297,18 @@ Lewis, J.E., Harmand, S. (2016). An earlier origin for stone tool making: Implic
 
 
                         <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="Gona">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="Gona">
 
 
                             
-                            <div class="hcLogoText discoveryName" style="width:auto;"  alt="Gona" onclick="showDetails('Gona');"> <a>Gona</a> </div>
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Gona.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Gona"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                            <div id="GonaImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Gona.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="Gona"></div> 
+                            
+                            <span id="GonaFullImage" style="display:none;">
+                               <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Lomekwi.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                           <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -915,8 +326,9 @@ Lewis, J.E., Harmand, S. (2016). An earlier origin for stone tool making: Implic
 
                             </div>
 
+                            <div class="hcLogoText discoveryName"  alt="Gona" onclick="showDetails('Gona');"> <a>Gona</a> </div>
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"> <span style="font-style:italic"> Major Discovery </span></br>
                               When first reported by <a href="http://www.cenieh.es/en/staff/sileshi-semaw" target="_blank">Sileshi Semaw</a>  and his team in 1997, the 2.6 million-year-old artifacts found at the site of Gona were thought to be the oldest chipped stone tools in the world. With the discovery of 3.3 million-year-old tools at the site of Lomekwi, Gona may now only represent the earliest evidence of the Oldowan industry<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -960,14 +372,17 @@ Wynn, T., Hernandez-Aguilar, R.A., Marchant, L.F., McGrew, W.C. (2011). “An ap
                         <!-- block ends-->
 
                           <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="KanjeraSouth">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="KanjeraSouth">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="KanjeraSouth"><a>Kanjera South</a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_KanjeraSouth.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="KanjeraSouth"></div> 
+                           
+                            <div id="KanjeraSouthImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_KanjeraSouth.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="KanjeraSouth"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                              <span id="KanjeraSouthFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_KanjeraSouth.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -985,8 +400,11 @@ Wynn, T., Hernandez-Aguilar, R.A., Marchant, L.F., McGrew, W.C. (2011). “An ap
 
                             </div>
 
+                             <div class="hcLogoText discoveryName" alt="KanjeraSouth"><a>Kanjera South</a></div>
+
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              Numerous, relatively complete carcasses of small hoofed animals were found at Kanjera South, where they had been butchered with Oldowan stone tools. These tools were made from raw materials that were transported over 10 km. This site represents the earliest evidence for persistent carnivory by hominins in the archaeological record.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1026,14 +444,17 @@ Schuppli, C., Graber, S.M., Isler, K., van Schaik, C.P. (2016). Life history, co
 
 
                          <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="Dmanisi">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="Dmanisi">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="Dmanisi"> <a>Dmanisi </a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Dmanisi.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName alt="Dmanisi"" ></div> 
+                          
+                            <div id="DmanisiImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Dmanisi.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="Dmanisi" ></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                             <span id="DmanisiFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Dmanisi.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1051,8 +472,12 @@ Schuppli, C., Graber, S.M., Isler, K., van Schaik, C.P. (2016). Life history, co
 
                             </div>
 
+
+                              <div class="hcLogoText discoveryName" alt="Dmanisi"> <a>Dmanisi </a></div>
+
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              Dmanisi represents the earliest known migration of early humans outside of Africa. The hominins at this site were small in stature and brain size and made Oldowan stone tools.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1099,14 +524,17 @@ Ferring, R., Olms, O., Agusti, J., Berna, F., Nioradze, M., Shelia, T., Tappen, 
 
 
                          <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="Kokiselei4">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="Kokiselei4">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="Kokiselei4"> <a>Kokiselei 4 </a> </div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Kokiselei4.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Kokiselei4"></div> 
+                          
+                            <div id="Kokiselei4Image" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Kokiselei4.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="Kokiselei4"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                             <span id="Kokiselei4FullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Kokiselei4.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1124,8 +552,11 @@ Ferring, R., Olms, O., Agusti, J., Berna, F., Nioradze, M., Shelia, T., Tappen, 
 
                             </div>
 
+                              <div class="hcLogoText discoveryName" alt="Kokiselei4"> <a>Kokiselei 4 </a> </div>
+
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              After more than 800,000 years of making simple Oldowan flakes, there was a shift toward making large cutting tools and bifacial handaxes, which are characteristic of the Acheulian industry. The earliest dated Acheulian stone tools were discovered by Christopher Lepre (Rutgers University) and his team at the site of Kokiselei 4 and date to 1.76 Ma. Other early occurrences of the Acheulian industry have also been found at Konso, Ethiopia, dated to 1.75 Ma, and FLK West, Olduvai Gorge, Tanzania, dated to 1.7 Ma.  This early appearance of Acheulian tools coincides with an increase in brain size in early Homo. <br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1179,14 +610,17 @@ Shipton, C. (2010). Imitation and shared intentionality in the Acheulean. Cambri
 
 
                         <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="Sangiran">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="Sangiran">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="Sangiran"> <a>Sangiran</a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Sangiran.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Sangiran"></div> 
+                          
+                            <div id="SangiranImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Sangiran.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="Sangiran"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                             <span id="SangiranFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Sangiran.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1203,6 +637,10 @@ Shipton, C. (2010). Imitation and shared intentionality in the Acheulean. Cambri
                              
 
                             </div>
+
+
+                              <div class="hcLogoText discoveryName"  alt="Sangiran"> <a>Sangiran</a></div>
+
 
                             <div>
                             <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:1% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
@@ -1249,14 +687,17 @@ Boaz, N.T., Ciochon, R.L. (2004). Dragon Bone Hill: An Ice-Age Saga of Homo erec
 
 
                         <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="SimadelElefante">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="SimadelElefante">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="SimadelElefante"><a>Sima del Elefante</a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_SimadelElefante.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="SimadelElefante"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                            <div id="SimadelElefanteImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_SimadelElefante.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="SimadelElefante"></div> 
+                            
+                            <span id="SimadelElefanteFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_SimadelElefante.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1274,8 +715,11 @@ Boaz, N.T., Ciochon, R.L. (2004). Dragon Bone Hill: An Ice-Age Saga of Homo erec
 
                             </div>
 
+                            <div class="hcLogoText discoveryName" alt="SimadelElefante"><a>Sima del Elefante</a></div>
+
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              Sima del Elefante is a cave site with the earliest dated hominin fossils and stone artifacts in western Europe. The lithic assemblage is characterized by low technical investment, and the stones were transported over a very short distance. <br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1324,14 +768,17 @@ de Lombera-Hermida, A., Bargallo, A., Terradillos-Bernal, M., Huguet, R., Vallve
 
 
                         <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="WoloSege">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="WoloSege">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="WoloSege"><a>Wolo Sege</a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_WoloSege.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="WoloSege"></div> 
+                           
+                            <div id="WoloSegeImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_WoloSege.jpg');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="WoloSege"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                             <span id="WoloSegeFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_WoloSege.jpg" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1349,8 +796,11 @@ de Lombera-Hermida, A., Bargallo, A., Terradillos-Bernal, M., Huguet, R., Vallve
 
                             </div>
 
+                             <div class="hcLogoText discoveryName"  alt="WoloSege"><a>Wolo Sege</a></div>
+
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              Stone tools at this site indicate an early occupation of the island of Flores by early Homo. While we know that fossil humans could reach some Indonesian islands, such as Java, by foot because of low sea levels at the time, Flores is a different story. Located east of the Wallace Line, this island could have only been reached by sea crossing. Occupation of this island may therefore represent the earliest example of manmade watercraft. <br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1403,14 +853,18 @@ Noble, Davidson, I. (1992).
 
 
                           <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="WonderwerkCave">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="WonderwerkCave">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="WonderwerkCave"> <a>Wonderwerk Cave </a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Wonderwerk.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="WonderwerkCave"></div> 
+                           
+                            <div id="WonderwerkCaveImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Wonderwerk.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="WonderwerkCave"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+
+                             <span id="WonderwerkCaveFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Wonderwerk.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1428,8 +882,11 @@ Noble, Davidson, I. (1992).
 
                             </div>
 
+                             <div class="hcLogoText discoveryName"  alt="WonderwerkCave"> <a>Wonderwerk Cave </a></div>
+
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              A team of archaeologists returned to Wonderwerk Cave to examine the evidence for Peter Beaumont’s claim for control of fire as early as 1.7 Ma. The hearthlike feature that Beaumont had reported on turned out to be a natural feature and not manmade. The team made an important new discovery, however--evidence for burning of plant and animal remains in a younger layer dated to 1 Ma. These materials were burned within the cave at a temperature of 450-700° C, the temperature of a small campfire. This is the earliest evidence for controlled fire by H. erectus.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1480,14 +937,17 @@ Twomey, T. (2013). The cognitive implications of controlled fire use by early hu
 
 
                         <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="Olorgesailie">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="Olorgesailie">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="Olorgesailie"><a>Olorgesailie</a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Olorgesaille.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Olorgesailie"></div> 
+                           
+                            <div id="OlorgesailieImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Olorgesaille.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="Olorgesailie"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                             <span id="OlorgesailieFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Olorgesaille.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1505,8 +965,11 @@ Twomey, T. (2013). The cognitive implications of controlled fire use by early hu
 
                             </div>
 
+                             <div class="hcLogoText discoveryName" alt="Olorgesailie"><a>Olorgesailie</a></div>
+
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"> <span style="font-style:italic"> Major Discovery </span></br>
                               Olorgesailie is an unusual site because of the thousands of handaxes that have been found there. Pigments older than 340,000 years have also been discovered at the site.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1556,14 +1019,17 @@ Whittaker, J.C., McCall, G. (2001). Handaxe-hurling hominids: An unlikely story.
 
 
                         <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="KathuPan">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="KathuPan">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="KathuPan"> <a>Kathu Pan </a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_KathuPan.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="KathuPan"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                            <div id="KathuPanImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_KathuPan.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="KathuPan"></div> 
+                            
+                             <span id="KathuPanFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_KathuPan.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1581,8 +1047,11 @@ Whittaker, J.C., McCall, G. (2001). Handaxe-hurling hominids: An unlikely story.
 
                             </div>
 
+                            <div class="hcLogoText discoveryName"  alt="KathuPan"> <a>Kathu Pan </a></div>
+
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              There have been several important discoveries at the site of Kathu Pan. The lithic assemblage at the site is one of the earliest occurrences of blade technology. They used hard hammer percussion to strike off blades from extensively prepared cores. Some of these blades were then retouched to make them into points. There are also signs on the stone points that they were hafted to a shaft and functioned as spear tips, making this the earliest evidence for hafted multicomponent tools.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1626,14 +1095,17 @@ Wilkins, J., Schoville, B.J., Brown, K.S., Chazan, M. (2012). Evidence for early
 
 
                         <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="Boxgrove">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="Boxgrove">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="Boxgrove"><a>Boxgrove</a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Boxgrove.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Boxgrove"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                            <div id="BoxgroveImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Boxgrove.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="Boxgrove"></div> 
+                            
+                             <span id="BoxgroveFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Boxgrove.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1651,8 +1123,10 @@ Wilkins, J., Schoville, B.J., Brown, K.S., Chazan, M. (2012). Evidence for early
 
                             </div>
 
+                            <div class="hcLogoText discoveryName"  alt="Boxgrove"><a>Boxgrove</a></div>
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              Boxgrove is a Lower Paleolithic site in England that consists of refined Acheulian handaxe tools and butchered animal bones, all of which were found in situ, or in an undisturbed context. The emphasis of the hominins at the site seemed to be on handaxes rather than flakes, as the flakes show no signs of retouch and remain where they fell during handaxe production. The handaxes were reduced almost completely with a soft hammer, such as an antler, rather than with a hard hammer, and the toolmakers prepared platforms on the bifaces to more effectively control the size and shape of the flakes they removed.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1698,14 +1172,18 @@ Stout, D., Apel, J., Commander, J., Roberts, M. (2014). Late Acheulean technolog
 
 
                        <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="Trinil">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="Trinil">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="Trinil"><a>Trinil </a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Trinil.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Trinil"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                            <div id="TrinilImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Trinil.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="Trinil"></div> 
+                            
+                              <span id="TrinilFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Trinil.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1723,8 +1201,10 @@ Stout, D., Apel, J., Commander, J., Roberts, M. (2014). Late Acheulean technolog
 
                             </div>
 
+                            <div class="hcLogoText discoveryName" alt="Trinil"><a>Trinil </a></div>
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              In a fossil freshwater shell assemblage originally collected by Eugène Dubois in 1891, a team of researchers rediscovered a shell with a geometric design engraved into it. The sediment within the shells date the assemblage to 500 Ka, which means that the abstract design was likely made by H. erectus. This is currently the earliest evidence for abstract engraving in the archaeological record.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1763,14 +1243,17 @@ Joordens, J.C.A., d’Errico, F., Wesselingh, F.P., Munro, S., de Vos, J., Walli
 
 
                         <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="Simadeloshuesos">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="Simadeloshuesos">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="Simadeloshuesos"> <a> Sima de los huesos </a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_SimadelosHuesos.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Simadeloshuesos"></div> 
+                           
+                            <div id="SimadeloshuesosImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_SimadelosHuesos.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="Simadeloshuesos"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                              <span id="SimadeloshuesosFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_SimadelosHuesos.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1788,8 +1271,10 @@ Joordens, J.C.A., d’Errico, F., Wesselingh, F.P., Munro, S., de Vos, J., Walli
 
                             </div>
 
+                             <div class="hcLogoText discoveryName" alt="Simadeloshuesos"> <a> Sima de los huesos </a></div>
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              The fossil bones of at least 28 archaic Neandertals were discovered in a pit of the Cueva Mayor-Cueva del Silo cave system of the Sierra de Atapuerca, along with one quartzite handaxe with no accompanying flake debris. Some researchers have suggested that the bodies of these individuals were purposely thrown down the 13 m shaft post-mortem by other members of their group. This has been a controversial claim, however. Other researchers argue that the presence of other animal remains in the pit in addition to human remains means that animals and hominins alike fell into the pit by accident and then could not get back out. The hominin fossils were all found in the same stratigraphic layer, while other animal remains continued to be deposited after this event. If the hominins at this site were intentionally thrown into the pit, then this would be the earliest evidence of human burial.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1832,14 +1317,19 @@ Sala, N., Arsuaga, J.L., Martínez, I., Gracia-Téllez, A. (2015). Breakage patt
                         
                         
                         <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="TerraAmata">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="TerraAmata">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="TerraAmata"> <a> Terra Amata </a> </div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_TerraAmata.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="TerraAmata"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                            <div id="TerraAmataImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_TerraAmata.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="TerraAmata"></div> 
+                            
+
+                              <span id="TerraAmataFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_TerraAmata.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1857,8 +1347,10 @@ Sala, N., Arsuaga, J.L., Martínez, I., Gracia-Téllez, A. (2015). Breakage patt
 
                             </div>
 
+                            <div class="hcLogoText discoveryName"  alt="TerraAmata"> <a> Terra Amata </a> </div>
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              n 1966, archaeologist Henry de Lumley discovered a habitation site in Nice where archaic humans lived along a prehistoric beach around 400 Ka. Here they made Acheulian stone tools and constructed the earliest dated, open-air living structures. de Lumley believed that the huts were probably made out of animal hides on poles, held up by low walls of stone. Within each structure he found ash that suggests early domestication of fire. These claims have been critiqued by Paola Villa, who argued that the position of the stones at the site was caused by natural processes.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1897,14 +1389,17 @@ Villa, P. (1983). Terra Amata and the Middle Pleistocene archaeological record o
 
 
                           <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="Campitello">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="Campitello">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="Campitello"> <a> Campitello </a> </div>
 
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Campitello.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Campitello"></div> 
+                            <div id="CampitelloImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Campitello.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="Campitello"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                             <span id="CampitelloFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Campitello.png" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1922,8 +1417,11 @@ Villa, P. (1983). Terra Amata and the Middle Pleistocene archaeological record o
 
                             </div>
 
+                            <div class="hcLogoText discoveryName" alt="Campitello"> <a> Campitello </a> </div>
+
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"> <span style="font-style:italic"> Major Discovery </span></br>
                               The process of hafting a point onto a shaft was likely developed independently several times in prehistory. At Campitello, however, Neandertals developed the first known synthetic material, an adhesive called pitch, which they made by heating birch bark in an oxygen-free environment at around 650° F for several hours. This dhesive improved the durability of their hafted tools and allowed for a stronger bond between the point and the shaft.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -1959,14 +1457,18 @@ Wynn, T., Coolidge, F.L. (2004). The expert Neandertal mind. Journal of Human Ev
 
 
                            <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="PinnaclePoint">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="PinnaclePoint">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="PinnaclePoint"><a> Pinnacle Point </a> </div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_PinnaclePoint.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="PinnaclePoint"></div> 
+                           
+                            <div id="PinnaclePointImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_PinnaclePoint.jpg');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="PinnaclePoint"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+
+                             <span id="PinnaclePointFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_PinnaclePoint.jpg" class="img-responsive rish_thumbnail" ></span> 
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -1984,8 +1486,11 @@ Wynn, T., Coolidge, F.L. (2004). The expert Neandertal mind. Journal of Human Ev
 
                             </div>
 
+                             <div class="hcLogoText discoveryName" alt="PinnaclePoint"><a> Pinnacle Point </a> </div>
+
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"> <span style="font-style:italic"> Major Discovery </span></br>
                               Heat treating certain types of stone, such as silcrete, improves the stone’s flaking abilities. Heat treating stone involves placing unmodified stone into a very hot fire. With increased hardness, these stones are more likely to fracture in the way a toolmaker intends, instead of breaking along internal imperfections in the structure of the stone. This practice became widespread by 72,000 years ago, but the first evidence of this behavior is found at Pinnacle Point 164,000 years ago.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -2025,14 +1530,17 @@ Schmidt, P., Porraz, G., Slodczyk, A., Bellot-gurlet, L., Archer, W., Miller, C.
 
 
                             <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="EsSkhulCave">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="EsSkhulCave">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="EsSkhulCave"> <a> Es-Skhul Cave </a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Skhul.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="EsSkhulCave"></div> 
+                           
+                            <div id="EsSkhulCaveImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Skhul.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="EsSkhulCave"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                              <span id="EsSkhulCaveFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Skhul.png" class="img-responsive rish_thumbnail" ></span>
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -2050,8 +1558,10 @@ Schmidt, P., Porraz, G., Slodczyk, A., Bellot-gurlet, L., Archer, W., Miller, C.
 
                             </div>
 
+                             <div class="hcLogoText discoveryName"  alt="EsSkhulCave"> <a> Es-Skhul Cave </a></div>
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"> <span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"> <span style="font-style:italic"> Major Discovery </span></br>
                               The rock shelter site known as Skhul was excavated in the 1930s. More recently, a research team discovered shells in the collections that had been recovered from the site. Skhul lies 3.5 km away from the Mediterranean seashore, which means that these shells were purposely selected and transported to the cave by premodern humans. Moreover, they have human-made perforations, and the edges of these perforations are rounded, indicating that the shells were worn on a string as beads. They were also stained with ochre. These shells currently represent the earliest evidence for personal ornamentation using beads. <br>
                            <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -2091,14 +1601,17 @@ Wadley, L. (2015). Those marvelous millennia: The Middle Stone Age of Southern A
 
 
                            <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="Krapina">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="Krapina">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="Krapina"> <a> Krapina </a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Krapina.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="Krapina"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                          <div id="KrapinaImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_Krapina.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="Krapina"></div> 
+                            
+                            <span id="KrapinaFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_Krapina.png" class="img-responsive rish_thumbnail" ></span>
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -2116,8 +1629,11 @@ Wadley, L. (2015). Those marvelous millennia: The Middle Stone Age of Southern A
 
                             </div>
 
+                            <div class="hcLogoText discoveryName" alt="Krapina"> <a> Krapina </a></div>
+
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              Symbolic behavior like personal ornamentation through the use of jewelry has long been considered by researchers as a hallmark of modern human cognition. However, this site shows that personal ornamentation may have been independently developed by Neanderthals earlier than previously thought. Researchers have identified cut marks and wear marks on several eagle talons. The wear marks on the talons are consistent with the expected wear marks that would develop if they were strung together on a bracelet or necklace. Krapina also has the distinction of being one of the oldest, undisputed burial sites in the world. <br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -2156,14 +1672,17 @@ Tattersall, I. (2016). Language origins: An evolutionary framework. Topoi 2016, 
 
 
                              <!-- block starts-->
-                         <div class="col-md-12" style="margin-bottom:10%;" id="BlombosCave">
+                         <div class="col-md-12" style="margin-bottom:15%;" id="BlombosCave">
 
 
-                            <div class="hcLogoText discoveryName" style="width:auto;" alt="BlombosCave"> <a>Blombos Cave</a></div>
-
-                            <div style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_BlombosCave.png');" class="img-responsive rish_thumbnail prehistDiscovimage discoveryName" alt="BlombosCave"></div> 
                             
-                            <div style="margin-top:1%;background-color:#2A5769;height:3em;">
+                            <div id="BlombosCaveImage" style="cursor:pointer;background-image:url('hcimages/prehistoricArchaeology/PrehistArch_BlombosCave.png');" class="img-responsive rish_thumbnail prehistDiscovimage" alt="BlombosCave"></div> 
+                            
+                             <span id="BlombosCaveFullImage" style="display:none;">
+                           <span> <img src="hcimages/prehistoricArchaeology/PrehistArch_BlombosCave.png" class="img-responsive rish_thumbnail" ></span>
+                             </span>
+
+                            <div class="discoveryLocPeriodBlock" >
 
                               
                                
@@ -2181,8 +1700,10 @@ Tattersall, I. (2016). Language origins: An evolutionary framework. Topoi 2016, 
 
                             </div>
 
+                            <div class="hcLogoText discoveryName" alt="BlombosCave"> <a>Blombos Cave</a></div>
+
                             <div>
-                            <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic"> Major Discovery </span></br>
+                            <div class="majorDiscoveryBlock"><span style="font-style:italic"> Major Discovery </span></br>
                              Like the presence of an early bone tool and shell bead industry. What really makes it an important site is the engraved ochre found there, which is the earliest evidence of art in the archaeological record. The engravings appear to have been made with the point of a stone tool. Many researchers consider this to be evidence of symbolic or abstract thought. <br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                             
@@ -2499,6 +2020,23 @@ GnJh-03 in the Kapthurin formation of Kenya (285 Ka): earliest known use of red 
     
 
   <!-- latest news ends-->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-dismiss="modal">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color:rgba(0, 0, 0, 0.8);">
+      <div class="modal-header" style="background-color:transparent;">
+      <button type="button" class="close" data-dismiss="modal" style="opacity:1;"><span style="color:white;" class="glyphicon glyphicon-remove"></span><span class="sr-only">Close</span></button>
+        <!--<h4 class="modal-title" id="myModalLabel">Image preview</h4>-->
+      </div>
+      <div class="modal-body" style="text-align:center;border-bottom:none;">
+        <img src="" class="modalImage" id="imagepreview"> 
+      </div>
+      <div class="modal-footer" style="text-align:center;">
+        <!--<button type="button" class="btn" data-dismiss="modal" >Close</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 

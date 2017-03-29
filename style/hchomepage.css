@@ -2168,6 +2168,21 @@ div#slider figure {
 
 @media screen and (min-width: 1200px) {
 
+.discoveryLocPeriodBlock
+{
+ margin-top:0%;background-color:#2A5769;height:3em;
+}
+
+.majorDiscoveryBlock
+{
+  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;
+}
+
+.discoveryName
+{
+  width:auto !important;
+  margin-top:2% !important;
+}
 
 .forDiscoveriesScroll
 {
