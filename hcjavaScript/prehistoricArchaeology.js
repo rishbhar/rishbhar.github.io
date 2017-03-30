@@ -4,6 +4,8 @@ $( document ).ready(function() {
 noUiSlider.create(handlesSlider, {
   start: [ 1820,2000 ],
   step: 10,
+  connect: true,
+  tooltips: [true, wNumb({ decimals: 0 })],
   range: {
     'min': [ 1800 ],
     'max': [ 2016 ]
@@ -23,9 +25,9 @@ var marginMin = document.getElementById('slider-margin-value-min'),
 
 handlesSlider.noUiSlider.on('update', function ( values, handle ) {
   if ( handle ) {
-    marginMax.innerHTML = values[handle];
+    //marginMax.innerHTML = values[handle];
   } else {
-    marginMin.innerHTML = values[handle];
+    //marginMin.innerHTML = values[handle];
   }
 });
 
