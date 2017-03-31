@@ -2,13 +2,13 @@ $( document ).ready(function() {
    var handlesSlider = document.getElementById('slider-handles');
 
 noUiSlider.create(handlesSlider, {
-  start: [ 1820,2000 ],
-  step: 10,
+  start: [ 0.0,3.5 ],
+  step: .5,
   connect: true,
-  tooltips: [true, wNumb({ decimals: 0 })],
+  tooltips: [true, wNumb({ decimals: 1 })],
   range: {
-    'min': [ 1800 ],
-    'max': [ 2016 ]
+    'min': [ 0.0 ],
+    'max': [ 3.5 ]
   },
   format: {
     to: function ( value ) {
@@ -25,9 +25,13 @@ var marginMin = document.getElementById('slider-margin-value-min'),
 
 handlesSlider.noUiSlider.on('update', function ( values, handle ) {
   if ( handle ) {
-    //marginMax.innerHTML = values[handle];
+    marginMax.innerHTML = values[handle];
+    if(selectedFilters!=null)
+    shuffleDiscoveries();
   } else {
-    //marginMin.innerHTML = values[handle];
+    marginMin.innerHTML = values[handle];
+    if(selectedFilters!=null)
+    shuffleDiscoveries();
   }
 });
 
@@ -140,6 +144,7 @@ $(window).scroll(function() {                  // assign scroll event listener
 });*/
 
 
+
 $('.tagMargin').click(function(){
 
 if(searchStringInArray($(this).attr('id'),selectedFilters)>0)
@@ -179,9 +184,87 @@ var behaviourFilters=["preoldo","oldowan","art","butchery","acheulian","hunting"
 var speciesFilters=["australopithecus","homoerectus","homoneanderthalensis"];
 var cognitionFilters=["planning","imitation","language","imitation","memory","problem-solving"];
 
+var datedTo= new Map();
+
+        datedTo.set('Dikika','3.42-3.24');
+
+       datedTo.set('Lomekwi','3.3');
+
+        datedTo.set('Gona','2.6');
+
+        datedTo.set('Dmanisi','1.85-1.78');
+
+        datedTo.set('KanjeraSouth','2');
+
+        datedTo.set('Kokiselei4','1.76');
+
+        datedTo.set('Sangiran','1.6');
+
+        datedTo.set('SimadelElefante','1.2');
+
+        datedTo.set('WoloSege','1.02');
+
+        datedTo.set('WonderwerkCave','1');
+
+        datedTo.set('Olorgesailie','.9');
+
+        datedTo.set('KathuPan','.55-.50');
+
+        datedTo.set('Boxgrove','.5');
+        
+        datedTo.set('Trinil','.5');
+
+        datedTo.set('Simadeloshuesos','.43');
+
+        datedTo.set('TerraAmata','.4');
+
+        datedTo.set('Campitello','.2');
+
+        datedTo.set('PinnaclePoint','.164');
+
+        datedTo.set('EsSkhulCave','.135-.1');
+
+        datedTo.set('Krapina','.13');
+
+        datedTo.set('BlombosCave','.1-.75');
+      
+
+
+
+
 var totalDiscoveriesShown=21;
 
 //$('#totalDiscoveriesShown').text(totalDiscoveriesShown+" discoveries");
+
+
+function datedToCheck(discovery)
+{
+  
+    var timePeriod = datedTo.get(discovery);
+    //alert(timePeriod);
+    var startTime = $('#slider-margin-value-min').text();
+    var endTime = $('#slider-margin-value-max').text();
+    //alert(datedTo.get(discovery));
+    var dashOccur = timePeriod.indexOf('-');
+    var discoveryStartTime = timePeriod.substring(0,dashOccur);
+    var discoveryEndTime = timePeriod.substring(dashOccur+1,timePeriod.length);
+    //alert(discoveryStartTime);
+    //alert(discoveryEndTime);
+    var startTimeInt = parseFloat(startTime);
+    var endTimeInt = parseFloat(endTime);
+    var discoveryStartTimeInt = parseFloat(discoveryStartTime);
+    var discoveryEndTimeInt = parseFloat(discoveryEndTime);
+
+
+    if((discoveryStartTimeInt>=startTimeInt) && (discoveryStartTimeInt<=endTimeInt))
+      {return 1;}
+
+    if((discoveryEndTimeInt>=startTimeInt) && (discoveryEndTimeInt<=endTimeInt))
+      {return 1;}
+
+
+}
+
 
 
 
@@ -202,6 +285,8 @@ function arraysAreIdentical(arr1, arr2){
     else 
     return 2;
 }
+
+
 
 
 function filterInUseCompareFunction(arr1, arr2){
@@ -309,6 +394,28 @@ $('#totalDiscoveriesShown').text('');
   var showKrapina = arraysAreIdentical(selectedFilters,Krapina);
   var showBlombosCave = arraysAreIdentical(selectedFilters,BlombosCave);
 
+  var datedToDikika = datedToCheck('Dikika');
+  var datedToLomekwi = datedToCheck('Lomekwi');
+  var datedToGona = datedToCheck('Gona');
+  var datedToKanjeraSouth = datedToCheck('KanjeraSouth');
+  var datedToDmanisi = datedToCheck('Dmanisi');
+  var datedToKokiselei4 = datedToCheck('Kokiselei4');
+  var datedToSangiran = datedToCheck('Sangiran');
+  var datedToSimadelElefante = datedToCheck('SimadelElefante');
+  var datedToWoloSege = datedToCheck('WoloSege');
+  var datedToWonderwerkCave = datedToCheck('WonderwerkCave');
+  var datedToOlorgesailie = datedToCheck('Olorgesailie');
+  var datedToKathuPan = datedToCheck('KathuPan');
+  var datedToBoxgrove = datedToCheck('Boxgrove');
+  var datedToTrinil = datedToCheck('Trinil');
+  var datedToSimadeloshuesos = datedToCheck('Simadeloshuesos');
+  var datedToTerraAmata = datedToCheck('TerraAmata');
+  var datedToCampitello = datedToCheck('Campitello');
+  var datedToPinnaclePoint= datedToCheck('PinnaclePoint');
+  var datedToEsSkhulCave = datedToCheck('EsSkhulCave');
+  var datedToKrapina = datedToCheck('Krapina');
+  var datedToBlombosCave = datedToCheck('BlombosCave');
+
 
 //alert(selectedFilters);
 
@@ -355,27 +462,27 @@ var cognitionFilterApplied = filterInUseCompareFunction(selectedFilters,cognitio
 
 totalDiscoveriesShown=0;
   
-if(showDikika==1) {totalDiscoveriesShown+=1;}
-if(showLomekwi==1){totalDiscoveriesShown+=1;}
-if(showGona==1){totalDiscoveriesShown+=1;}
-if(showKanjeraSouth==1){totalDiscoveriesShown+=1;}
-if(showDmanisi==1){totalDiscoveriesShown+=1;}
-if(showKokiselei4==1){totalDiscoveriesShown+=1;}
-if(showSangiran==1){totalDiscoveriesShown+=1;}
-if(showSimadelElefante==1){totalDiscoveriesShown+=1;}
-if(showWoloSege==1){totalDiscoveriesShown+=1;}
-if(showWonderwerkCave==1){totalDiscoveriesShown+=1;}
-if(showOlorgesailie==1){totalDiscoveriesShown+=1;}
-if(showKathuPan==1){totalDiscoveriesShown+=1;}
-if(showTrinil==1){totalDiscoveriesShown+=1;}
-if(showBoxgrove==1){totalDiscoveriesShown+=1;}
-if(showSimadeloshuesos==1){totalDiscoveriesShown+=1;}
-if(showTerraAmata==1){totalDiscoveriesShown+=1;}
-if(showCampitello==1){totalDiscoveriesShown+=1;}
-if(showPinnaclePoint==1){totalDiscoveriesShown+=1;}
-if(showEsSkhulCave==1){totalDiscoveriesShown+=1;}
-if(showKrapina==1){totalDiscoveriesShown+=1;}
-if(showBlombosCave==1){totalDiscoveriesShown+=1;}
+if((showDikika==1) && (datedToDikika==1)) {totalDiscoveriesShown+=1;}
+if((showLomekwi==1) && (datedToLomekwi==1)){totalDiscoveriesShown+=1;}
+ if((showGona==1) && (datedToGona==1)){totalDiscoveriesShown+=1;}
+if((showKanjeraSouth==1) && (datedToKanjeraSouth==1)){totalDiscoveriesShown+=1;}
+if((showDmanisi==1) && (datedToDmanisi==1)){totalDiscoveriesShown+=1;}
+if((showKokiselei4==1) && (datedToKokiselei4==1)){totalDiscoveriesShown+=1;}
+if((showSangiran==1) && (datedToSangiran==1)) {totalDiscoveriesShown+=1;}
+if((showSimadelElefante==1) && (datedToSimadelElefante==1)){totalDiscoveriesShown+=1;}
+ if((showWoloSege==1) && (datedToWoloSege==1)){totalDiscoveriesShown+=1;}
+if((showWonderwerkCave==1) && (datedToWonderwerkCave==1)){totalDiscoveriesShown+=1;}
+if((showOlorgesailie==1) && (datedToOlorgesailie==1)){totalDiscoveriesShown+=1;}
+if((showKathuPan==1) && (datedToKathuPan==1)){totalDiscoveriesShown+=1;}
+if((showTrinil==1) && (datedToTrinil==1)){totalDiscoveriesShown+=1;}
+if((showBoxgrove==1) && (datedToBoxgrove==1)){totalDiscoveriesShown+=1;}
+if((showSimadeloshuesos==1) && (datedToSimadeloshuesos==1)){totalDiscoveriesShown+=1;}
+if((showTerraAmata==1) && (datedToTerraAmata==1)){totalDiscoveriesShown+=1;}
+if((showCampitello==1) && (datedToCampitello==1)){totalDiscoveriesShown+=1;}
+if((showPinnaclePoint==1) && (datedToPinnaclePoint==1)){totalDiscoveriesShown+=1;}
+if((showEsSkhulCave==1) && (datedToEsSkhulCave==1)){totalDiscoveriesShown+=1;}
+if((showKrapina==1) && (datedToKrapina==1)){totalDiscoveriesShown+=1;}
+if((showBlombosCave==1) && (datedToBlombosCave==1)){totalDiscoveriesShown+=1;}
   //alert(showDikika,showLomekwi,showGona,showKanjeraSouth);
   $('#totalDiscoveriesShown').text("("+totalDiscoveriesShown+" discoveries, filters applied)");
 
@@ -405,69 +512,69 @@ if(showBlombosCave==1){totalDiscoveriesShown+=1;}
 
 
   $('#discoveriesBlock').css('opacity', '1');
-  if(showDikika==1)
+  if((showDikika==1) && (datedToDikika==1))
   $('#Dikika').fadeIn(500);
 
-  if(showLomekwi==1)
+  if((showLomekwi==1) && (datedToLomekwi==1))
   $('#Lomekwi').fadeIn(500);
 
-  if(showGona==1)
+  if((showGona==1) && (datedToGona==1))
   $('#Gona').fadeIn(500);
 
-  if(showKanjeraSouth==1)
+  if((showKanjeraSouth==1) && (datedToKanjeraSouth==1))
   $('#KanjeraSouth').fadeIn(500);
 
-   if(showDmanisi==1)
+   if((showDmanisi==1) && (datedToDmanisi==1))
   $('#Dmanisi').fadeIn(500);
 
-  if(showKokiselei4==1)
+  if((showKokiselei4==1) && (datedToKokiselei4==1))
   $('#Kokiselei4').fadeIn(500);
 
-  if(showSangiran==1)
+  if((showSangiran==1) && (datedToSangiran==1))
   $('#Sangiran').fadeIn(500);
 
-  if(showSimadelElefante==1)
+  if((showSimadelElefante==1) && (datedToSimadelElefante==1))
   $('#SimadelElefante').fadeIn(500);
 
-   if(showWoloSege==1)
+   if((showWoloSege==1) && (datedToWoloSege==1))
   $('#WoloSege').fadeIn(500);
 
-  if(showWonderwerkCave==1)
+  if((showWonderwerkCave==1) && (datedToWonderwerkCave==1))
   $('#WonderwerkCave').fadeIn(500);
 
-  if(showOlorgesailie==1)
+  if((showOlorgesailie==1) && (datedToOlorgesailie==1))
   $('#Olorgesailie').fadeIn(500);
 
 
 
-   if(showKathuPan==1)
+   if((showKathuPan==1) && (datedToKathuPan==1))
   $('#KathuPan').fadeIn(500);
 
-  if(showTrinil==1)
+  if((showTrinil==1) && (datedToTrinil==1))
   $('#Trinil').fadeIn(500);
 
-  if(showBoxgrove==1)
+  if((showBoxgrove==1) && (datedToBoxgrove==1))
   $('#Boxgrove').fadeIn(500);
 
-  if(showSimadeloshuesos==1)
+  if((showSimadeloshuesos==1) && (datedToSimadeloshuesos==1))
   $('#Simadeloshuesos').fadeIn(500);
 
-   if(showTerraAmata==1)
+   if((showTerraAmata==1) && (datedToTerraAmata==1))
   $('#TerraAmata').fadeIn(500);
 
-  if(showCampitello==1)
+  if((showCampitello==1) && (datedToCampitello==1))
   $('#Campitello').fadeIn(500);
 
-  if(showPinnaclePoint==1)
+  if((showPinnaclePoint==1) && (datedToPinnaclePoint==1))
   $('#PinnaclePoint').fadeIn(500);
 
-  if(showEsSkhulCave==1)
+  if((showEsSkhulCave==1) && (datedToEsSkhulCave==1))
   $('#EsSkhulCave').fadeIn(500);
   
-  if(showKrapina==1)
+  if((showKrapina==1) && (datedToKrapina==1))
   $('#Krapina').fadeIn(500);
 
-  if(showBlombosCave==1)
+  if((showBlombosCave==1) && (datedToBlombosCave==1))
   $('#BlombosCave').fadeIn(500);
   
 
@@ -565,6 +672,9 @@ function showDetails(discovery)
 
   $('#preArchaeologyLink').text(' | '+discovery);
   $(''+blockGoBack+'').css('display','block');
+  $('.majorDiscoveryBlock').css('background-color','transparent');
+  $('.majorDiscoveryBlock').css('border-top','none');
+  $('.majorDiscoveryBlock').css('padding','2% 3% 0% 0%');
   $(window).scrollTop(0);
   
 
@@ -612,6 +722,9 @@ function showDetails(discovery)
   
   
   $('#preArchaeologyLink').text('');
+  $('.majorDiscoveryBlock').css('background-color','#012E40');
+  $('.majorDiscoveryBlock').css('border-top','1px solid #547887');
+  $('.majorDiscoveryBlock').css('padding','2% 3% 2% 2%');
   //$(window).scrollTop($("#discoveriesBlock").offset().top-50);
   //alert(lastPosition);
   lastPosition+=280;//alert(lastPosition);
@@ -637,7 +750,7 @@ $("#imagemodal").click(function(e) {
     else if(clickedItem!="modalImage")
       $('#imagemodal').modal('hide');
       else if(clickedItem=="modal-body")
-        alert("lamlam");
+        return;//alert("lamlam");
         
     //alert(senderElement);
     

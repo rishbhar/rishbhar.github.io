@@ -97,12 +97,13 @@ display: block;
 
 .discoveryLocPeriodBlock
 {
- margin-top:0%;background-color:#2A5769;height:4em;
+ margin-top:0%;background-color:#012E40;height:4em;
 }
 
 .majorDiscoveryBlock
 {
-  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;word-wrap: break-word;
+  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;word-wrap: break-word;background-color:#012E40;
+border-top: 1px solid #547887;
 }
 
 .discoveryName
@@ -1203,12 +1204,13 @@ div#slider figure {
 
 .discoveryLocPeriodBlock
 {
- margin-top:0%;background-color:#2A5769;height:4em;
+ margin-top:0%;background-color:#012E40;height:4em;
 }
 
 .majorDiscoveryBlock
 {
-  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;word-wrap: break-word;
+  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;word-wrap: break-word;background-color:#012E40;
+  border-top: 1px solid #547887;
 }
 
 .discoveryName
@@ -1247,12 +1249,12 @@ font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight
 
 .discoveryLocPeriodBlock
 {
- margin-top:0%;background-color:#2A5769;height:3em;
+ margin-top:0%;background-color:#012E40;height:3em;
 }
 
 .majorDiscoveryBlock
 {
-  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;
+  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;background-color:#012E40;border-top: 1px solid #547887;
 }
 
 .discoveryName
@@ -2338,12 +2340,13 @@ font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight
 
 .discoveryLocPeriodBlock
 {
- margin-top:0%;background-color:#2A5769;height:3em;
+ margin-top:0%;background-color:#012E40;height:3em;
 }
 
 .majorDiscoveryBlock
 {
-  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 3% 0;line-height:1.7;
+  font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:2% 3% 2% 2%;line-height:1.7;background-color:#012E40;
+  border-top: 1px solid #547887;
 }
 
 .discoveryName
