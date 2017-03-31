@@ -280,7 +280,12 @@ function arraysAreIdentical(arr1, arr2){
     }
     //alert(equals);
     
-    if(selectedFilters.length == (equals+1))
+    // if(selectedFilters.length == (equals+1))
+    // {return 1;}
+    // else 
+    // return 2;
+
+   if(equals>0)
     {return 1;}
     else 
     return 2;
@@ -453,7 +458,7 @@ function shuffleDiscoveries()
   $('#BlombosCave').fadeIn(500);
 
 
-      $('#locationFilterApplied').text('');
+$('#locationFilterApplied').text('');
 $('#behaviourFilterApplied').text('');
 $('#speciesFilterApplied').text('');
 $('#cognitionFilterApplied').text('');
@@ -547,8 +552,7 @@ var cognitionFilterApplied = filterInUseCompareFunction(selectedFilters,cognitio
   if(speciesFilterApplied==1)
      {$('#speciesFilterApplied').text('(filter in use)');}
    else if(speciesFilterApplied==2)
-    {$('#speciesFilterApplied').text('');
-}
+    {$('#speciesFilterApplied').text('');}
 
 
 
