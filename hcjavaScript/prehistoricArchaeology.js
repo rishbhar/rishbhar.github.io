@@ -739,6 +739,7 @@ $('.discoveryName, .readMoreDiscovery').click(function(){
   showDetails($(this).attr('alt'));
   var attrValue = $(this).attr('alt');
 
+
   $('[alt="'+attrValue+'"]').closest(".readMoreDiscovery").toggle();  
 
   //$('[alt="'+attrValue+'"]').css('display','block');
