@@ -47,10 +47,21 @@ $('#locationCatBar').click(function(){
         {
           $('#locationTagToggle').removeClass('glyphicon-chevron-down');
           $('#locationTagToggle').addClass('glyphicon-minus');
-  
+
+          $('#speciesTagToggle').removeClass('glyphicon-minus');
+          $('#speciesTagToggle').addClass('glyphicon-chevron-down');
+          $('#behavioursTagToggle').removeClass('glyphicon-minus');
+          $('#behavioursTagToggle').addClass('glyphicon-chevron-down');
+          $('#cognitionTagToggle').removeClass('glyphicon-minus');
+          $('#cognitionTagToggle').addClass('glyphicon-chevron-down');
+
+          $('#speciesTagOptionsBlock').css("display","none");
+          $('#behavioursTagOptionsBlock').css("display","none");
+          $('#cognitionTagOptionsBlock').css("display","none");
         }
 
     $('#locationTagOptionsBlock').slideToggle(100,function(){});
+  
 });
 
 $('#speciesTagBar').click(function(){
@@ -64,6 +75,17 @@ $('#speciesTagBar').click(function(){
         {
           $('#speciesTagToggle').removeClass('glyphicon-chevron-down');
           $('#speciesTagToggle').addClass('glyphicon-minus');
+
+           $('#locationTagToggle').removeClass('glyphicon-minus');
+          $('#locationTagToggle').addClass('glyphicon-chevron-down');
+          $('#behavioursTagToggle').removeClass('glyphicon-minus');
+          $('#behavioursTagToggle').addClass('glyphicon-chevron-down');
+          $('#cognitionTagToggle').removeClass('glyphicon-minus');
+          $('#cognitionTagToggle').addClass('glyphicon-chevron-down');
+
+          $('#locationTagOptionsBlock').css("display","none");
+          $('#behavioursTagOptionsBlock').css("display","none");
+          $('#cognitionTagOptionsBlock').css("display","none");
   
         }
     $('#speciesTagOptionsBlock').slideToggle(100,function(){});
@@ -80,6 +102,16 @@ $('#behavioursTagBar').click(function(){
         {
           $('#behavioursTagToggle').removeClass('glyphicon-chevron-down');
           $('#behavioursTagToggle').addClass('glyphicon-minus');
+          $('#locationTagToggle').removeClass('glyphicon-minus');
+          $('#locationTagToggle').addClass('glyphicon-chevron-down');
+          $('#speciesTagToggle').removeClass('glyphicon-minus');
+          $('#speciesTagToggle').addClass('glyphicon-chevron-down');
+          $('#cognitionTagToggle').removeClass('glyphicon-minus');
+          $('#cognitionTagToggle').addClass('glyphicon-chevron-down');
+
+          $('#locationTagOptionsBlock').css("display","none");
+          $('#speciesTagOptionsBlock').css("display","none");
+          $('#cognitionTagOptionsBlock').css("display","none");
   
         }
     $('#behavioursTagOptionsBlock').slideToggle(100,function(){});
@@ -96,6 +128,16 @@ $('#cognitionTagBar').click(function(){
         {
           $('#cognitionTagToggle').removeClass('glyphicon-chevron-down');
           $('#cognitionTagToggle').addClass('glyphicon-minus');
+          $('#locationTagToggle').removeClass('glyphicon-minus');
+          $('#locationTagToggle').addClass('glyphicon-chevron-down');
+          $('#speciesTagToggle').removeClass('glyphicon-minus');
+          $('#speciesTagToggle').addClass('glyphicon-chevron-down');
+          $('#behaviourTagToggle').removeClass('glyphicon-minus');
+          $('#behaviourTagToggle').addClass('glyphicon-chevron-down');
+
+          $('#locationTagOptionsBlock').css("display","none");
+          $('#speciesTagOptionsBlock').css("display","none");
+          $('#behavioursTagOptionsBlock').css("display","none");
   
         }
     $('#cognitionTagOptionsBlock').slideToggle(100,function(){});
@@ -156,32 +198,32 @@ selectedFilters.push($(this).attr('id'));
 shuffleDiscoveries();
 });
 
-var Dikika = ["eastafrica","australopithecus","preoldo"];
-var Lomekwi = ["eastafrica", "preoldo", "australopithecus"];
+var Dikika = ["eastafrica","australopithecus","preoldo","butchery"];
+var Lomekwi = ["eastafrica", "preoldo", "australopithecus", "planning"];
 var Gona = ["eastafrica","oldowan", "planning", "problem-solving", "imitation"];
-var Dmanisi = ["westafrica","oldowan", "homoerectus", "memory"];
-var KanjeraSouth = ["eastafrica","oldowan", "planning", "hunting", "imitation","butchery"];
-var Kokiselei4 = ["africa","acheulian", "planning", "imitation","memory","language"];
+var Dmanisi = ["westafrica","westasia", "oldowan", "homoerectus", "memory", "hunting"];
+var KanjeraSouth = ["eastafrica","oldowan", "planning", "hunting", "imitation","butchery", "language"];
+var Kokiselei4 = ["eastafrica", "africa","acheulian", "homoerectus", "planning", "imitation","memory","language"];
 var Sangiran = ["southasia","homoerectus"];
-var SimadelElefante = ["westeurope","hunting"];
-var WoloSege = ["southasia","seafaring","planning","language"];
+var SimadelElefante = ["westeurope","hunting", "butchery", "homoerectus", "oldowan"];
+var WoloSege = ["southasia","seafaring","planning","language", "oldowan"];
 var WonderwerkCave = ["southafrica","fire", "homoerectus", "memory","planning","language"];
-var Olorgesailie = ["eastafrica","language","acheulian"];
-var KathuPan = ["southafrica","haftedtools", "planning","language","memory"];
-var Boxgrove = ["westeurope","acheulian","butchery","planning","imitation"];
+var Olorgesailie = ["eastafrica","language","acheulian", "homoerectus"];
+var KathuPan = ["southafrica","haftedtools", "planning","language","memory", "problem-solving"];
+var Boxgrove = ["westeurope","acheulian","butchery","planning","imitation", "language"];
 var Trinil = ["southasia","homoerectus","language","art"];
-var Simadeloshuesos = ["westeurope","acheulian","burial","planning","problem-solving"];
-var TerraAmata = ["westeurope","fire","livingstructures","problem-solving","planning"];
-var Campitello = ["southeurope","haftedtools","homoneanderthalensis","fire","memory","language"];
-var PinnaclePoint = ["fire","problem-solving","southafrica"];
-var EsSkhulCave = ["westasia", "ornamentation"];
-var Krapina = ["southeurope","ornamentation","homoneanderthalensis","planning","burial","language"];
-var BlombosCave = ["southafrica","art"];
+var Simadeloshuesos = ["westeurope","acheulian","burial","planning","problem-solving","homoneanderthalensis", "burials"];
+var TerraAmata = ["westeurope","fire","livingstructures","problem-solving","planning", "acheulian"];
+var Campitello = ["southeurope","haftedtools","homoneanderthalensis","fire","memory","language", "problem-solving", "planning"];
+var PinnaclePoint = ["fire","problem-solving","southafrica", "planning", "earlyhomosapiens"];
+var EsSkhulCave = ["westasia", "ornamentation", "art", "language", "earlyhomosapiens"];
+var Krapina = ["southeurope","ornamentation","homoneanderthalensis","planning","burials","language", "imitation", "art"];
+var BlombosCave = ["southafrica","art", "memory","planning","language", "imitation", "earlyhomosapiens"];
 
 
 var locationFilters=["eastafrica", "westeurope", "westasia", "southafrica","southeurope","southasia"];
 var behaviourFilters=["preoldo","oldowan","art","butchery","acheulian","hunting","seafaring","fire","livingstructures","haftedtools","burials"];
-var speciesFilters=["australopithecus","homoerectus","homoneanderthalensis"];
+var speciesFilters=["australopithecus","homoerectus","homoneanderthalensis", "earlyhomosapiens"];
 var cognitionFilters=["planning","imitation","language","imitation","memory","problem-solving"];
 
 var datedTo= new Map();
@@ -226,7 +268,7 @@ var datedTo= new Map();
 
         datedTo.set('Krapina','.13');
 
-        datedTo.set('BlombosCave','.1-.75');
+        datedTo.set('BlombosCave','.1-.075');
       
 
 
@@ -837,10 +879,34 @@ $('html, body').animate({
 }
 
 
+$(document).mouseup(function (e)
+{
+    var tagToggle = $("[id*='TagToggle']") ;
+    var tagOptionsBlock = $("[id*='TagOptionsBlock']") ;
 
+    if ((!tagToggle.is(e.target) // if the target of the click isn't the container...
+        && tagToggle.has(e.target).length === 0 ) && (!tagOptionsBlock.is(e.target) // if the target of the click isn't the container...
+        && tagOptionsBlock.has(e.target).length === 0 )) // ... nor a descendant of the container
+    {
+        //container.hide();
+          $('#locationTagToggle').removeClass('glyphicon-minus');
+          $('#locationTagToggle').addClass('glyphicon-chevron-down');
+          $('#speciesTagToggle').removeClass('glyphicon-minus');
+          $('#speciesTagToggle').addClass('glyphicon-chevron-down');
+          $('#behavioursTagToggle').removeClass('glyphicon-minus');
+          $('#behavioursTagToggle').addClass('glyphicon-chevron-down');
+          $('#cognitionTagToggle').removeClass('glyphicon-minus');
+          $('#cognitionTagToggle').addClass('glyphicon-chevron-down');
+
+          $('#locationTagOptionsBlock').css("display","none");
+          $('#speciesTagOptionsBlock').css("display","none");
+          $('#behavioursTagOptionsBlock').css("display","none");
+          $('#cognitionTagOptionsBlock').css("display","none");
+  
+    }
+});
 
 $("#imagemodal").click(function(e) {
-
 
     var senderElement = e.target;
     //check if sender is the DIV element
