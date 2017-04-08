@@ -874,7 +874,7 @@ function showDetails(discovery)
   $('.majorDiscoveryBlock').css('padding','2% 3% 2% 2%');
   //$(window).scrollTop($("#discoveriesBlock").offset().top-50);
   //alert(lastPosition);
-  lastPosition+=1220;//alert(lastPosition);
+  lastPosition+=1020;//alert(lastPosition);
 //$(window).scrollTop(lastPosition);$(window).scrollTop(lastPosition);
 $('html, body').animate({
         scrollTop: lastPosition
