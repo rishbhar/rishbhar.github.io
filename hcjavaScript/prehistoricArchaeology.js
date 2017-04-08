@@ -744,6 +744,8 @@ $('.discoveryName, .readMoreDiscovery').click(function(){
   //$('[alt="'+attrValue+'"]').css('display','block');
   $('[alt="'+attrValue+'"]').closest(".goBack").css('display','inline');
   lastPosition=$('[alt="'+attrValue+'"]').closest('#'+attrValue).position().top;
+  //lastPosition=$('[alt="'+attrValue+'"]').closest(".discoveryName").position().top;
+  
   //alert(""+lastPosition);
 });
 
@@ -874,7 +876,7 @@ function showDetails(discovery)
   $('.majorDiscoveryBlock').css('padding','2% 3% 2% 2%');
   //$(window).scrollTop($("#discoveriesBlock").offset().top-50);
   //alert(lastPosition);
-  lastPosition+=1020;//alert(lastPosition);
+  lastPosition+=1280;//alert(lastPosition);
 //$(window).scrollTop(lastPosition);$(window).scrollTop(lastPosition);
 $('html, body').animate({
         scrollTop: lastPosition
