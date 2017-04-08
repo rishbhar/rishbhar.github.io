@@ -742,7 +742,7 @@ $('.discoveryName, .readMoreDiscovery').click(function(){
   $('[alt="'+attrValue+'"]').closest(".readMoreDiscovery").toggle();  
 
   //$('[alt="'+attrValue+'"]').css('display','block');
-  $('[alt="'+attrValue+'"]').closest(".goBack").css('display','block');
+  $('[alt="'+attrValue+'"]').closest(".goBack").css('display','inline');
   lastPosition=$('[alt="'+attrValue+'"]').closest('#'+attrValue).position().top;
   //alert(""+lastPosition);
 });
@@ -809,13 +809,16 @@ function showDetails(discovery)
   var blockGoBack = "#goBack"+discovery;
   $('#discoveriesBlock').css('opacity', '1');
 
+  //alert(blockGoBack);
+
+  $('#goBackBro').attr("alt",discovery);
   $(''+block+'Image').fadeOut(100);
   $(''+block+'FullImage').fadeIn(100);
   $(''+block+'').fadeIn(100);
   $(''+blockDetails+'').fadeIn(100);
 
   $('#preArchaeologyLink').text(' | '+discovery);
-  $(''+blockGoBack+'').css('display','block');
+  $(''+blockGoBack+'').css('display','inline');
   $('.majorDiscoveryBlock').css('background-color','transparent');
   $('.majorDiscoveryBlock').css('border-top','none');
   $('.majorDiscoveryBlock').css('padding','2% 3% 0% 0%');
@@ -871,7 +874,7 @@ function showDetails(discovery)
   $('.majorDiscoveryBlock').css('padding','2% 3% 2% 2%');
   //$(window).scrollTop($("#discoveriesBlock").offset().top-50);
   //alert(lastPosition);
-  lastPosition+=280;//alert(lastPosition);
+  lastPosition+=1220;//alert(lastPosition);
 //$(window).scrollTop(lastPosition);$(window).scrollTop(lastPosition);
 $('html, body').animate({
         scrollTop: lastPosition
