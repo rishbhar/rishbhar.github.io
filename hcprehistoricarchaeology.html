@@ -69,7 +69,30 @@ $(".prehistDiscovimage").on("click", function() {
 });
 
 
+var discoveryBlockStartTop;
 
+$("#readMorePreArchText").click(function(){
+  
+  $('#morePreArchTextTwo').toggle();
+  $('#morePreArchTextOne').toggle();
+  $('#readMorePreArchText').toggle();
+  $('#readLessPreArchText').css('display','block');
+  //discoveryBlockStartTop = $('#discoveryBlockStart').offset().top;
+  //alert(discoveryBlockStartTop);
+
+});
+
+$("#readLessPreArchText").click(function(){
+  
+  $('#morePreArchTextTwo').css('display','none');
+  $('#morePreArchTextOne').css('display','none');
+  $('#readLessPreArchText').css('display','none');
+  $('#readMorePreArchText').css('display','block');
+  $('#discoveryBlockStart').css('display','none');
+  $('#discoveryBlockStart').fadeIn(100);
+  //$('#discoveryBlockStart').css('top',discoveryBlockStartTop);
+
+});
 /*var h = window.location;
 h = h.toString();
 var lenURL = h.length;
@@ -149,10 +172,17 @@ if(discoveryURL.lastIndexOf(".html")==-1)
                             <div>
                               <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 5% 0;line-height:1.7;"> The prehistoric archaeological record sheds light on the evolution of human cognitive abilities. The archaeological record has yielded important information regarding technological patterns, foresight and planning, skill, cognitive capabilities, and dexterity. It is appreciated that at any stage of human evolution, we can only be sure that we are seeing minimal expressions of cognitive abilities in the form of the material culture and behavioral patterns of prehistoric hominins. Material culture, nonetheless, is the most important and reliable source of information pertaining to cognitive evolution that we can recover in the archaeological record. We can search for the most complex and exceptional forms of material culture at different stages of human evolution to see evidence for the most advanced level of cognitive abilities and skill manifested at that time. <br><br>
 
-Before 2.6 million years ago (Ma), there are only two sites that provide tentative evidence of hominin technological behaviors. Modified stones were discovered at Lomekwi in Kenya that date to 3.3 Ma. It should also be noted that a claim has been made for stone tool use and bone modification at approximately 3.4 million years at the site of Dikika, Ethiopia, where two surface mammal bones allegedly have chop-marks and cut-marks made from stone tools. Based on our knowledge of chimpanzee material culture and cultural traits, we can speculate on a range of possible types of tool-use and other types of cultural phenomena that occurred prior to 3.4 Ma, but without hard prehistoric evidence, it still remains a matter of conjecture. <br><br>
-
-By 2.6 Ma, there is clear evidence of hominin material culture. The archaeological sites from this time are all on the African continent. The archaeological record is characterized by a simple Oldowan technology, normally made with river cobbles that were knapped with hammerstones to produce sharp flakes and fragments. Even in this early period, there seems to be some indication of selection for higher-quality raw materials, some transport of stone from their sources, and processing of meat and marrow/brains with stone tools. By 1.75 Ma, the early Acheulian industry appears, which includes crude handaxes, cleavers, and picks made on large flakes struck from boulder-cores or made on large cobbles. Around the same time, hominins began to move out of Africa and disperse into Eurasia; evidence of this can be seen at sites such as Dmanisi in the Republic of Georgia and Sangiran in Indonesia. Handaxes and cleavers became better-made, more symmetrical, and more extensively flaked over time. By this technological stage, there are recurrences of very similar forms that suggest the emergence of style and a concept of a “mental template,” or the idea of a distinct artifact form in the mind of the toolmaker. Such templates become even more standardized in the subsequent later Acheulean, Middle Palaeolithic, and Upper Palaeolithic. <br><br>
+Before 2.6 million years ago (Ma), there are only two sites that provide tentative evidence of hominin technological behaviors. Modified stones were discovered at Lomekwi in Kenya that date to 3.3 Ma. It should also be noted that a claim has been made for stone tool use and bone modification at approximately 3.4 million years at the site of Dikika, Ethiopia, where two surface mammal bones allegedly have chop-marks and cut-marks made from stone tools. Based on our knowledge of chimpanzee material culture and cultural traits, we can speculate on a range of possible types of tool-use and other types of cultural phenomena that occurred prior to 3.4 Ma, but without hard prehistoric evidence, it still remains a matter of conjecture. 
  <br>
+ 
+<a id="readMorePreArchText" >Read More</a>
+ <br>
+
+
+<span id="morePreArchTextOne" style="display:none;">
+By 2.6 Ma, there is clear evidence of hominin material culture. The archaeological sites from this time are all on the African continent. The archaeological record is characterized by a simple Oldowan technology, normally made with river cobbles that were knapped with hammerstones to produce sharp flakes and fragments. Even in this early period, there seems to be some indication of selection for higher-quality raw materials, some transport of stone from their sources, and processing of meat and marrow/brains with stone tools. By 1.75 Ma, the early Acheulian industry appears, which includes crude handaxes, cleavers, and picks made on large flakes struck from boulder-cores or made on large cobbles. Around the same time, hominins began to move out of Africa and disperse into Eurasia; evidence of this can be seen at sites such as Dmanisi in the Republic of Georgia and Sangiran in Indonesia. Handaxes and cleavers became better-made, more symmetrical, and more extensively flaked over time. By this technological stage, there are recurrences of very similar forms that suggest the emergence of style and a concept of a “mental template,” or the idea of a distinct artifact form in the mind of the toolmaker. Such templates become even more standardized in the subsequent later Acheulean, Middle Palaeolithic, and Upper Palaeolithic. <br><br> </span>
+ <br>
+
 
                               </div>
                              </div>
@@ -162,17 +192,17 @@ By 2.6 Ma, there is clear evidence of hominin material culture. The archaeologic
 
 
 
-<div class="col-md-6" style="margin-bottom:0%;">
+<div class="col-md-6" style="margin-bottom:0%;display:none;" id="morePreArchTextTwo" >
 
 
                             <div>
                               <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:0% 3% 5% 0;line-height:1.7;"> 
 
-Between 750,000 and 250,000 years ago, a number of technological developments associated with Homo heidelbergensis are found around the Old World. These include the development of refined Later Acheulian tools, which commonly include extremely symmetrical and finely fashioned handaxes and cleavers and often show very intricate, controlled flaking, the use of careful platform preparation and of soft hammer percussion in their production. Additional advances observed in the archaeological record include apparent evidence of some controlled use of fire, though its incidence was rare and may not have involved skilled production of fire, as well as the possible emergence of early ritual or symbolic behavior. <br><br>
+Between 750,000 and 250,000 years ago, a number of technological developments associated with <i>Homo heidelbergensis</i> are found around the Old World. These include the development of refined Later Acheulian tools, which commonly include extremely symmetrical and finely fashioned handaxes and cleavers and often show very intricate, controlled flaking, the use of careful platform preparation and of soft hammer percussion in their production. Additional advances observed in the archaeological record include apparent evidence of some controlled use of fire, though its incidence was rare and may not have involved skilled production of fire, as well as the possible emergence of early ritual or symbolic behavior. <br><br>
 
 Changes associated with Neandertals in Eurasia add more complex (hafted) tools, apparent habitual use of fire, use of personal adornment, and burial of the dead to the adaptive and behavioral repertoire. Such trends continued in earnest among the modern human populations as they grew and spread, eventually involving the addition of other bone, antler, and ivory materials to the toolmaking systems, the appearance of needles and sewing, the development of habitual architecture in various forms, and evidence for long-distance transport and trade of materials. The emergence and evolution of complex symbolic behavior more recently in the archaeological record is evidenced in highly endowed burials, often prolific use of ornaments, and the proliferation of artistic traditions, including sometimes elaborate decoration of utilitarian tools. The emergence of regional patterning and the evidence for complex symbolic behaviors may indicate evolution of complex language systems and abilities during this later stage of human evolution.
 <br><br>
-Explore below some of the many discoveries archaeologists have made at important archaeological sites that have contributed to our understanding of our cognitive evolutionary history. <br>
+Explore below some of the many discoveries archaeologists have made at important archaeological sites that have contributed to our understanding of our cognitive evolutionary history. <br><a id="readLessPreArchText" >Read Less</a> <br>
 
                               </div>
                              </div>
@@ -201,7 +231,8 @@ Explore below some of the many discoveries archaeologists have made at important
 <!-- new block for filters-->
 
 
-<div class="col-md-12">
+
+<div class="col-md-12" id="discoveryBlockStart">
 
 <div class="row">
 
@@ -605,7 +636,7 @@ Thompson, J.C., McPherron, S.P., Bobe, R., Reed, D., Barr, W.A., Wynn, G.G., Mar
 
                             <div> 
                             <div class="majorDiscoveryBlock"> <span style="font-style:italic"> Major Discovery </span></br>
-                              Stone tools dating back to 3.3 Ma were discovered at Lomekwi by a team led by <a target="_blank" href="http://www.stonybrook.edu/commcms/anthropology/faculty/archaeology.html">Sonia Harmand</a> of Stony Brook University. If this date turns out to be correct, then that would mean that these are the oldest stone tools yet known, and it would push the date of chipped stone technologies back by 700,000 years, before the appearance of the genus <i>Homo</i>.<br>
+                              Stone tools dating back to 3.3 Ma were discovered at Lomekwi by a team led by <a target="_blank" href="http://www.turkanabasin.org/author/soniaharmand/">Sonia Harmand</a> of Stony Brook University. If this date turns out to be correct, then that would mean that these are the oldest stone tools yet known, and it would push the date of chipped stone technologies back by 700,000 years, before the appearance of the genus <i>Homo</i>.<br>
                             <!--<button type="button" class="btn readmoreMargin">Read more about this discovery</button> -->
                                <a class="readMoreDiscovery" alt="Lomekwi" >Read more about this discovery</a>
                             </div>
@@ -619,7 +650,7 @@ Thompson, J.C., McPherron, S.P., Bobe, R., Reed, D., Barr, W.A., Wynn, G.G., Mar
     </div>  -->
 
  <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span><br>
-The tools at Lomekwi correspond in time with the small-brained <i>Australopithecus afarensis</i> species, which represents a paradigm shift in paleoanthropology. Scientists have long considered members of the genus Homo to be the first stone toolmakers, but now we have to consider that smaller-brained hominins may have possessed the motor coordination, attention, and inventiveness to make stone tools as well. The sharp flakes found at Lomekwi were likely made by bipolar and passive hammering methods rather than striking a hammer stone against a core (flintknapping) like we see in later industries. These reduction methods presumably involve less skill and planning than flintknapping.</div>
+The tools at Lomekwi correspond in time with the small-brained <i>Australopithecus afarensis</i> species, which represents a paradigm shift in paleoanthropology. Scientists have long considered members of the genus <i>Homo</i> to be the first stone toolmakers, but now we have to consider that smaller-brained hominins may have possessed the motor coordination, attention, and inventiveness to make stone tools as well. The sharp flakes found at Lomekwi were likely made by bipolar and passive hammering methods rather than striking a hammer stone against a core (flintknapping) like we see in later industries. These reduction methods presumably involve less skill and planning than flintknapping.</div>
 
 
 
@@ -765,7 +796,7 @@ Wynn, T., Hernandez-Aguilar, R.A., Marchant, L.F., McGrew, W.C. (2011). “An ap
     </div>  -->
 
  <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
-Humans are not the only great apes to eat meat, but humans are the only great apes that persistently consume the flesh of other animals. Regular meat consumption is thought to be a leading reason for why the human brain was able to expand to such a large size over time. Primates that rely on complex ways of obtaining food tend to require enhanced cognitive skills, and this would have been especially the case for early humans as they exploited a wide variety of food items on the grasslands. When we find evidence of meat consumption in the early archaeological record, this also brings up the question of whether hominins were acquiring the meat by scavenging or by hunting. It is usually assumed by researchers that hunting requires increased cooperation among individuals relative to scavenging. The evidence at Kanjera South is suggestive of cooperative hunting, which may mean that this population of early Homo had enhanced social cognition skills, such as imitation, gaze following, and perhaps an enhanced communication system. The long distance transport of rocks to make tools also indicates foresight and planning that surpasses that of modern apes.
+Humans are not the only great apes to eat meat, but humans are the only great apes that persistently consume the flesh of other animals. Regular meat consumption is thought to be a leading reason for why the human brain was able to expand to such a large size over time. Primates that rely on complex ways of obtaining food tend to require enhanced cognitive skills, and this would have been especially the case for early humans as they exploited a wide variety of food items on the grasslands. When we find evidence of meat consumption in the early archaeological record, this also brings up the question of whether hominins were acquiring the meat by scavenging or by hunting. It is usually assumed by researchers that hunting requires increased cooperation among individuals relative to scavenging. The evidence at Kanjera South is suggestive of cooperative hunting, which may mean that this population of early <i>Homo</i> had enhanced social cognition skills, such as imitation, gaze following, and perhaps an enhanced communication system. The long distance transport of rocks to make tools also indicates foresight and planning that surpasses that of modern apes.
 
 </div>
 
@@ -849,7 +880,7 @@ Schuppli, C., Graber, S.M., Isler, K., van Schaik, C.P. (2016). Life history, co
 <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;">
 <span style="font-style:italic">Further reading</span></br>
 Baena, J., Lordkipanidze, D., Cuartero, F., Ferring, R., Zhvania, D., Martin, D., Shelia, T., Bidzinashuili, G., Roca, M., Rubio, D. (2010). Technical and technological complexity in the beginning: The study of Dmanisi lithic assemblage. Quaternary International 223-224, 45-53. doi:10.1016/j.quaint.2010.01.019<br><br>
-Coolidge, F.L., Wynn, T. (2009). The Rise of Homo sapiens: The Evolution of Modern Thinking. Oxford: Wiley-Blackwell. <br><br>
+Coolidge, F.L., Wynn, T. (2009). The Rise of <i>Homo sapiens</i>: The Evolution of Modern Thinking. Oxford: Wiley-Blackwell. <br><br>
 Ferring, R., Olms, O., Agusti, J., Berna, F., Nioradze, M., Shelia, T., Tappen, M., Vekua, A., Zhvania, D., Lordkipanidze, D. (2011). Earliest human occupations at Dmanisi (Georgian Caucasus) dated to 1.85-1.78 Ma. PNAS 108, 10432-10436. doi: 10.1073/pnas.1106638108
 
 
@@ -2024,7 +2055,7 @@ Wadley, L. (2015). Those marvelous millennia: The Middle Stone Age of Southern A
     </div>  -->
 
  <div style="font-size:1.1em;color:#ffffff;font-family: 'Open Sans', sans-serif;font-weight:300;padding:3% 3% 3% 0;line-height:1.7;"><span style="font-style:italic">How it relates to the evolution of cognition </span></br>
-Symbolic items are rarely discovered at Neandertal sites. When modern human-like behaviors are associated with Neandertal remains, it is common for researchers to argue that Neandertals came into contact with Homo sapiens and imitated their behaviors. The early dates at Krapina exclude this possibility, however, which means that Neandertals were making jewelry long before modern humans arrived in Europe. If they were catching the eagles to make the talon pendants, this would have required planning. And if they wore the talons as jewelry, this implies that they had a well-developed theory of mind, a sense of self-awareness, and possibly a symbolic communication system.
+Symbolic items are rarely discovered at Neandertal sites. When modern human-like behaviors are associated with Neandertal remains, it is common for researchers to argue that Neandertals came into contact with <i>Homo sapiens</i> and imitated their behaviors. The early dates at Krapina exclude this possibility, however, which means that Neandertals were making jewelry long before modern humans arrived in Europe. If they were catching the eagles to make the talon pendants, this would have required planning. And if they wore the talons as jewelry, this implies that they had a well-developed theory of mind, a sense of self-awareness, and possibly a symbolic communication system.
 
 </div>
 
