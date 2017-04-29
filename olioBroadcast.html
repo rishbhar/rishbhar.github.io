@@ -8,19 +8,14 @@
     <title>Human Cognition Evolution</title>
 
     <!-- Bootstrap -->
-    <link href="hcbootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <link href="style/hchomepage.css" rel="stylesheet">
-    <link href="style/slider-def.css" rel="stylesheet">
-    
-    <link href="style/scrolling-nav.css" rel="stylesheet">
+   
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,300italic,400,700' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="hcjavaScript/index.js"></script>
-      <!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">-->
+   
       <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600|Open+Sans:300,300i,400" rel="stylesheet">
       <link href='https://fonts.googleapis.com/css?family=Merriweather:100,300,400,700' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -63,22 +58,161 @@ $("#footer").load("footer.html");
   return t;
 }(document, "script", "twitter-wjs"));</script>
 
+<script type="text/javascript">
+    // var feed = new Instafeed({
+    //     get: 'tagged',
+    //     tagName: 'awesome',
+    //     clientId: '885b3a0c01f041c9ad7f60c7ddf9956b'
+    // });
+    // feed.run();
+    var feed = new Instafeed({
+get: 'user',
+userId: '357117163',
+accessToken: '357117163.1677ed0.77289d89beed4938b97c2590fde9bf9b',
+resolution:'standard_resolution',
+template: '<a href="{{link}}"><img src="{{image}}" width="{{width}}" height="{{height}}" /></a>'
+});
+feed.run();
+</script>
+
 
     <!-- --> 
   </head>
-  <body style="background-color:#012E40;">
 
-<a class="twitter-moment" href="https://twitter.com/i/moments/650667182356082688">The Obamas&#39; wedding anniversary</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<body>
 
-<?php echo '<p>Hello World</p>'; ?> 
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Header -->
+          <header id="header" class="alt">
+            <a href="index.html" class="logo"><strong>boohmm</strong> <span> up!</span></a>
+            <nav>
+              <!--<a href="#menu">Menu</a>-->
+              <a href="aboutus.html">About</a>
+            </nav>
+          </header>
+
+        
+        <!-- Banner -->
+          <section id="banner" class="major">
+            <div class="inner">
+              <!--<header class="major"> commented by Rishabh to remove the underline-->
+                <header>
+                <h1>Designer pick up lines? They suck.</h1>
+              </header>
+              <div class="content">
+                <!--<p>A responsive site template designed by HTML5 UP<br />
+                and released under the Creative Commons.</p>-->
+                <ul class="actions">
+                  <li><a href="#one" class="button next scrolly">read this comic</a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+        <!-- Main -->
+          <div id="main">
+
+            <!-- One -->
+            <section id="contact">
+            <div class="inner">
+              <section style="width:20%;">
+
+                <nav id="">
+            <ul class="links">
+              <li><a href="index.html">Butt Warmer</a></li>
+              <li><a href="landing.html">Designer Pick Up Lines</a></li>
+              <li><a href="generic.html">The Whole Game</a></li>
+              <li><a href="elements.html">Elements</a></li>
+            </ul>
+            <!--<ul class="actions vertical">
+              <li><a href="#" class="button special fit">Get Started</a></li>
+              <li><a href="#" class="button fit">Log In</a></li>
+            </ul>-->
+          </nav>
+
+
+              </section>
+              <section class="split" style="width:80%;">
+
+                 
+
+         
+
+
+
+              </section>
+            </div>
+          </section>
+            <!-- One -->
+            
+              <section class="split">
+              
+            </section>
+
+              
+          </div>
+
+        
+
+        
+
+      </div>
+
+    <!-- Scripts -->
+      <!--<script src="assets/js/jquery.min.js"></script>-->
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+
+      <script>
+
+          function sharefbimage(theImage) {
+      FB.init({ appId: `282841592163313`, status: true, cookie: true });
+      FB.ui(
+      {
+                  method: `share`,
+                  name: 'Facebook Dialogs',
+                  href: $(location).attr('href'),
+                  link: 'https://developers.facebook.com/docs/dialogs/',
+                  picture: theImage.src,
+                  caption: 'Ishelf Book',
+                  description: 'your description'
+              },
+              function (response) {
+                  if (response && response.post_id) {
+                      alert('success');
+                  } else {
+                     alert('error');
+                  }
+              }
+            );
+        }
+
+      </script>
+
+
+
+
+<!--<a class="twitter-moment" href="https://twitter.com/i/moments/650667182356082688">The Obamas&#39; wedding anniversary</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+
+<div id="instafeed"></div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="hcbootstrap/js/bootstrap.min.js"></script>
-    <script src="javaScript/jquery.easing.min.js"></script>
-
+   
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
 
 
  
@@ -89,4 +223,6 @@ $("#footer").load("footer.html");
 
 
   </body>
+
+
 </html>
