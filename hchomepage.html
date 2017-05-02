@@ -589,8 +589,14 @@ $(document).ready(function(){
      //your script inside it
      if (matchMedia('only screen and (max-width: 480px)').matches) { 
   // smartphone/iphone... maybe run some small-screen related dom scripting?
-     if($(".images img").height()!=0) 
-     $(".content-txt").css('height',($(".images img").css("height")));
+     // if($(".images img").height()!=0) 
+     // $(".content-txt").css('height',($(".images img").css("height")));
+      if($(".images img").height()!=0) 
+    { 
+      $(".carousel-caption").css('height',($(".item img").css("height")));
+      $(".carousel-caption").css('bottom','0px');
+      $(".carousel-caption").css('font-size','0.8em');
+    }
 }      
 
  
