@@ -6420,8 +6420,8 @@ button.close {
   overflow: hidden;
   /*Commented by Rishabh Bhardwajwidth: 100%;*/
   /*added by Rishabh*/
-  margin-left: 10%;
-  width:80%;
+  /*margin-left: 10%;commented by Rishabh*/
+  width:100%;
 
 }
 .carousel-inner > .item {
@@ -6605,17 +6605,39 @@ button.close {
   position: absolute;
   left: 0%;
   right: 0%;
-  bottom: 0px;
+  /*bottom: 0px;commented by Rishabh*/
+bottom:20%;/*added by Rishabh*/
   z-index: 10;
-  padding-top: 14px;
-  padding-bottom: 8px;
+  padding-top: 0px;/*edited from 14 to 0 */
+
+  padding-bottom: 20px;/*edited from 8 to 20 */
+  
+  padding-left: 24px;/*added by Rishabh*/
   color: #ffffff;
-  text-align: center;
+  /*text-align: center;commented by Rishabh*/
   /*text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);Commented by Rishabh Bhardwaj*/
   /*background added by Rishabh Bhardwaj*/
+
+      font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
   font-size: 20px;
-  background:#F59090;
+  /*
+  background:#F59090;*/
+  background:rgba(0,0,0,0.5);/*addd by Rishabh*/
 }
+
+.carousel-caption h3{
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+   padding-right:5%;
+    font-size: 1em;
+    line-height: 1.3;
+  
+}
+
 .carousel-caption .btn {
   text-shadow: none;
 }
@@ -6638,8 +6660,9 @@ button.close {
     margin-right: -15px;
   }
   .carousel-caption {
-    left: 0%; 
-    right: 0%;
+    /*changed by Rishabh*/
+    left: 8%; 
+    right: 40%;
     /*padding-bottom: 30px;Commented by Rishabh and left and right made 0%*/
   }
   .carousel-indicators {
