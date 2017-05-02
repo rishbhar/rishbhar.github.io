@@ -2570,7 +2570,7 @@ div#slider figure {
 
 
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  { 
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  { 
 
 
 .discoveryFilterCategories
@@ -2730,6 +2730,40 @@ width: 100%;
 .homeNewsItemText{
   font-size:1em;color:#ffffff;font-weight:300;
 }
+
+
+
+
+.newsBlockTopPadding
+{
+  margin-top: 10%;
+}
+
+.newsItemImageMobile
+{
+  max-width: 40%;
+  display: inline;
+}
+
+.newsImageBlockMobile
+{
+  display:inline;
+}
+
+.newsTextBlockMobile
+{
+  display:inline;
+}
+
+.homeNewsItemImageMobile
+{
+  max-width: 40%;
+  display: inline;
+}
+
+
+
+
 
 
 .paddingHomeNewsImages
@@ -4923,9 +4957,14 @@ div#slider figure {
 
 
 
-/******** *************/
+/******** for latest issue fuck up*************/
 
 @media screen and (min-width: 768px) {
+
+
+
+
+
 
 .content{
   width:100%;
