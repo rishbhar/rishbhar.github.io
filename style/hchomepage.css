@@ -5759,3 +5759,13 @@ div#slider figure {
 }
 
 }
+
+@media screen and (min-width: 1900px) {
+
+
+.titlePadding
+{
+ padding:0 20% 0 6% !important;
+}
+
+}
