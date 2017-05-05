@@ -5745,3 +5745,17 @@ div#slider figure {
 
 
 }
+
+
+
+
+
+@media screen and (min-width: 1600px) {
+
+
+.titlePadding
+{
+ padding:0 15% 0 6% !important;
+}
+
+}
