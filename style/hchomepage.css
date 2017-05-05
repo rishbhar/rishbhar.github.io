@@ -4656,7 +4656,8 @@ font-size: 1.1em;color: #ffffff;font-family: 'Open Sans', sans-serif;font-weight
 
 .prehistDiscovimage
 {
-    width:50em;
+    /*width:50em;commented by Rishabh*/
+    width:100%;
     height:25em;
     background-position: center;
     background-repeat: no-repeat;
