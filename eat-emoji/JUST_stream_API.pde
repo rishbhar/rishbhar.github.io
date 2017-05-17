@@ -324,7 +324,7 @@ void draw() {
   if(gameStart==1) 
    {  
        
-     clear();
+     //clear();
      background(backgroundImage);
      fill(0,255,0);
      
