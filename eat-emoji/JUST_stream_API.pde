@@ -57,7 +57,7 @@ int yPosHeart=-930;
 int yPosClock=-970;
 int yPosBalloon=-970;
 
-int speed=9;                   //How fast is it moving?
+int speed=1;                   //How fast is it moving?
 int yDir=-1;                    //what direction is the ball going?
 
 int happyIs=0;
@@ -706,6 +706,7 @@ void draw() {
      
      if(((10+(happyScore*5))/180)>0)
       {
+     // level += 1;
       
       
       
