@@ -625,7 +625,7 @@ void draw() {
               image(sadEmojiLargeImage,(xPos5*70),yPos5);
               //else if((int)(xPos5%3)==0 || (int)(xPos5%3)==2)
               //image(sadEmojiImage,(xPos5*70),yPos5);
-              yPos5=yPos5-(speed*yDir);  
+              yPos5=yPos5-((speed-4)*yDir);  
           // }
      //}
      
