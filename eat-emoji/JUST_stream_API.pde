@@ -324,7 +324,7 @@ void draw() {
   if(gameStart==1) 
    {  
       
-      delay(500); 
+
      //clear();
      background(backgroundImage);
      fill(0,255,0);
@@ -613,9 +613,9 @@ void draw() {
               yPosBalloon=yPosBalloon-((speed-4)*yDir);
               }
              
-              if(xPos6%3==0 || xPos6%3==2)
+              if((int)(xPos6%3)==0 || (int)(xPos6%3)==2)
               image(angryEmojiImage,(xPos6*70),yPos6);
-              else if(xPos6%3==1)
+              else if((int)(xPos6%3)==1)
               image(angryEmojiLargeImage,(xPos6*70),yPos6);
               yPos6=yPos6-(speed*yDir);
               
@@ -625,10 +625,10 @@ void draw() {
       
      //  if(sadIs==1)
        //    {  
-              //if((int)(xPos5%3)==1)
+              if((int)(xPos5%3)==1)
               image(sadEmojiLargeImage,(xPos5*70),yPos5);
-              //else if((int)(xPos5%3)==0 || (int)(xPos5%3)==2)
-              //image(sadEmojiImage,(xPos5*70),yPos5);
+              else if((int)(xPos5%3)==0 || (int)(xPos5%3)==2)
+              image(sadEmojiImage,(xPos5*70),yPos5);
               yPos5=yPos5-((speed-4)*yDir);  
           // }
      //}
