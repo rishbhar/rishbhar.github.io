@@ -164,6 +164,13 @@ void setup() {
  
   
   backgroundImage = loadImage("Level0.png");
+
+  backgroundImage.loadPixels();
+for (int i = 0; i < backgroundImage.pixels.length; i++) {
+  backgroundImage.pixels[i] = color(0, 90, 102); 
+}
+backgroundImage.updatePixels();
+
   //String portName=Serial.list()[2];
   //println(Serial.list());
   //ComPort = new Serial(this, portName,9600);
