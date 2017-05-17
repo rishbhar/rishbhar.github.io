@@ -706,7 +706,6 @@ void draw() {
      
      if(((10+(happyScore*5))/180)>0)
       {
-      level += 1;
       
       
       
