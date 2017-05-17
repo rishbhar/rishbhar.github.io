@@ -120,7 +120,7 @@ PImage grayBalloonEmojiImage;
 PImage notGrayBalloonEmojiImage;
 PImage twitterLaptop;
 
-Serial ComPort;
+//Serial ComPort;
 
 import ddf.minim.*;
 
@@ -166,8 +166,8 @@ void setup() {
   backgroundImage = loadImage("Level0.png");
   String portName=Serial.list()[2];
   //println(Serial.list());
-  ComPort = new Serial(this, portName,9600);
-  ComPort.bufferUntil('\n');
+  //ComPort = new Serial(this, portName,9600);
+  //ComPort.bufferUntil('\n');
     
   characterImage = loadImage("character.png"); 
   
@@ -1100,7 +1100,7 @@ if(xPos3%3==0 || xPos3%3==2)
   //text("Emotional Health",width-165,750,100,100);
   fill (color(0,0, 225));
   
-   if(ComPort.available()>0)
+   /*if(ComPort.available()>0)
      { 
        String value = ComPort.readStringUntil('\n');
        if(value!=null && value.equals("A\n"))
@@ -1120,7 +1120,7 @@ if(xPos3%3==0 || xPos3%3==2)
             characterX=characterX+10*characterDirX;
         } 
        }
-     }
+     }*/
   
 
    }// game start if ended
