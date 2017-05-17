@@ -1134,7 +1134,7 @@ if(xPos3%3==0 || xPos3%3==2)
   
   if(gameStart==2)
   {
-         clear();
+         //clear();
          background(backgroundImage);
          fill(0,255,0);
          textSize(25);
@@ -1317,7 +1317,7 @@ void keyPressed()
         yBarPos=470;
         level=0;
         speed=9;
-        clear();
+        //clear();
         background(backgroundImage);
         fill(0,255,0);
          if(!player1.isPlaying() && slowDownSec==0)
@@ -1334,7 +1334,7 @@ void keyPressed()
         yBarPos=470;
         level=0;
         speed=9;
-        clear();
+        //clear();
          background(backgroundImage);
      fill(0,255,0);
         loop();
