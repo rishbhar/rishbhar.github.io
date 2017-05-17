@@ -323,7 +323,8 @@ void draw() {
   //game start if started
   if(gameStart==1) 
    {  
-       
+      
+      delay(500); 
      //clear();
      background(backgroundImage);
      fill(0,255,0);
@@ -495,7 +496,7 @@ void draw() {
               //if(level>0)
              // {
                
-              image(sadEmojiImage,(xPosHeart*80),yPosHeart);
+              image(heartEmojiImage,(xPosHeart*80),yPosHeart);
               yPosHeart=yPosHeart-((speed-4)*yDir);
 
               image(sadEmojiLargeImage,(xPos5*70),yPos5);
