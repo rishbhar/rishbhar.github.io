@@ -497,6 +497,9 @@ void draw() {
                
               image(heartEmojiImage,(xPosHeart*80),yPosHeart);
               yPosHeart=yPosHeart-((speed-4)*yDir);
+
+              image(sadEmojiLargeImage,(xPos5*70),yPos5);
+              yPos5=yPos5-((speed-4)*yDir);  
               //}
               
               if(level==0)
