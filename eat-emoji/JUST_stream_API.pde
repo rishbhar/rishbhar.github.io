@@ -164,7 +164,7 @@ void setup() {
  
   
   backgroundImage = loadImage("Level0.png");
-  String portName=Serial.list()[2];
+  //String portName=Serial.list()[2];
   //println(Serial.list());
   //ComPort = new Serial(this, portName,9600);
   //ComPort.bufferUntil('\n');
