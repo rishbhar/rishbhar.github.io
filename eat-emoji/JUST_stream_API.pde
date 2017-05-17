@@ -621,10 +621,10 @@ void draw() {
       
      //  if(sadIs==1)
        //    {  
-              if((int)(xPos5%3)==1)
+              //if((int)(xPos5%3)==1)
               image(sadEmojiLargeImage,(xPos5*70),yPos5);
-              else if((int)(xPos5%3)==0 || (int)(xPos5%3)==2)
-              image(sadEmojiImage,(xPos5*70),yPos5);
+              //else if((int)(xPos5%3)==0 || (int)(xPos5%3)==2)
+              //image(sadEmojiImage,(xPos5*70),yPos5);
               yPos5=yPos5-(speed*yDir);  
           // }
      //}
