@@ -704,7 +704,7 @@ void draw() {
      rect(width-470,30,180,30); // the Level bar
      
      
-     if((10+(happyScore*5))/180>0)
+     if(((10+(happyScore*5))/180)>0)
       {
       level += 1;
       
