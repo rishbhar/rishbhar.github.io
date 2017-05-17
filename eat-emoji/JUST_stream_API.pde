@@ -57,7 +57,7 @@ int yPosHeart=-930;
 int yPosClock=-970;
 int yPosBalloon=-970;
 
-int speed=1;                   //How fast is it moving?
+int speed=5;                   //How fast is it moving?
 int yDir=-1;                    //what direction is the ball going?
 
 int happyIs=0;
@@ -621,9 +621,9 @@ void draw() {
       
      //  if(sadIs==1)
        //    {  
-              if(xPos5%3==1)
+              if((int)(xPos5%3)==1)
               image(sadEmojiLargeImage,(xPos5*70),yPos5);
-              else if(xPos5%3==0 || xPos5%3==2)
+              else if((int)(xPos5%3)==0 || (int)(xPos5%3)==2)
               image(sadEmojiImage,(xPos5*70),yPos5);
               yPos5=yPos5-(speed*yDir);  
           // }
