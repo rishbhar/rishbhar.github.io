@@ -495,7 +495,7 @@ void draw() {
               //if(level>0)
              // {
                
-              image(clockEmojiImage,(xPosHeart*80),yPosHeart);
+              image(sadEmojiImage,(xPosHeart*80),yPosHeart);
               yPosHeart=yPosHeart-((speed-4)*yDir);
 
               image(sadEmojiLargeImage,(xPos5*70),yPos5);
