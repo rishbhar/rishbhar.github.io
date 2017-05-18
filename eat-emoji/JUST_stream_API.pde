@@ -248,7 +248,7 @@ void draw() {
          {
            
          textSize(25);
-         text("This is JApoorva",width/2-300, height/2-180,400,30);
+         text("This is MApoorva",width/2-300, height/2-180,400,30);
          image(characterDaughterImage, width/2-220, height/2 - 90);
          
          text("and her mother, Neelam",width/2-100, height/2-180,400,30);
@@ -482,10 +482,12 @@ void draw() {
     
     if(yPosBalloon==2200 || yPosBalloon>2200 )
     {
+
       rando = (int)random(0,5);
        yPosBalloon=rando*(-2); 
       xPosBalloon = xPosPowersArray[rando];
        trimArray(rando, xPosPowersArray);
+        text("xPosBalloon - "+xPosBalloon+" yPosBalloon -"+yPosBalloon,30, 130,700,30);
       
     }
     
