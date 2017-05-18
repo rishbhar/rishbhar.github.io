@@ -137,7 +137,8 @@ AudioPlayer awwWin;
 Minim minim;//audio context
 
 void setup() {     
-  size(1100, 900);  
+  //size(1100, 900);  
+  size(1100, 820);  
   background(0); 
   //openTwitterStream();
    smooth();
