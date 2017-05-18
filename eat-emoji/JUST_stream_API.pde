@@ -248,7 +248,7 @@ void draw() {
          {
            
          textSize(25);
-         text("This is WApoorva",width/2-300, height/2-180,400,30);
+         text("This is XApoorva",width/2-300, height/2-180,400,30);
          image(characterDaughterImage, width/2-220, height/2 - 90);
          
          text("and her mother, Neelam",width/2-100, height/2-180,400,30);
@@ -716,7 +716,7 @@ void draw() {
      rect(width-470,30,180,30); // the Level bar
      
      
-     if(((10+(happyScore*5))/180)>0)
+     if((int)((10+(happyScore*5))/180)>0)
       {
      // level += 1;
       
