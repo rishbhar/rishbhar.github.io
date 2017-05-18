@@ -487,7 +487,7 @@ void draw() {
        yPosBalloon=rando*(-2); 
       xPosBalloon = xPosPowersArray[rando];
        trimArray(rando, xPosPowersArray);
-        text("xPosBalloon - "+xPosBalloon+" yPosBalloon -"+yPosBalloon,30, 130,700,30);
+       
       
     }
     
@@ -503,7 +503,7 @@ void draw() {
              // {
                
             image(balloonEmojiImage,(xPosBalloon*70),yPosBalloon);
-              yPosBalloon=(int)(yPosBalloon+((speed-4)*yDir));
+              yPosBalloon=(int)(yPosHeart-((speed-4)*yDir));
 
               image(heartEmojiImage,(xPosHeart*80),yPosHeart);
               yPosHeart=yPosHeart-((speed-4)*yDir);
