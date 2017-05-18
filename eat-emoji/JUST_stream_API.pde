@@ -546,10 +546,10 @@ void draw() {
                text("Level - 2",width-170, 580,200,30);
                
                 fill(170,170,170);
-               rect(width-230,180,210,200);
+               rect(width-230,210,210,200);
                 fill(0,0,0);
-                  image(grayClockEmojiImage,width-160,250);
-               text("Level - 3",width-170, 360,200,30);
+                  image(grayClockEmojiImage,width-160,260);
+               text("Level - 3",width-170, 380,200,30);
                
               }
               else if(level==2)
@@ -567,10 +567,10 @@ void draw() {
                text("Level - 2",width-170, 580,200,30);
                
                 fill(255,255,0);
-               rect(width-230,180,210,200);
+               rect(width-230,210,210,200);
                 fill(0,0,0);
-                  image(notGrayClockEmojiImage,width-160,250);
-               text("Level - 3",width-170, 360,200,30);
+                  image(notGrayClockEmojiImage,width-160,260);
+               text("Level - 3",width-170, 380,200,30);
                
               }
               else if(level==3)
@@ -588,10 +588,10 @@ void draw() {
                text("Level - 2",width-170, 580,200,30);
                
                 fill(0,255,0);
-               rect(width-230,180,210,200);
+               rect(width-230,210,210,200);
                 fill(0,0,0);
-                  image(notGrayClockEmojiImage,width-160,250);
-               text("Level - 3",width-170, 360,200,30);
+                  image(notGrayClockEmojiImage,width-160,260);
+               text("Level - 3",width-170, 380,200,30);
   
               }
               
