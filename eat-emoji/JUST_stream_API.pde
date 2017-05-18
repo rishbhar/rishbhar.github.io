@@ -248,7 +248,7 @@ void draw() {
          {
            
          textSize(25);
-         text("This is dApoorva",width/2-300, height/2-180,400,30);
+         text("This is PApoorva",width/2-300, height/2-180,400,30);
          image(characterDaughterImage, width/2-220, height/2 - 90);
          
          text("and her mother, Neelam",width/2-100, height/2-180,400,30);
@@ -400,6 +400,7 @@ void draw() {
 
      text("xPosBalloon - "+xPosBalloon+" yPosBalloon -"+yPosBalloon,30, 70,700,30);
      text("xPosHeart - "+xPosHeart+" yPosHeart -"+yPosHeart,30, 90,700,30);
+     text("xPos4 - "+xPos4+" yPos4 -"+yPos4,30, 110,700,30);
 
     
    
