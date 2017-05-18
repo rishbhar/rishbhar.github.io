@@ -396,7 +396,7 @@ void draw() {
      //image(angryEmojiImage, width-200, 150);
      //image(sadEmojiImage, width-90, 150);
      textSize(20); 
-     text("Score - "+score,30, 30,200,30);
+     text("LaScore - "+score,30, 30,200,30);
 
     
    
@@ -496,9 +496,9 @@ void draw() {
               //if(level>0)
              // {
                
-                image(sadEmojiLargeImage,(xPosHeart*70),yPos5);
+                image(sadEmojiImage,(xPos5*70),yPos5);
               yPos5=yPos5-((speed-4)*yDir);  
-              
+
               image(heartEmojiImage,(xPosHeart*80),yPosHeart);
               yPosHeart=yPosHeart-((speed-4)*yDir);
 
@@ -627,11 +627,11 @@ void draw() {
       
      //  if(sadIs==1)
        //    {  
-              //if((int)(xPos5%3)==1)
-              image(sadEmojiLargeImage,(xPos5*70),yPos5);
-             // else if((int)(xPos5%3)==0 || (int)(xPos5%3)==2)
+             // if((int)(xPos5%3)==1)
+              //image(sadEmojiLargeImage,(xPos5*70),yPos5);
+              //else if((int)(xPos5%3)==0 || (int)(xPos5%3)==2)
               //image(sadEmojiImage,(xPos5*70),yPos5);
-              yPos5=yPos5-((speed-4)*yDir);  
+              //yPos5=yPos5-((speed-4)*yDir);  
           // }
      //}
      
