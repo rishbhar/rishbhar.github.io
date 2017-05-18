@@ -519,10 +519,10 @@ void draw() {
                text("Level - 1",width-170, 780,200,30);
                
                 fill(170,170,170);
-               rect(width-230,390,210,200);
+               rect(width-230,410,210,200);
                 fill(0,0,0);
-                image(grayBalloonEmojiImage,width-160,450);
-               text("Level - 2",width-170, 570,200,30);
+                image(grayBalloonEmojiImage,width-160,460);
+               text("Level - 2",width-170, 580,200,30);
                
                 fill(170,170,170);
                rect(width-230,180,210,200);
