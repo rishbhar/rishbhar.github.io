@@ -525,10 +525,10 @@ void draw() {
                text("Level - 2",width-170, 580,200,30);
                
                 fill(170,170,170);
-               rect(width-230,180,210,200);
+               rect(width-230,210,210,200);
                 fill(0,0,0);
-                  image(grayClockEmojiImage,width-160,250);
-               text("Level - 3",width-170, 360,200,30);
+                  image(grayClockEmojiImage,width-160,260);
+               text("Level - 3",width-170, 380,200,30);
                
               }
               else if(level==1)
@@ -540,10 +540,10 @@ void draw() {
                text("Level - 1",width-170, 780,200,30);
                
                 fill(255,255,0);
-               rect(width-230,390,210,200);
+               rect(width-230,410,210,200);
                 fill(0,0,0);
-                image(notGrayBalloonEmojiImage,width-160,450);
-               text("Level - 2",width-170, 570,200,30);
+                image(notGrayBalloonEmojiImage,width-160,460);
+               text("Level - 2",width-170, 580,200,30);
                
                 fill(170,170,170);
                rect(width-230,180,210,200);
@@ -561,10 +561,10 @@ void draw() {
                text("Level - 1",width-170, 780,200,30);
                
                 fill(0,255,0);
-               rect(width-230,390,210,200);
+               rect(width-230,410,210,200);
                 fill(0,0,0);
-                image(notGrayBalloonEmojiImage,width-160,450);
-               text("Level - 2",width-170, 570,200,30);
+                image(notGrayBalloonEmojiImage,width-160,460);
+               text("Level - 2",width-170, 580,200,30);
                
                 fill(255,255,0);
                rect(width-230,180,210,200);
@@ -582,10 +582,10 @@ void draw() {
                text("Level - 1",width-170, 780,200,30);
                
                 fill(0,255,0);
-               rect(width-230,390,210,200);
+               rect(width-230,410,210,200);
                 fill(0,0,0);
-                image(notGrayBalloonEmojiImage,width-160,450);
-               text("Level - 2",width-170, 570,200,30);
+                image(notGrayBalloonEmojiImage,width-160,460);
+               text("Level - 2",width-170, 580,200,30);
                
                 fill(0,255,0);
                rect(width-230,180,210,200);
