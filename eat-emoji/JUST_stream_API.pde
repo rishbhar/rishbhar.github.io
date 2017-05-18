@@ -396,7 +396,7 @@ void draw() {
      //image(angryEmojiImage, width-200, 150);
      //image(sadEmojiImage, width-90, 150);
      textSize(20); 
-     text("LjScore - "+score,30, 30,200,30);
+     text("doScore - "+score,30, 30,200,30);
 
     
    
@@ -496,8 +496,8 @@ void draw() {
               //if(level>0)
              // {
                
-            image(balloonEmojiImage,(xPosBalloon*70),yPosBalloon);
-              yPosBalloon=(int)(yPosBalloon-((speed-4)*yDir));
+            image(balloonEmojiImage,(xPosHeart*70),yPosHeart);
+              yPosHeart=(int)(yPosHeart-((speed-4)*yDir));
 
              // image(heartEmojiImage,(xPosHeart*80),yPosHeart);
              // yPosHeart=yPosHeart-((speed-4)*yDir);
