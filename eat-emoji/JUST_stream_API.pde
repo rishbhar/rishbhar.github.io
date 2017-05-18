@@ -248,7 +248,7 @@ void draw() {
          {
            
          textSize(25);
-         text("This is PApoorva",width/2-300, height/2-180,400,30);
+         text("This is JApoorva",width/2-300, height/2-180,400,30);
          image(characterDaughterImage, width/2-220, height/2 - 90);
          
          text("and her mother, Neelam",width/2-100, height/2-180,400,30);
@@ -501,7 +501,7 @@ void draw() {
              // {
                
             image(balloonEmojiImage,(xPosBalloon*70),yPosBalloon);
-              yPosBalloon=(int)(yPosBalloon-((speed-4)*yDir));
+              yPosBalloon=(int)(yPosBalloon+((speed-4)*yDir));
 
               image(heartEmojiImage,(xPosHeart*80),yPosHeart);
               yPosHeart=yPosHeart-((speed-4)*yDir);
