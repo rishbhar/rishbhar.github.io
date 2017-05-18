@@ -248,7 +248,7 @@ void draw() {
          {
            
          textSize(25);
-         text("This is Apoorva",width/2-300, height/2-180,400,30);
+         text("This is LApoorva",width/2-300, height/2-180,400,30);
          image(characterDaughterImage, width/2-220, height/2 - 90);
          
          text("and her mother, Neelam",width/2-100, height/2-180,400,30);
@@ -396,7 +396,10 @@ void draw() {
      //image(angryEmojiImage, width-200, 150);
      //image(sadEmojiImage, width-90, 150);
      textSize(20); 
-     text("kaScore - "+score,30, 30,200,30);
+     text("Score - "+score,30, 30,200,30);
+
+     text("xPosBalloon - "+xPosBalloon+" yPosBalloon -"+yPosBalloon,30, 70,200,30);
+     text("xPosHeart - "+xPosHeart+" yPosHeart -"+yPosHeart,30, 90,200,30);
 
     
    
@@ -496,8 +499,8 @@ void draw() {
               //if(level>0)
              // {
                
-            image(sadEmojiImage,(xPosHeart*70),yPosHeart);
-              yPosHeart=(int)(yPosHeart-((speed-4)*yDir));
+            image(balloonEmojiImage,(xPosBalloon*70),yPosBalloon);
+              yPosBalloon=(int)(yPosBalloon-((speed-4)*yDir));
 
               image(heartEmojiImage,(xPosHeart*80),yPosHeart);
               yPosHeart=yPosHeart-((speed-4)*yDir);
