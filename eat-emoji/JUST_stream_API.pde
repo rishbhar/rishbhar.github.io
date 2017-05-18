@@ -726,7 +726,7 @@ void draw() {
       yPos3=-2900;
       yPos5=-4000;
       yPos6=-5870;
-      yPosBalloon=-6910;
+      yPosBalloon=-1910;
 
       momClimbing-=200;
       
@@ -759,7 +759,7 @@ void draw() {
           if(level<3)
           text("Level - "+(level+1),width/2-250, height/2);
           else if(level==3)
-          text("Apoorva's Room",width/2-350, height/2);
+          text("Apoorva's Room",width/2-350, height/2-100);
           
           
           textSize(25);
