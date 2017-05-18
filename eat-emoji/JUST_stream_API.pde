@@ -396,7 +396,7 @@ void draw() {
      //image(angryEmojiImage, width-200, 150);
      //image(sadEmojiImage, width-90, 150);
      textSize(20); 
-     text("LoScore - "+score,30, 30,200,30);
+     text("LikaScore - "+score,30, 30,200,30);
 
     
    
@@ -496,11 +496,11 @@ void draw() {
               //if(level>0)
              // {
                
-                image(sadEmojiImage,(xPos5*70),yPos5);
-              yPos5=yPos5-((speed-4)*yDir);  
+            image(balloonEmojiImage,(xPosBalloon*70),yPosBalloon);
+              yPosBalloon=yPosBalloon-((speed-4)*yDir);
 
-              image(heartEmojiImage,(xPosHeart*80),yPosHeart);
-              yPosHeart=yPosHeart-((speed-4)*yDir);
+             // image(heartEmojiImage,(xPosHeart*80),yPosHeart);
+             // yPosHeart=yPosHeart-((speed-4)*yDir);
 
              
               //}
