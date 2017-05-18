@@ -249,7 +249,7 @@ void draw() {
          {
            
          textSize(25);
-         text("This is ZApoorva",width/2-300, height/2-180,400,30);
+         text("This is Apoorva",width/2-300, height/2-180,400,30);
          image(characterDaughterImage, width/2-220, height/2 - 90);
          
          text("and her mother, Neelam",width/2-100, height/2-180,400,30);
@@ -790,7 +790,7 @@ void draw() {
           text("Level - "+(level+1),width/2-250, height/2);
           
           textSize(25);
-           text("Collect hearts for power ups.",width/2-270, height/2+40);
+           text("Collect hearts for health.",width/2-270, height/2+40);
            if(fade==0){
           firstLevelCheck=1;fade=1;
           }
