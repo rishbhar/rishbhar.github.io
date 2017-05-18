@@ -396,7 +396,7 @@ void draw() {
      //image(angryEmojiImage, width-200, 150);
      //image(sadEmojiImage, width-90, 150);
      textSize(20); 
-     text("LaScore - "+score,30, 30,200,30);
+     text("LoScore - "+score,30, 30,200,30);
 
     
    
@@ -608,7 +608,7 @@ void draw() {
               yPosClock=yPosClock-((speed-4)*yDir);
               }
               
-              if(level>0)
+              if(level==0)
               {
              
               image(balloonEmojiImage,(xPosBalloon*70),yPosBalloon);
