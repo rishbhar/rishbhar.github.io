@@ -57,7 +57,7 @@ int yPosHeart=-930;
 int yPosClock=-970;
 int yPosBalloon=-930;
 
-int speed=5;                   //How fast is it moving?
+int speed=8;                   //How fast is it moving?
 int yDir=-1;                    //what direction is the ball going?
 
 int happyIs=0;
@@ -248,7 +248,7 @@ void draw() {
          {
            
          textSize(25);
-         text("This is XApoorva",width/2-300, height/2-180,400,30);
+         text("This is Apoorva",width/2-300, height/2-180,400,30);
          image(characterDaughterImage, width/2-220, height/2 - 90);
          
          text("and her mother, Neelam",width/2-100, height/2-180,400,30);
@@ -502,9 +502,7 @@ void draw() {
               //if(level>0)
              // {
                
-            image(balloonEmojiImage,(xPosBalloon*70),yPosBalloon);
-              yPosBalloon=yPosHeart-((speed-4)*yDir);
-
+           
               image(heartEmojiImage,(xPosHeart*80),yPosHeart);
               yPosHeart=yPosHeart-((speed-4)*yDir);
 
@@ -633,11 +631,11 @@ void draw() {
       
      //  if(sadIs==1)
        //    {  
-             // if((int)(xPos5%3)==1)
-              //image(sadEmojiLargeImage,(xPos5*70),yPos5);
-              //else if((int)(xPos5%3)==0 || (int)(xPos5%3)==2)
-              //image(sadEmojiImage,(xPos5*70),yPos5);
-              //yPos5=yPos5-((speed-4)*yDir);  
+              if((int)(xPos5%3)==1)
+              image(sadEmojiLargeImage,(xPos5*70),yPos5);
+              else if((int)(xPos5%3)==0 || (int)(xPos5%3)==2)
+              image(sadEmojiImage,(xPos5*70),yPos5);
+              yPos5=yPos5-((speed-4)*yDir);  
           // }
      //}
      
@@ -718,7 +716,7 @@ void draw() {
      
      if((int)((10+(happyScore*5))/180)>0)
       {
-     // level += 1;
+      level += 1;
       
       
       
