@@ -513,85 +513,85 @@ void draw() {
               if(level==0)
               {
                 fill(255,255,0);
-               rect(width-230,620,210,210);
+               rect(width-230,610,210,210);
                 fill(0,0,0);
-                 image(heartEmojiImage,width-160,690);
-               text("Level - 1",width-170, 790,200,30);
+                 image(heartEmojiImage,width-160,680);
+               text("Level - 1",width-170, 780,200,30);
                
                 fill(170,170,170);
-               rect(width-230,410,210,210);
+               rect(width-230,400,210,210);
                 fill(0,0,0);
-                image(grayBalloonEmojiImage,width-160,460);
-               text("Level - 2",width-170, 580,200,30);
+                image(grayBalloonEmojiImage,width-160,450);
+               text("Level - 2",width-170, 570,200,30);
                
                 fill(170,170,170);
-               rect(width-230,200,210,210);
+               rect(width-230,190,210,210);
                 fill(0,0,0);
-                  image(grayClockEmojiImage,width-160,260);
-               text("Level - 3",width-170, 370,200,30);
+                  image(grayClockEmojiImage,width-160,250);
+               text("Level - 3",width-170, 360,200,30);
                
               }
               else if(level==1)
               {
                  fill(0,255,0);
-               rect(width-230,620,210,210);
+               rect(width-230,610,210,210);
                 fill(0,0,0);
-                 image(heartEmojiImage,width-160,690);
-               text("Level - 1",width-170, 790,200,30);
+                 image(heartEmojiImage,width-160,680);
+               text("Level - 1",width-170, 780,200,30);
                
                 fill(255,255,0);
-               rect(width-230,410,210,210);
+               rect(width-230,400,210,210);
                 fill(0,0,0);
-                image(notGrayBalloonEmojiImage,width-160,460);
-               text("Level - 2",width-170, 580,200,30);
+                image(notGrayBalloonEmojiImage,width-160,450);
+               text("Level - 2",width-170, 570,200,30);
                
                 fill(170,170,170);
-               rect(width-230,200,210,210);
+               rect(width-230,190,210,210);
                 fill(0,0,0);
-                  image(grayClockEmojiImage,width-160,260);
-               text("Level - 3",width-170, 370,200,30);
+                  image(grayClockEmojiImage,width-160,250);
+               text("Level - 3",width-170, 360,200,30);
                
               }
               else if(level==2)
               {
                  fill(0,255,0);
-               rect(width-230,620,210,210);
+               rect(width-230,610,210,210);
                 fill(0,0,0);
-                 image(heartEmojiImage,width-160,690);
-               text("Level - 1",width-170, 790,200,30);
+                 image(heartEmojiImage,width-160,680);
+               text("Level - 1",width-170, 780,200,30);
                
                 fill(0,255,0);
-               rect(width-230,410,210,210);
+               rect(width-230,400,210,210);
                 fill(0,0,0);
-                image(notGrayBalloonEmojiImage,width-160,460);
-               text("Level - 2",width-170, 580,200,30);
+                image(notGrayBalloonEmojiImage,width-160,450);
+               text("Level - 2",width-170, 570,200,30);
                
                 fill(255,255,0);
-               rect(width-230,200,210,210);
+               rect(width-230,190,210,210);
                 fill(0,0,0);
-                  image(notGrayClockEmojiImage,width-160,260);
-               text("Level - 3",width-170, 370,200,30);
+                  image(notGrayClockEmojiImage,width-160,250);
+               text("Level - 3",width-170, 360,200,30);
                
               }
               else if(level==3)
               {
                  fill(0,255,0);
-               rect(width-230,620,210,210);
+               rect(width-230,610,210,210);
                 fill(0,0,0);
-                 image(heartEmojiImage,width-160,690);
-               text("Level - 1",width-170, 790,200,30);
+                 image(heartEmojiImage,width-160,680);
+               text("Level - 1",width-170, 780,200,30);
                
                 fill(0,255,0);
-               rect(width-230,410,210,210);
+               rect(width-230,400,210,210);
                 fill(0,0,0);
-                image(notGrayBalloonEmojiImage,width-160,460);
-               text("Level - 2",width-170, 580,200,30);
+                image(notGrayBalloonEmojiImage,width-160,450);
+               text("Level - 2",width-170, 570,200,30);
                
                 fill(0,255,0);
-               rect(width-230,200,210,210);
+               rect(width-230,190,210,210);
                 fill(0,0,0);
-                  image(notGrayClockEmojiImage,width-160,260);
-               text("Level - 3",width-170, 370,200,30);
+                  image(notGrayClockEmojiImage,width-160,250);
+               text("Level - 3",width-170, 360,200,30);
   
               }
               
