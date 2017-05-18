@@ -55,7 +55,7 @@ int yPos6=-2250;                      // y Position of the 5th emoji
  
 int yPosHeart=-930; 
 int yPosClock=-970;
-int yPosBalloon=-970;
+int yPosBalloon=-930;
 
 int speed=5;                   //How fast is it moving?
 int yDir=-1;                    //what direction is the ball going?
@@ -248,7 +248,7 @@ void draw() {
          {
            
          textSize(25);
-         text("This is QApoorva",width/2-300, height/2-180,400,30);
+         text("This is WApoorva",width/2-300, height/2-180,400,30);
          image(characterDaughterImage, width/2-220, height/2 - 90);
          
          text("and her mother, Neelam",width/2-100, height/2-180,400,30);
