@@ -1156,7 +1156,7 @@ if(xPos3%3==0 || xPos3%3==2)
          image(savedHerImage, 250, 150);
          //image();
          player1.pause();
-        
+         theEnd.play();
          textSize(18);
          fill(0,0,0);
          score=0;
