@@ -134,7 +134,7 @@ AudioPlayer gameIntroSound;
 AudioPlayer slowDownAudio;
 AudioPlayer explosion;
 AudioPlayer awwWin;
-AudioPlayer end;
+AudioPlayer theEnd;
 Minim minim;//audio context
 
 void setup() {     
@@ -229,7 +229,7 @@ backgroundImage.updatePixels();
   player4 = minim.loadFile("gamelost1.wav", 2048);
   
   player3 = minim.loadFile("powerDown.mp3", 2048);
-   end = minim.loadFile("end.wav", 2048);
+   theEnd = minim.loadFile("end.wav", 2048);
   
   player2 = minim.loadFile("powerUp.wav", 2048);
   //gameIntroSound.loop();
@@ -1156,7 +1156,7 @@ if(xPos3%3==0 || xPos3%3==2)
          image(savedHerImage, 250, 150);
          //image();
          player1.pause();
-         end.play();
+         theEnd.play();
          textSize(18);
          fill(0,0,0);
          score=0;
