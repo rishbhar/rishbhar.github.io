@@ -20,6 +20,7 @@ int levelWentUp=0;
 int time = 0;
 float fade;
 int score=0;
+int restartFlag=0;
 
 float healthValue=300;
 
@@ -338,7 +339,14 @@ void draw() {
   { player1.rewind();
   player1.play();
   }*/
-     player1.play();
+
+  if(restartFlag==1)
+{
+  player1.rewind();
+  player1.play();
+  restartFlag=0;
+}
+     //player1.play();
     //background(backgroundImage);
     //int yeah=0, damage=0;
     int damage=0;
@@ -1158,6 +1166,7 @@ if(xPos3%3==0 || xPos3%3==2)
          image(savedHerImage, 250, 150);
          //image();
          player1.pause();
+         restartFlag=1;
          //theEnd.play();
          textSize(18);
          fill(0,0,0);
