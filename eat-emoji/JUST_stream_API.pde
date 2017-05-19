@@ -506,7 +506,7 @@ void draw() {
               //if(level>0)
              // {
                
-           
+            
               image(heartEmojiImage,(xPosHeart*80),yPosHeart);
               yPosHeart=yPosHeart-((speed-4)*yDir);
 
