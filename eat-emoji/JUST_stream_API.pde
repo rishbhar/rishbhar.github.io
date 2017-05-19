@@ -319,6 +319,7 @@ void draw() {
          //image();
          textSize(18);
          fill(0,0,0);
+         text("Use Left/Right Arrow to play.",width/2-190, height/2+150,400,30);
          text("Press RETURN/ENTER to start the game!",width/2-190, height/2+200,400,30);
          
          }
