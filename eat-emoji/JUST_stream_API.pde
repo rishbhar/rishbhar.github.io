@@ -267,7 +267,7 @@ void draw() {
          {  
          textSize(25);  
          fill(0,255,0);
-         text("Apoorva spends a lot of time on social media. She got involved in a heated argument on Twitter.",width/2-250, height/2-350,600,30);
+         text("Apoorva spends a lot of time on social media.",width/2-250, height/2-350,600,30);
          image(characterDaughterImage, width/2-150, height/2 - 300);
          image(twitterLaptop, width/2+20, height/2 - 270);
          
