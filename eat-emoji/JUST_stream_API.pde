@@ -59,7 +59,7 @@ int yPosHeart=-930;
 int yPosClock=-970;
 int yPosBalloon=-930;
 
-int speed=8;                   //How fast is it moving?
+int speed=9;                   //How fast is it moving?
 int yDir=-1;                    //what direction is the ball going?
 
 int happyIs=0;
@@ -516,8 +516,10 @@ void draw() {
              // {
                
             
+              
               image(heartEmojiImage,(xPosHeart*80),yPosHeart);
               yPosHeart=yPosHeart-((speed-4)*yDir);
+              
 
              
               //}
@@ -750,10 +752,10 @@ void draw() {
       
       if(slowDownSec!=0)
         {
-          recordSpeed+=2;
+          recordSpeed+=1;
         }
         else
-      speed+=2;
+      speed+=1;
       
       levelUp.play();
       levelUp.rewind();
