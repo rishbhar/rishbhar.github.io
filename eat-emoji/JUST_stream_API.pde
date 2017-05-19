@@ -1166,7 +1166,7 @@ void stop()
   player1.pause();
   player4.play();
   fill(225,0,0);
-  rect(400,400,250,80);
+  rect(300,300,300,100);
   fill(225,225,225);
   //if(evilAttack==1)
   //text("Evil got you! It's over",width/2-120, height/2 - 20,350,30);
@@ -1174,7 +1174,7 @@ void stop()
   text("You could not save Apoorva :'(",width/2-120, height/2 - 20,500,30);
   gameStart=0;
   fill(0,0,0);
-  text("Press RETURN/ENTER key to restart the game",width/2-190, height/2+200,400,60);
+  text("Press RETURN/ENTER key to restart the game",width/2-250, height/2+200,500,60);
   noLoop();
 }
  
