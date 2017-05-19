@@ -1006,7 +1006,7 @@ if(xPos4%3==0 || xPos4%3==2)
   && (height-characterY-(level*120))+ 65 > yPos4)
   {healthValue-=80;
     yBarPos+=10;
-    damage=1;
+    damage=2;
     player3.play();
     player3.rewind();
   yPos4=910;
@@ -1026,7 +1026,7 @@ if(xPos3%3==0 || xPos3%3==2)
         && (height-characterY-(level*120))+ 65 > yPos3)
         {healthValue-=20;
         yBarPos+=20;
-        damage=1;
+        damage=2;
         player3.play();
         player3.rewind();
       yPos3=910;}
@@ -1041,7 +1041,7 @@ if(xPos3%3==0 || xPos3%3==2)
     && (height-characterY-(level*120))+ 65 > yPos3)
     {healthValue-=10;
     yBarPos+=10;
-    damage=1;
+    damage=2;
      player3.play();
     player3.rewind();
   yPos3=910;}
@@ -1058,7 +1058,7 @@ if(xPos3%3==0 || xPos3%3==2)
     && (height-characterY-(level*120))+ 65 > yPos5)
     {healthValue-=10;
     yBarPos+=10;
-    damage=1;
+    damage=2;
     player3.play();
     player3.rewind();
   yPos5=910;}
@@ -1072,7 +1072,7 @@ if(xPos3%3==0 || xPos3%3==2)
           && (height-characterY-(level*120))+ 65 > yPos5)
           {healthValue-=20;
           yBarPos+=20;
-          damage=1;
+          damage=2;
            player3.play();
           player3.rewind();
           yPos5=910;}
@@ -1089,7 +1089,7 @@ if(xPos3%3==0 || xPos3%3==2)
       && (height-characterY-(level*120))+ 65 > yPos6)
       {healthValue-=10;
       yBarPos+=10;
-      damage=1;
+      damage=2;
         player3.play();
     player3.rewind();
       yPos6=910;
@@ -1106,7 +1106,7 @@ if(xPos3%3==0 || xPos3%3==2)
         yBarPos+=20;
         player3.play();
         player3.rewind();
-        damage=1;yPos6=910;
+        damage=2;yPos6=910;
       }
       
       
