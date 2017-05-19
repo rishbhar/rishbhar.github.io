@@ -324,7 +324,7 @@ void draw() {
          }
      
   //game start if started
-  if(gameStart==1) 
+  if(gameStart==2) 
    {  
       
 
@@ -1145,7 +1145,7 @@ if(xPos3%3==0 || xPos3%3==2)
 
    }// game start if ended
   
-  if(gameStart==2)
+  if(gameStart==1)
   {
          //clear();
          background(backgroundImage);
