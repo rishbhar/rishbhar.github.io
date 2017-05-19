@@ -338,7 +338,7 @@ void draw() {
   { player1.rewind();
   player1.play();
   }*/
-     //player1.play();
+     player1.play();
     //background(backgroundImage);
     //int yeah=0, damage=0;
     int damage=0;
@@ -742,10 +742,10 @@ void draw() {
       
       if(slowDownSec!=0)
         {
-          recordSpeed+=1;
+          recordSpeed+=2;
         }
         else
-      speed+=1;
+      speed+=2;
       
       levelUp.play();
       levelUp.rewind();
