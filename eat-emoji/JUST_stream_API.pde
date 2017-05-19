@@ -1024,7 +1024,7 @@ if(xPos3%3==0 || xPos3%3==2)
         && (xPos3*(138/2)) < characterX+ 65
         && (height-characterY-(level*120))< yPos3 + 70
         && (height-characterY-(level*120))+ 65 > yPos3)
-        {healthValue-=20;
+        {healthValue-=40;
         yBarPos+=20;
         damage=2;
         player3.play();
@@ -1039,7 +1039,7 @@ if(xPos3%3==0 || xPos3%3==2)
     && (xPos3*60) < characterX+ 65
     && (height-characterY-(level*120))< yPos3 + 70
     && (height-characterY-(level*120))+ 65 > yPos3)
-    {healthValue-=10;
+    {healthValue-=20;
     yBarPos+=10;
     damage=2;
      player3.play();
@@ -1056,7 +1056,7 @@ if(xPos3%3==0 || xPos3%3==2)
     && (xPos5*60) < characterX+ 65
     && (height-characterY-(level*120))< yPos5 + 70
     && (height-characterY-(level*120))+ 65 > yPos5)
-    {healthValue-=10;
+    {healthValue-=20;
     yBarPos+=10;
     damage=2;
     player3.play();
@@ -1070,7 +1070,7 @@ if(xPos3%3==0 || xPos3%3==2)
           && (xPos5*(138/2)) < characterX+ 65
           && (height-characterY-(level*120))< yPos5 + 70
           && (height-characterY-(level*120))+ 65 > yPos5)
-          {healthValue-=20;
+          {healthValue-=40;
           yBarPos+=20;
           damage=2;
            player3.play();
@@ -1087,7 +1087,7 @@ if(xPos3%3==0 || xPos3%3==2)
       && (xPos6*60) < characterX+ 65
       && (height-characterY-(level*120))< yPos6 + 70
       && (height-characterY-(level*120))+ 65 > yPos6)
-      {healthValue-=10;
+      {healthValue-=20;
       yBarPos+=10;
       damage=2;
         player3.play();
@@ -1102,7 +1102,7 @@ if(xPos3%3==0 || xPos3%3==2)
         && (xPos6*(138/2)) < characterX+ 65
         && (height-characterY-(level*120))< yPos6 + 70
         && (height-characterY-(level*120))+ 65 > yPos6)
-        {healthValue-=20;
+        {healthValue-=40;
         yBarPos+=20;
         player3.play();
         player3.rewind();
@@ -1362,7 +1362,8 @@ void keyPressed()
         gameStart=1;
         yBarPos=470;
         level=0;
-        speed=9;
+        speed=8;
+        healthValue=300;
         //clear();
          background(backgroundImage);
      fill(0,255,0);
