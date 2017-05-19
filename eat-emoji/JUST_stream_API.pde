@@ -1173,6 +1173,7 @@ if(xPos3%3==0 || xPos3%3==2)
          textSize(18);
          fill(0,0,0);
          score=0;
+         speed=8;
          text("Press RETURN/ENTER to play again.",width/2-170, height/2+300,400,30);
          
   }
