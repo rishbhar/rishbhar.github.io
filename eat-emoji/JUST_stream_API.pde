@@ -1171,10 +1171,10 @@ void stop()
   //if(evilAttack==1)
   //text("Evil got you! It's over",width/2-120, height/2 - 20,350,30);
   //else if(evilAttack==0)
-  text("You could not save Apoorva :'(",width/2-120, height/2 - 20,500,30);
+  text("You could not save Apoorva :'(",width/2-20, height/2 - 120,500,30);
   gameStart=0;
   fill(0,0,0);
-  text("Press RETURN/ENTER key to restart the game",width/2-250, height/2+200,500,60);
+  text("Press RETURN/ENTER key to restart the game",width/2-350, height/2+200,500,60);
   noLoop();
 }
  
