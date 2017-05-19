@@ -1331,10 +1331,10 @@ void keyPressed()
         //clear();
         background(backgroundImage);
         fill(0,255,0);
-         if(!player1.isPlaying() && slowDownSec==0)
+       /*  if(!player1.isPlaying() && slowDownSec==0)
   { player1.rewind();
   player1.play();
-  }
+  }*/
         loop();
       }
       
