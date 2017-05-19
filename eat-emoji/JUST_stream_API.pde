@@ -636,7 +636,7 @@ void draw() {
               image(sadEmojiLargeImage,(xPos5*70),yPos5);
               else if((int)(xPos5%3)==0 || (int)(xPos5%3)==2)
               image(sadEmojiImage,(xPos5*70),yPos5);
-              yPos5=yPos5-((speed-4)*yDir);  
+              yPos5=yPos5-((speed)*yDir);  
           // }
      //}
      
@@ -760,7 +760,7 @@ void draw() {
           if(level<3)
           text("Level - "+(level+1),width/2-250, height/2);
           else if(level==3)
-          text("Apoorva's Room",width/2-350, height/2-100);
+          text("Apoorva's Room",width/2-350, height/2-200);
           
           
           textSize(25);
@@ -769,7 +769,7 @@ void draw() {
           else if(level==2)
           text("Collect clocks to slow the time.",width/2-270, height/2+40);
           else if(level==3)
-          text("Almost there. Save Apoorva!",width/2-300, height/2+40);
+          text("Almost there. Save Apoorva!",width/2-300, height/2-100);
           
           
           if(fade==0){
