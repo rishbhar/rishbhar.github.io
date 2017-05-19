@@ -7,6 +7,7 @@ int characterDirX =1;
 float characterX = 20, characterY = 130, characterSpeed = 80;
 float x=1, y=20;
 
+/* @pjs preload="Level0.png"; */
 
 //level up text 
 int MAX = 255;
