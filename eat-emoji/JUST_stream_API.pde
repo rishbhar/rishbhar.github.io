@@ -1173,7 +1173,7 @@ if(xPos3%3==0 || xPos3%3==2)
          textSize(18);
          fill(0,0,0);
          score=0;
-         speed=8;
+         speed=7;
          text("Press RETURN/ENTER to play again.",width/2-170, height/2+300,400,30);
          
   }
@@ -1345,7 +1345,7 @@ void keyPressed()
         gameStart=1;
         yBarPos=470;
         level=0;
-        speed=9;
+        speed=7;
         //clear();
         background(backgroundImage);
         fill(0,255,0);
