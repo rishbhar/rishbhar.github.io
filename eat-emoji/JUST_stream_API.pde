@@ -59,7 +59,7 @@ int yPosHeart=-930;
 int yPosClock=-970;
 int yPosBalloon=-930;
 
-int speed=8;                   //How fast is it moving?
+int speed=7;                   //How fast is it moving?
 int yDir=-1;                    //what direction is the ball going?
 
 int happyIs=0;
